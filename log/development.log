@@ -1852,3 +1852,239 @@ Processing by HomeController#spotify as HTML
 Completed 200 OK in 1151ms (Views: 1150.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-09-30 15:33:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1317ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-09-30 15:33:06 +0100
+Started GET "/auth/spotify" for ::1 at 2019-09-30 15:33:06 +0100
+Started GET "/auth/spotify/callback?code=AQCsOrL678Z90tzG6FGHpMQSw8WEuZur738fn3Mnhdwv520b1J8E6HmJAsaC3wks6ueK9nrtsqOEcLxSguEOlIw_gsoUo-LF-5LRR3sz1USeJMSIWuEuGnVxJ5LQAf4A0UHQVLbHkdKeC32jFcCXT_leQW0bX-DV4GJUP6J_B5gkRdn1fQG5yI4VZlpVzdkrV_xcSzCVpL2DFdlNpj8YAJ2T2B6nUOcVbEJUMLOEodLD-Cghx0NTWNm3wpCofNKX22iqAOtVHN2-CtsxKfWx0b18ZiFplV8lcuM_ZcgcGGSZ0Efs-pXFPqT0vP2ZaMz5pM8BfNy-PHwdWRYM7cjdnUuXxQ&state=a2069594810d906205cf73ab7d89d2b80e873b43a03c251a" for ::1 at 2019-09-30 15:33:07 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQCsOrL678Z90tzG6FGHpMQSw8WEuZur738fn3Mnhdwv520b1J8E6HmJAsaC3wks6ueK9nrtsqOEcLxSguEOlIw_gsoUo-LF-5LRR3sz1USeJMSIWuEuGnVxJ5LQAf4A0UHQVLbHkdKeC32jFcCXT_leQW0bX-DV4GJUP6J_B5gkRdn1fQG5yI4VZlpVzdkrV_xcSzCVpL2DFdlNpj8YAJ2T2B6nUOcVbEJUMLOEodLD-Cghx0NTWNm3wpCofNKX22iqAOtVHN2-CtsxKfWx0b18ZiFplV8lcuM_ZcgcGGSZ0Efs-pXFPqT0vP2ZaMz5pM8BfNy-PHwdWRYM7cjdnUuXxQ", "state"=>"a2069594810d906205cf73ab7d89d2b80e873b43a03c251a"}
+  Rendering home/spotify.html.erb within layouts/application
+  Rendered home/spotify.html.erb within layouts/application (1012.1ms)
+Completed 200 OK in 1028ms (Views: 1026.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-30 19:18:32 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 877ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-09-30 19:18:35 +0100
+Started GET "/auth/spotify" for ::1 at 2019-09-30 19:18:35 +0100
+Started GET "/auth/spotify/callback?code=AQAnqaHr9tZ4dlFJL546ulRouKnPDhgR1SWHYGleM0cpFB_nPg5CoGBeRQnnfah1VPe6QgLAlGlLwME52gEO8lhAIE6ObgXJ9vyqSLyHPs7r9jA_JJ0gvzWwijD632hI46cR9B_RKYSeymcKZTjwKW4-Xf1MV18SUNHniAsyEdysTMKUR_YPTW4kr5YWIc0HadzvYhXgzynCIn9conMRJfrubLRiiDkyd0CykCYW5nrwaxgRUf1HosIwSwKeitwCPSwQsyBJyetVzcvnqGvHN1agXu7CtPLMlwP7-rqtU4OBoYv2BFCtb2U4JXEsUyYbsRQuwdszhrggkQrzhvxaurH3ig&state=1cf99ee42aa013582e3060e710e18ee25bd5b5af8cae8a7d" for ::1 at 2019-09-30 19:18:35 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQAnqaHr9tZ4dlFJL546ulRouKnPDhgR1SWHYGleM0cpFB_nPg5CoGBeRQnnfah1VPe6QgLAlGlLwME52gEO8lhAIE6ObgXJ9vyqSLyHPs7r9jA_JJ0gvzWwijD632hI46cR9B_RKYSeymcKZTjwKW4-Xf1MV18SUNHniAsyEdysTMKUR_YPTW4kr5YWIc0HadzvYhXgzynCIn9conMRJfrubLRiiDkyd0CykCYW5nrwaxgRUf1HosIwSwKeitwCPSwQsyBJyetVzcvnqGvHN1agXu7CtPLMlwP7-rqtU4OBoYv2BFCtb2U4JXEsUyYbsRQuwdszhrggkQrzhvxaurH3ig", "state"=>"1cf99ee42aa013582e3060e710e18ee25bd5b5af8cae8a7d"}
+  Rendering home/spotify.html.erb within layouts/application
+  Rendered home/spotify.html.erb within layouts/application (2085.8ms)
+Completed 200 OK in 2099ms (Views: 2097.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-30 19:20:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (555.0ms)
+Completed 500 Internal Server Error in 1008ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `reset_session' for #<#<Class:0x00007fa9f0a098c0>:0x00007fa9f23f3498>
+Did you mean?  resolve_assets_with):
+    4: <% end %>
+    5: 
+    6: <%= link_to 'Sign in with Spotify', '/auth/spotify' %>
+    7: <%= link_to 'end', reset_session %>
+  
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb___3359460029685620986_70183945215600'
+Started GET "/" for ::1 at 2019-09-30 19:22:30 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 449ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2019-09-30 19:22:33 +0100
+Processing by HomeController#log_out as HTML
+Completed 406 Not Acceptable in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (HomeController#log_out is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-30 19:22:54 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 723ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-09-30 19:22:56 +0100
+Started GET "/auth/spotify" for ::1 at 2019-09-30 19:22:56 +0100
+Started GET "/auth/spotify/callback?code=AQBahHZWZUfUlsnoo1RufnKmBsUHHHyPLohpPSEOM9lH9rKlxjPrxCCnyd-lX3Jsm6TZX_P0S6Tlo_PmmFE9eu-3GufTPdINW6nZ61xHBAlhSfNwORBN1jT7PgvC1E7LSFcDYg7nsLCDFpg30fj8-5yIQrpN6ofu7ma6ZseiBVLPUFvy567bSy8Vhkmcd9o-eW3cp6H4-a5kWV5dUxMXvo3640R7fDn7MOMbsSH788V_AckdnGBLiQ9IFak4usHLioT3OxX4M2w6N8niq68AvSykj1C6nD6zgDCFPTH4gKRz9ekNiWEkPp1Y25fhEF6NWbLpA2zIsBFTk9fqr32Gko2LNQ&state=7196e144cb46ece692fa4c57a7a217b42b9935e2e5e2b6e2" for ::1 at 2019-09-30 19:22:56 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBahHZWZUfUlsnoo1RufnKmBsUHHHyPLohpPSEOM9lH9rKlxjPrxCCnyd-lX3Jsm6TZX_P0S6Tlo_PmmFE9eu-3GufTPdINW6nZ61xHBAlhSfNwORBN1jT7PgvC1E7LSFcDYg7nsLCDFpg30fj8-5yIQrpN6ofu7ma6ZseiBVLPUFvy567bSy8Vhkmcd9o-eW3cp6H4-a5kWV5dUxMXvo3640R7fDn7MOMbsSH788V_AckdnGBLiQ9IFak4usHLioT3OxX4M2w6N8niq68AvSykj1C6nD6zgDCFPTH4gKRz9ekNiWEkPp1Y25fhEF6NWbLpA2zIsBFTk9fqr32Gko2LNQ", "state"=>"7196e144cb46ece692fa4c57a7a217b42b9935e2e5e2b6e2"}
+  Rendering home/spotify.html.erb within layouts/application
+  Rendered home/spotify.html.erb within layouts/application (1949.2ms)
+Completed 200 OK in 1966ms (Views: 1964.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2019-09-30 19:23:10 +0100
+Processing by HomeController#log_out as HTML
+Completed 500 Internal Server Error in 395ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError ('#<RSpotify::Playlist:0x00007fa9ebc8ff90 @collaborative=false, @description=nil, @followers=nil, @images=[{"height"=>640, "url"=>"https://mosaic.scdn.co/640/08569f4ebf39ea275f9601a0f5ae62c489485a7b94105e271865c28853bfb7b44b38353a2fea45d6c17e558d633b4d3d2c589abf4478fd4e2b52a09bcab69be60564cd8bcc917eaf1e429fe23e1a345b", "width"=>640}, {"height"=>300, "url"=>"https://mosaic.scdn.co/300/08569f4ebf39ea275f9601a0f5ae62c489485a7b94105e271865c28853bfb7b44b38353a2fea45d6c17e558d633b4d3d2c589abf4478fd4e2b52a09bcab69be60564cd8bcc917eaf1e429fe23e1a345b", "width"=>300}, {"height"=>60, "url"=>"https://mosaic.scdn.co/60/08569f4ebf39ea275f9601a0f5ae62c489485a7b94105e271865c28853bfb7b44b38353a2fea45d6c17e558d633b4d3d2c589abf4478fd4e2b52a09bcab69be60564cd8bcc917eaf1e429fe23e1a345b", "width"=>60}], @name="POST", @public=true, @snapshot_id="MjQsNGZiOGU0MmJkNTg0NDQ4OTM5MDQ0ZGZlYWFjZGZlYTY3Y2FlYmM2OQ==", @total=23, @owner=#<RSpotify::User:0x00007fa9ebc8ff68 @birthdate=nil, @country=nil, @display_name="alanbiju79", @email=nil, @followers=nil, @images=nil, @product=nil, @external_urls={"spotify"=>"https://open.spotify.com/user/alanbiju79"}, @href="https://api.spotify.com/v1/users/alanbiju79", @id="alanbiju79", @type="user", @uri="spotify:user:alanbiju79">, @tracks_cache=nil, @tracks_added_at=nil, @tracks_added_by=nil, @tracks_is_local=nil, @external_urls={"spotify"=>"https://open.spotify.com/playlist/3V26JjOdj6zivA9M0kwnVf"}, @href="https://api.spotify.com/v1/playlists/3V26JjOdj6zivA9M0kwnVf", @id="3V26JjOdj6zivA9M0kwnVf", @type="playlist", @uri="spotify:playlist:3V26JjOdj6zivA9M0kwnVf", @path="users/alanbiju79/playlists/3V26JjOdj6zivA9M0kwnVf">' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+  
+app/controllers/home_controller.rb:19:in `log_out'
+Started GET "/" for ::1 at 2019-09-30 19:24:41 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/home_controller.rb:5:in `new'
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/" for ::1 at 2019-09-30 19:25:00 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/home_controller.rb:5:in `new'
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/" for ::1 at 2019-09-30 19:26:33 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: <% @test.each do |x| %>
+    3:   <%= x.name  %>
+    4: <% end %>
+    5: 
+  
+app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___3359460029685620986_70183905041120'
+Started GET "/" for ::1 at 2019-09-30 19:26:48 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-09-30 19:26:49 +0100
+Started GET "/auth/spotify" for ::1 at 2019-09-30 19:26:50 +0100
+Started GET "/auth/spotify/callback?code=AQAJOrIkagYLqW_4Sto18WnU7HUSJLwF6Tx7jXsMmtszGSHSIpLlSHsTYKuFAIK9GqDDZXzsXiZEMeeBDb6FwmQhxypvjq9ZqeC63LpT_36skKRd8p7tuD8s7bZCOLCSSl11kF1PuvXO0MmJSujkIQ4i6-hMiShRdwa7W-LeTHcwkUpWaAmwb8i57U9hnlLmyGfcTRkHnAwMKDO7viYcFj2HR1jWmkhL-YyZImTJQrr62w5gU9b-SphWzzjbTPn-9v7GkZM943nM-5caCcbUcUYIWlktoeLjKA0ofgOhPrdG9s1Xzfw5QFQPr6XX1gfdNpBOMNzLbVDLq7mAHzsnB-E4Mw&state=ebf98754964187dda44ab038e5068759430a67ef600962ec" for ::1 at 2019-09-30 19:26:50 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQAJOrIkagYLqW_4Sto18WnU7HUSJLwF6Tx7jXsMmtszGSHSIpLlSHsTYKuFAIK9GqDDZXzsXiZEMeeBDb6FwmQhxypvjq9ZqeC63LpT_36skKRd8p7tuD8s7bZCOLCSSl11kF1PuvXO0MmJSujkIQ4i6-hMiShRdwa7W-LeTHcwkUpWaAmwb8i57U9hnlLmyGfcTRkHnAwMKDO7viYcFj2HR1jWmkhL-YyZImTJQrr62w5gU9b-SphWzzjbTPn-9v7GkZM943nM-5caCcbUcUYIWlktoeLjKA0ofgOhPrdG9s1Xzfw5QFQPr6XX1gfdNpBOMNzLbVDLq7mAHzsnB-E4Mw", "state"=>"ebf98754964187dda44ab038e5068759430a67ef600962ec"}
+  Rendering home/spotify.html.erb within layouts/application
+  Rendered home/spotify.html.erb within layouts/application (2101.9ms)
+Completed 200 OK in 2115ms (Views: 2114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-30 19:31:34 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-09-30 19:31:35 +0100
+Started GET "/auth/spotify" for ::1 at 2019-09-30 19:31:35 +0100
+Started GET "/auth/spotify/callback?code=AQAW4a5HxgXGaWJKZ76uFMnWgCkwedz0MdXcLI8rQoWQ4tQc7JaNuhcwe-B_EnnBBeA14OStgplBUwa56aCBxz6TZW7zU-g4QYfjJK-AXyM1aBsgch20doeJ8fBbDgdawtQ0MKy-_PDYA9fr2UC5CKVUnjbnFuAU3g9k8HoepPQ81gSIx2b8f3URLKYGzXQWBAdzLD-h6OECNRCnVAVWCcpROvQKIxMM0wW-m8GGaFNPfC6kNRgh9DbJkgo78QK8GjuzzpOfum6HVWQgGOdgbYt8f3c6vf3xFRRvYhNghhe0J9eklX-FVVqnJGEyp7YSEkudU-gz32-yI0V_BgGjd4njdw&state=2aed443990f33adac6d79df963c746429e8aed05b86cdf9e" for ::1 at 2019-09-30 19:31:36 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQAW4a5HxgXGaWJKZ76uFMnWgCkwedz0MdXcLI8rQoWQ4tQc7JaNuhcwe-B_EnnBBeA14OStgplBUwa56aCBxz6TZW7zU-g4QYfjJK-AXyM1aBsgch20doeJ8fBbDgdawtQ0MKy-_PDYA9fr2UC5CKVUnjbnFuAU3g9k8HoepPQ81gSIx2b8f3URLKYGzXQWBAdzLD-h6OECNRCnVAVWCcpROvQKIxMM0wW-m8GGaFNPfC6kNRgh9DbJkgo78QK8GjuzzpOfum6HVWQgGOdgbYt8f3c6vf3xFRRvYhNghhe0J9eklX-FVVqnJGEyp7YSEkudU-gz32-yI0V_BgGjd4njdw", "state"=>"2aed443990f33adac6d79df963c746429e8aed05b86cdf9e"}
+  Rendering home/spotify.html.erb within layouts/application
+  Rendered home/spotify.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 159ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+

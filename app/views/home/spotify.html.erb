@@ -1,7 +1,3 @@
-hello
-
-<% @spotify_user.top_artists(time_range: 'short_term', limit: 5).each do |x| %>
-  <%= x.related_artists.first.name  %>
-  <%= x.related_artists.first.top_tracks(:US).first.name  %>
-  <%= x.related_artists.first.top_tracks(:US).first.audio_features.danceability  %>
+<% @playlists.each do |x| %>
+  <%= x.name %>
 <% end %>
