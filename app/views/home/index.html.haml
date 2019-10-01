@@ -1,2 +1,9 @@
-- render "home/navbar"
-= link_to 'Sign in with Spotify', '/auth/spotify'
+
+
+.container-fluid.h-100.vertical-center
+  .row
+    .col.text-center
+      = link_to 'Sign in with Spotify', '/auth/spotify'
+    .col
+    /
+      %img.img-fluid{:alt => "Responsive image", :src => "index_bg.jpg"}/
