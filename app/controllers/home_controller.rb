@@ -7,12 +7,7 @@ class HomeController < ApplicationController
   def spotify
     @spotify_user = RSpotify::User.new(request.env['omniauth.auth'])
     @playlists = @spotify_user.playlists
-    get_energy
     render :playlists
-  end
-
-  def playlists
-    get_energy
   end
 
   private
