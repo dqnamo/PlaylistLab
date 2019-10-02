@@ -7,3 +7,24 @@
     .col
     /
       %img.img-fluid{:alt => "Responsive image", :src => "index_bg.jpg"}/
+
+.container-fluid
+  .row.no-gutter
+    .col-md-8.col-lg-6
+      .login.d-flex.align-items-center.py-5
+        .container
+          .row
+            .col-md-9.col-lg-8.mx-auto
+              %h3.login-heading.mb-4 Welcome back!
+              %form
+                .form-label-group
+                  %input#inputEmail.form-control{:autofocus => "", :placeholder => "Email address", :required => "", :type => "email"}/
+                  %label{:for => "inputEmail"} Email address
+                .form-label-group
+                  %input#inputPassword.form-control{:placeholder => "Password", :required => "", :type => "password"}/
+                  %label{:for => "inputPassword"} Password
+                .custom-control.custom-checkbox.mb-3
+                  %input#customCheck1.custom-control-input{:type => "checkbox"}/
+                  %label.custom-control-label{:for => "customCheck1"} Remember password
+                %button.btn.btn-lg.btn-primary.btn-block.btn-login.text-uppercase.font-weight-bold.mb-2{:type => "submit"} Sign in with Spotify
+    .d-none.d-md-flex.col-md-4.col-lg-6.bg-image
