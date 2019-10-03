@@ -12,20 +12,22 @@
 }
 
 .bg-image {
-  background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
+  background-image: url('https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
   background-size: cover;
   background-position: center;
 }
 
 .login-heading {
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .btn-login {
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 2rem;
+  background-color: #1ad85e;
+  border-color: #1ad85e;
 }
 
 .form-label-group {

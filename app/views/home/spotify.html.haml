@@ -1,0 +1,15 @@
+.col-md-8.col-lg-6
+  .row
+    = @playlists.each do |x|
+      .card.mb-3{:style => "max-width: 400px;"}
+        .row.no-gutters
+          .col-md-4
+            %img.card-img{:alt => "...", :src => "#{x.images.first.try(:fetch, "url")}"}/
+          .col-md-8
+            .card-body
+              %h5.card-title
+                = x.name
+                %p.card-text
+                %p.card-text
+                %small.text-muted
+                  = "#{x.tracks.count} songs in this playlist."
