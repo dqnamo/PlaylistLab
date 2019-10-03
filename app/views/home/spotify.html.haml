@@ -1,12 +1,16 @@
 
 .container
-  .row
-    %h3.login-heading.my-4 🎶 Your Playlists.
+  .row.pl-4.d-flex.align-items-center
+    .col-md-6.ml-0.pl-0
+      %h3.login-heading.my-4 🎶 Your Playlists.
+    .col-md-6
+      = link_to('Log Out', 'https://open.spotify.com/browse', class: "btn btn-sm bg-dark text-white float-right ml-2")
+      = link_to('Open Spotify', 'https://open.spotify.com/browse', class: "btn btn-sm bg-success text-white float-right")
 
   .row
     - @playlists.each do |x|
       .col-md-4
-        .card.mb-4
+        .card.mb-4.bg-light
           .row.no-gutters
             .col-md-4
               %img.card-img{:alt => "...", :src => "#{x.images.first.try(:fetch, "url")}"}/
@@ -16,9 +20,15 @@
                   = x.name
                   %small.text-muted
                     = "#{x.tracks.count} songs"
-                  .row
-                    %small.text-muted.mx-0
-                      = "⚡ Energy: #{get_features(x)[:energy]}"
-                  .row
-                    %small.text-muted
-                      = "💃 Dancebility: #{get_features(x)[:danceability]}"
+                = link_to('🔥 Enhance', playlist_path(@name, x.id), class: "btn btn-sm bg-dark text-white")
+
+  .row
+    .card.w-100.ml-3
+      .row.no-gutters
+        .card-body
+          .col-md-6
+            %h5.card-title.mb-1
+              🍀 Feeling Lucky?
+            %small.text-muted
+              Let us create a recommended playlist for you based on your listening habits.
+            = link_to('Make Me A Playlist', '/auth/spotify', class: "btn btn-sm btn-primary mt-4")
