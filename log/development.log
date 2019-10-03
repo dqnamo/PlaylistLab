@@ -7768,27 +7768,495 @@ Processing by HomeController#spotify as HTML
 Completed 200 OK in 1520ms (Views: 1397.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2019-10-03 08:24:12 +0100
+Started GET "/" for ::1 at 2019-10-03 08:32:30 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.haml within layouts/application
-  Rendered home/index.html.haml within layouts/application (8.4ms)
-Completed 200 OK in 485ms (Views: 478.8ms | ActiveRecord: 0.0ms)
+  Rendered home/index.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 1207ms (Views: 1191.1ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2019-10-03 08:24:32 +0100
-Processing by HomeController#index as HTML
-  Rendering home/index.html.haml within layouts/application
-  Rendered home/index.html.haml within layouts/application (5.6ms)
-Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/auth/spotify" for ::1 at 2019-10-03 08:26:27 +0100
-Started GET "/auth/spotify" for ::1 at 2019-10-03 08:26:27 +0100
-Started GET "/auth/spotify/callback?code=AQBuvnAhLzJXuw8uJwvL_mxhea8hKB3W38z_irqdGX3fxtPMsI23dM7slPFik4_S0wxMoGqlifbhyqWrDNZV5DB35us9LrfVN_8fs87SE53RIJzCK9PFlPmxdrWe7_3Wr4uU-00r4f2DUf0LPAUiHj_nrtYCft6llAHZJ19LK0v8r4b5oGVdONizcT22gFIVUQADQ3375WSO57c8oxua3lFjmR-Xw3ShgUVPWehDfDF4_7kspZG_MfBBTidM2MCN0pIQOwN5WC9NtNhW3A_gEssfW79RqTcGZE_HP4rIjM1G1vScg3gZN-zTl-EO1XuMHUy9FTLBmyf631GaVg2RxFwDzQ&state=81de04b64bab7600056d40eb57abbe0bedf41327893c7f38" for ::1 at 2019-10-03 08:26:28 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:32:49 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:32:50 +0100
+Started GET "/auth/spotify/callback?code=AQAzg74ApT9kjOKjdFp6w8s8EaNZaN503eovRk_COX9DEQpwPKAVXSa_r7V5KFxbeBmARvYQgn9WqXvmS9VcStVhXSaIxiGADhHpQoLxqPl3jGTdXeDI1ysuPbhhZFCF3A7o8qmcPx25MjZhS1dnr6lET2Lum5s7JEIngI1f8idHMMSC9pTFR4jIiG73bpiayCxzB10aSRtcmcHSwxhn3ailoYiYzRMr1oRYrO49HsDaHV2267inNuLs29xuzBYidW1V4xODzKBZ7yG5-UY_r2MMiXhlJEbrwca3eyajyoVwZcoJx2ohdD3aBtDTne5zHM9xwWqKLvDMzkhgFlx1fsmEjg&state=a06644a74381c73dfc928e9d158021704830aa9405cd9e87" for ::1 at 2019-10-03 08:32:50 +0100
 Processing by HomeController#spotify as HTML
-  Parameters: {"code"=>"AQBuvnAhLzJXuw8uJwvL_mxhea8hKB3W38z_irqdGX3fxtPMsI23dM7slPFik4_S0wxMoGqlifbhyqWrDNZV5DB35us9LrfVN_8fs87SE53RIJzCK9PFlPmxdrWe7_3Wr4uU-00r4f2DUf0LPAUiHj_nrtYCft6llAHZJ19LK0v8r4b5oGVdONizcT22gFIVUQADQ3375WSO57c8oxua3lFjmR-Xw3ShgUVPWehDfDF4_7kspZG_MfBBTidM2MCN0pIQOwN5WC9NtNhW3A_gEssfW79RqTcGZE_HP4rIjM1G1vScg3gZN-zTl-EO1XuMHUy9FTLBmyf631GaVg2RxFwDzQ", "state"=>"81de04b64bab7600056d40eb57abbe0bedf41327893c7f38"}
+  Parameters: {"code"=>"AQAzg74ApT9kjOKjdFp6w8s8EaNZaN503eovRk_COX9DEQpwPKAVXSa_r7V5KFxbeBmARvYQgn9WqXvmS9VcStVhXSaIxiGADhHpQoLxqPl3jGTdXeDI1ysuPbhhZFCF3A7o8qmcPx25MjZhS1dnr6lET2Lum5s7JEIngI1f8idHMMSC9pTFR4jIiG73bpiayCxzB10aSRtcmcHSwxhn3ailoYiYzRMr1oRYrO49HsDaHV2267inNuLs29xuzBYidW1V4xODzKBZ7yG5-UY_r2MMiXhlJEbrwca3eyajyoVwZcoJx2ohdD3aBtDTne5zHM9xwWqKLvDMzkhgFlx1fsmEjg", "state"=>"a06644a74381c73dfc928e9d158021704830aa9405cd9e87"}
   Rendering home/spotify.html.haml within layouts/application
-  Rendered home/spotify.html.haml within layouts/application (1413.6ms)
-Completed 200 OK in 1664ms (Views: 1496.5ms | ActiveRecord: 0.0ms)
+  Rendered home/spotify.html.haml within layouts/application (1669.5ms)
+Completed 200 OK in 2087ms (Views: 1936.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-03 08:36:35 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (61.5ms)
+Completed 200 OK in 663ms (Views: 641.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:36:37 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:36:37 +0100
+Started GET "/auth/spotify/callback?code=AQBOq2aiyk4LEyxcWk0yWP8q_ffnKn0hY1Ztp4oollK3orIwPresu71qV4_FKU2tvWgtSiNrv12OY9QNW5MJ0ScdJ2nLrG5hlkaWJBkkKCPIAvnQxOpseoxkoCejOcTilDfWpPvw6-gv1ipVegt3hZAIGw1ESuIA1s6rqlYn2txYkagYRgMWU3jYnVz0aLj7xgMzsg9YxXvpq1WRqGH7PifOAe1CZWHdi_xhfMAh8hkjweG1B5BlgLCImFe1Y_aOlL1JIqxd1sduqDCLZNMf0Yd2okiiPYroPdwXZj316_5j4oZ9iG0b4naibySBLdLjiMEV_GWaz1yGOVx-0gBAzZHLPQ&state=9daf8745130a4d0715e13944037bce1f5933345e7285d3f7" for ::1 at 2019-10-03 08:36:38 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBOq2aiyk4LEyxcWk0yWP8q_ffnKn0hY1Ztp4oollK3orIwPresu71qV4_FKU2tvWgtSiNrv12OY9QNW5MJ0ScdJ2nLrG5hlkaWJBkkKCPIAvnQxOpseoxkoCejOcTilDfWpPvw6-gv1ipVegt3hZAIGw1ESuIA1s6rqlYn2txYkagYRgMWU3jYnVz0aLj7xgMzsg9YxXvpq1WRqGH7PifOAe1CZWHdi_xhfMAh8hkjweG1B5BlgLCImFe1Y_aOlL1JIqxd1sduqDCLZNMf0Yd2okiiPYroPdwXZj316_5j4oZ9iG0b4naibySBLdLjiMEV_GWaz1yGOVx-0gBAzZHLPQ", "state"=>"9daf8745130a4d0715e13944037bce1f5933345e7285d3f7"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (24.8ms)
+Completed 500  in 200ms (ActiveRecord: 0.0ms)
+
+
+
+Haml::SyntaxError - The line was indented 2 levels deeper than the previous line.:
+  app/views/home/spotify.html.haml:5:in `'
+
+Started POST "/__better_errors/4c16572749455190/variables" for ::1 at 2019-10-03 08:36:39 +0100
+Started GET "/" for ::1 at 2019-10-03 08:37:05 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 97ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:37:06 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:37:06 +0100
+Started GET "/auth/spotify/callback?code=AQANAHExKTyapmAD-Q9bIVKF2rXbg1gQQnhXcScAheJzNanNMUlSLI-BQ3c8je65uQmq9ZFa-MOjR5oFCjZf0VLy3b-TqhI2NLHATBK4tFlpRTOSWGOClfEW3LY4e-DVRyCbh9_zRfWece4zHtpyfIsV4ztlPHGzlydy4930iAASdYW_9uGaIL3uP-lZqQ6Fx25sV5VJuLzAHzZHkBCg9px27IjoSneOm0Xq4g1ADvIoqiHoqpPAdKB3McodBsUwnRU8GYAjjeJ0jD0rfeKcrBncjl8GHduwVZQ-4WTn2UIot57-l6IcmDtJxi1bx61DTm5sF2pUamhhxFIcIJ0xoowyGQ&state=f61d2b396f4033b34b6c4b41739030d2f6ccb32bf7c2bdfe" for ::1 at 2019-10-03 08:37:06 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQANAHExKTyapmAD-Q9bIVKF2rXbg1gQQnhXcScAheJzNanNMUlSLI-BQ3c8je65uQmq9ZFa-MOjR5oFCjZf0VLy3b-TqhI2NLHATBK4tFlpRTOSWGOClfEW3LY4e-DVRyCbh9_zRfWece4zHtpyfIsV4ztlPHGzlydy4930iAASdYW_9uGaIL3uP-lZqQ6Fx25sV5VJuLzAHzZHkBCg9px27IjoSneOm0Xq4g1ADvIoqiHoqpPAdKB3McodBsUwnRU8GYAjjeJ0jD0rfeKcrBncjl8GHduwVZQ-4WTn2UIot57-l6IcmDtJxi1bx61DTm5sF2pUamhhxFIcIJ0xoowyGQ", "state"=>"f61d2b396f4033b34b6c4b41739030d2f6ccb32bf7c2bdfe"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1251.6ms)
+Completed 200 OK in 1411ms (Views: 1291.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify/callback?code=AQANAHExKTyapmAD-Q9bIVKF2rXbg1gQQnhXcScAheJzNanNMUlSLI-BQ3c8je65uQmq9ZFa-MOjR5oFCjZf0VLy3b-TqhI2NLHATBK4tFlpRTOSWGOClfEW3LY4e-DVRyCbh9_zRfWece4zHtpyfIsV4ztlPHGzlydy4930iAASdYW_9uGaIL3uP-lZqQ6Fx25sV5VJuLzAHzZHkBCg9px27IjoSneOm0Xq4g1ADvIoqiHoqpPAdKB3McodBsUwnRU8GYAjjeJ0jD0rfeKcrBncjl8GHduwVZQ-4WTn2UIot57-l6IcmDtJxi1bx61DTm5sF2pUamhhxFIcIJ0xoowyGQ&state=f61d2b396f4033b34b6c4b41739030d2f6ccb32bf7c2bdfe" for ::1 at 2019-10-03 08:38:50 +0100
+
+OmniAuth::Strategies::OAuth2::CallbackError - csrf_detected | CSRF detected:
+
+Started POST "/__better_errors/caa979b93d7e0ce2/variables" for ::1 at 2019-10-03 08:38:50 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:38:54 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:38:54 +0100
+Started GET "/auth/spotify/callback?code=AQBvY6t-3dJXIOw6sxydoZV0DP0U4-haVxCgPP68rPZkneCzzq10ZG7vgDuB9QhxsT1UlN0oixBcUZGFPm6MeOL8IOacAkZj2cv2bEPqAogw_sE63RPIdm5W37_pBLUtRFRFppStLyfkjL5Qxx9yTlSpojgI-Ldpdbm-kC0dcEE6h2RszGHCvhkjOuFkEB1hXZ08uAHhl7iicKWT7fSXDaEJjNwhyOoLlk8SDCJy3TuiL4RWMibpDKw3yW3qeGVH2GAV8SUjPXuV9apxUMgdT4jv_iQMZ0K1iQmmkUkEab43jEImvo8tOpBCz1KVLCISeSjfGq3mftv37tUhdNqjshQHwg&state=14a27ed92fe54ada3b5d13bc683d36c856df7fe32d6c076b" for ::1 at 2019-10-03 08:38:54 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBvY6t-3dJXIOw6sxydoZV0DP0U4-haVxCgPP68rPZkneCzzq10ZG7vgDuB9QhxsT1UlN0oixBcUZGFPm6MeOL8IOacAkZj2cv2bEPqAogw_sE63RPIdm5W37_pBLUtRFRFppStLyfkjL5Qxx9yTlSpojgI-Ldpdbm-kC0dcEE6h2RszGHCvhkjOuFkEB1hXZ08uAHhl7iicKWT7fSXDaEJjNwhyOoLlk8SDCJy3TuiL4RWMibpDKw3yW3qeGVH2GAV8SUjPXuV9apxUMgdT4jv_iQMZ0K1iQmmkUkEab43jEImvo8tOpBCz1KVLCISeSjfGq3mftv37tUhdNqjshQHwg", "state"=>"14a27ed92fe54ada3b5d13bc683d36c856df7fe32d6c076b"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1657.0ms)
+Completed 200 OK in 1927ms (Views: 1782.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 08:43:15 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 129ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:43:16 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:43:16 +0100
+Started GET "/auth/spotify/callback?code=AQAqK_Q8jGp8mXNiSPkFiD_z6WxDuSe6xrXJ10eNGxFVDoHEemBrbYY7vQD4kBu9ti1kVCnrO7MI0Ihdetfd0efHT8ZoCXe4n4YPGSNk9zN_fp-ovvTY3X__a-PZhSwOpPT2Ygy6bfWxrExMJ_OyfO_nx95wa9pxKK4cL-MC8sX6-rwaNysgPNqkQLGCaq-wI-uZaZX52B1DnsbTAQ2hptEJ1gfSGuhrNRm6KPH2YU29aup2ORkHeHbs4sHoWZyPnQbLaP_s74FRW7la92rum6-wf3SwzRdRK-W71Py5eHcXUsDgWU9ACcBjr49RUbrJHtfTuoLwoV73znT4UXBBurv1Gw&state=e5cd3c5a31433327bc459733fbd5509cf299e1a3af7dc687" for ::1 at 2019-10-03 08:43:16 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQAqK_Q8jGp8mXNiSPkFiD_z6WxDuSe6xrXJ10eNGxFVDoHEemBrbYY7vQD4kBu9ti1kVCnrO7MI0Ihdetfd0efHT8ZoCXe4n4YPGSNk9zN_fp-ovvTY3X__a-PZhSwOpPT2Ygy6bfWxrExMJ_OyfO_nx95wa9pxKK4cL-MC8sX6-rwaNysgPNqkQLGCaq-wI-uZaZX52B1DnsbTAQ2hptEJ1gfSGuhrNRm6KPH2YU29aup2ORkHeHbs4sHoWZyPnQbLaP_s74FRW7la92rum6-wf3SwzRdRK-W71Py5eHcXUsDgWU9ACcBjr49RUbrJHtfTuoLwoV73znT4UXBBurv1Gw", "state"=>"e5cd3c5a31433327bc459733fbd5509cf299e1a3af7dc687"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1624.8ms)
+Completed 200 OK in 1883ms (Views: 1753.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 08:44:45 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 176ms (Views: 172.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:44:46 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:44:46 +0100
+Started GET "/auth/spotify/callback?code=AQAdQuIhrxYI_33L5NdYOa0ubPtV31ywtnug_B0voIaS9tWmgNp0EsSGI99NAc7is9Ie4-oCSs4Exe5dOO8j8JvZ0W68omTWgXLodGq-0C-UeA2e5ihL9MpHfmAuxq4lOwn95RFkZ8pVDXjuikoJzgX4q3sQKnttKvsqz8M-hv4w51p-THu-k-X25BBXBCpq8RwVz2OECeGivxvbLIbzwsBSjkg22ZC6oobVASXoSzeqHh0cJwIC42Vcou4eM1ngT7x3OVWrdvKFSh_FCzNZBjXLtjwtfhQR5FoYTSJabEX6QuvwFYTjuUo8m2zRwCYZoUTjEYbTQi199R4eb26-7Mh6SA&state=0ae628095dfc8f1531d65e78dafad60cd3e7f2f09121c48a" for ::1 at 2019-10-03 08:44:46 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQAdQuIhrxYI_33L5NdYOa0ubPtV31ywtnug_B0voIaS9tWmgNp0EsSGI99NAc7is9Ie4-oCSs4Exe5dOO8j8JvZ0W68omTWgXLodGq-0C-UeA2e5ihL9MpHfmAuxq4lOwn95RFkZ8pVDXjuikoJzgX4q3sQKnttKvsqz8M-hv4w51p-THu-k-X25BBXBCpq8RwVz2OECeGivxvbLIbzwsBSjkg22ZC6oobVASXoSzeqHh0cJwIC42Vcou4eM1ngT7x3OVWrdvKFSh_FCzNZBjXLtjwtfhQR5FoYTSJabEX6QuvwFYTjuUo8m2zRwCYZoUTjEYbTQi199R4eb26-7Mh6SA", "state"=>"0ae628095dfc8f1531d65e78dafad60cd3e7f2f09121c48a"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1534.1ms)
+Completed 200 OK in 1764ms (Views: 1573.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:45:35 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:45:35 +0100
+Started GET "/auth/spotify/callback?code=AQDIB78d8LEr5hyQkmnFD2alKyBigKx4WGut_PQsl0juFcn3Vhrin1NUpQhFbl2DDTPh1QvShoXc9WO7HaMoNx5pEhcfhiEyYgR3wpDBGHCC1w_PnqKsAu2ZXcS2Qg9yu9vvtDNS_n2hajemAmCEp0920f7zl--FWahvxKaVOreTsOCgL6-QHDGwawMKYm4lgCD2GOr-bDox1Jf1uRTz5QHcgntl_HCGeziNvLGnpJsR_ol4lDcFfjyWWf89dneZO_7wE-OvwIrh9m4PeJbBlbETwgZfG8yeBB93pPhKzAzRw9eFf60FjCPDU6CtqUL4X2HlwTuqPI1oW-NFEqLgTUd5Ng&state=9633578044268bde7999208190de9c7104eb5ccffb3a3b14" for ::1 at 2019-10-03 08:45:35 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDIB78d8LEr5hyQkmnFD2alKyBigKx4WGut_PQsl0juFcn3Vhrin1NUpQhFbl2DDTPh1QvShoXc9WO7HaMoNx5pEhcfhiEyYgR3wpDBGHCC1w_PnqKsAu2ZXcS2Qg9yu9vvtDNS_n2hajemAmCEp0920f7zl--FWahvxKaVOreTsOCgL6-QHDGwawMKYm4lgCD2GOr-bDox1Jf1uRTz5QHcgntl_HCGeziNvLGnpJsR_ol4lDcFfjyWWf89dneZO_7wE-OvwIrh9m4PeJbBlbETwgZfG8yeBB93pPhKzAzRw9eFf60FjCPDU6CtqUL4X2HlwTuqPI1oW-NFEqLgTUd5Ng", "state"=>"9633578044268bde7999208190de9c7104eb5ccffb3a3b14"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1268.4ms)
+Completed 200 OK in 1459ms (Views: 1317.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:46:30 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:46:30 +0100
+Started GET "/auth/spotify/callback?code=AQD1fA2ThDmLnr0tyl7rxPJko5cdJUM_AuRvnCutJK79nYppQ53Ayi9z__l-B7t49XYfih1v5_ayqAgQB-QYIulHMf7_bUj9mLzi2_JxH1lEL5eAWd5Fo4A4TSkTNaiYYaF3uSL-ibRcRuL_zZ9FpTC0OVdbuiEfDi9G13zeveu35yU4Qt7pmbBMOzUysHI48YVBvnTvMjxx5CIY6OAPogIcRHfhUP2kCFl0HQ5Velx-Cc3btCgOwv4-QJdSfzfsvPgJX1BODI_-YaTnQFkAU-Srt7oHiNNmBZjKYZrJzh59FGtn_8vJh0mVwly0oMrQtiJjruWC1hYJpUGJVWhJuICFdw&state=0fe6194dd98a364500808b7926dc3681e61d644e866b531e" for ::1 at 2019-10-03 08:46:30 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQD1fA2ThDmLnr0tyl7rxPJko5cdJUM_AuRvnCutJK79nYppQ53Ayi9z__l-B7t49XYfih1v5_ayqAgQB-QYIulHMf7_bUj9mLzi2_JxH1lEL5eAWd5Fo4A4TSkTNaiYYaF3uSL-ibRcRuL_zZ9FpTC0OVdbuiEfDi9G13zeveu35yU4Qt7pmbBMOzUysHI48YVBvnTvMjxx5CIY6OAPogIcRHfhUP2kCFl0HQ5Velx-Cc3btCgOwv4-QJdSfzfsvPgJX1BODI_-YaTnQFkAU-Srt7oHiNNmBZjKYZrJzh59FGtn_8vJh0mVwly0oMrQtiJjruWC1hYJpUGJVWhJuICFdw", "state"=>"0fe6194dd98a364500808b7926dc3681e61d644e866b531e"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1553.4ms)
+Completed 200 OK in 1965ms (Views: 1632.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:47:36 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:47:36 +0100
+Started GET "/auth/spotify/callback?code=AQArDetYsrtpzKfc3tn3MnVDctfWE00RfYL2cyMf_PO8rQmMloBao1-Q6jisDnDn5g_e5sAf57ZT3bzT3qWaM7Uk5OKISf8FGryoaO5ZWTKHLA-ctVR65wu5XZfp9xXpv10c-UJGw-CiCH2Nv7vg5LAHHHVdwHQSUA8yZVQG0s9mysHxSS6bZMbrCJX3bcckM8h2dPfPef7EETyzCfqy5OMXvPho6qH1GLH0-na13Qm5tm2hG6ToYSDfVpnyoOpeEOzNbykVntZCWu3467yDDLm_E2BoIKGzclLD0jSechucEx8TjY0WlZv_HMWxFmbneFdI6rEZshc7OxIrysKbGde4kw&state=f963f7ba32eb2314bbeb8d8715b9ebb347b1b23cc597acca" for ::1 at 2019-10-03 08:47:36 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQArDetYsrtpzKfc3tn3MnVDctfWE00RfYL2cyMf_PO8rQmMloBao1-Q6jisDnDn5g_e5sAf57ZT3bzT3qWaM7Uk5OKISf8FGryoaO5ZWTKHLA-ctVR65wu5XZfp9xXpv10c-UJGw-CiCH2Nv7vg5LAHHHVdwHQSUA8yZVQG0s9mysHxSS6bZMbrCJX3bcckM8h2dPfPef7EETyzCfqy5OMXvPho6qH1GLH0-na13Qm5tm2hG6ToYSDfVpnyoOpeEOzNbykVntZCWu3467yDDLm_E2BoIKGzclLD0jSechucEx8TjY0WlZv_HMWxFmbneFdI6rEZshc7OxIrysKbGde4kw", "state"=>"f963f7ba32eb2314bbeb8d8715b9ebb347b1b23cc597acca"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1542.3ms)
+Completed 200 OK in 1776ms (Views: 1660.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:47:55 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:47:55 +0100
+Started GET "/auth/spotify/callback?code=AQBKVYbJ-7FuoI-6UIaJ6QFmyQHT_mIpm_YXRX6QXMpMy49HpMiNioOdu78Qn1-s45gG_oDfDOOr5OC1TtpvwM5n3ZVO_7mBrVw169rln47yQkh5DLNHqpgQynt_w9nu17YLZm8JvMqHzOrzlEgp-Hi81-4S__H-Zpd6q0L6nkJO0ajYV1TiRCKXNoaKaZWpxqTO_Tbo3tSC7BBZfjI4F2rCuC4OnXxHBHIwp3uQt19j8ksg-x_IIKh_S2X9tjrSRVNK5BPyE5wmSUGjSGBgtTXrhFAW0SsXyAwr549Kk-sOg6aGy7S4_tUVRa74yfshN_Ig_D9Xlx_Dt7atAo17JBKRYg&state=1c1632493039004c1580bde7e75804934d577cc0e4d4ed33" for ::1 at 2019-10-03 08:47:55 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBKVYbJ-7FuoI-6UIaJ6QFmyQHT_mIpm_YXRX6QXMpMy49HpMiNioOdu78Qn1-s45gG_oDfDOOr5OC1TtpvwM5n3ZVO_7mBrVw169rln47yQkh5DLNHqpgQynt_w9nu17YLZm8JvMqHzOrzlEgp-Hi81-4S__H-Zpd6q0L6nkJO0ajYV1TiRCKXNoaKaZWpxqTO_Tbo3tSC7BBZfjI4F2rCuC4OnXxHBHIwp3uQt19j8ksg-x_IIKh_S2X9tjrSRVNK5BPyE5wmSUGjSGBgtTXrhFAW0SsXyAwr549Kk-sOg6aGy7S4_tUVRa74yfshN_Ig_D9Xlx_Dt7atAo17JBKRYg", "state"=>"1c1632493039004c1580bde7e75804934d577cc0e4d4ed33"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1173.5ms)
+Completed 200 OK in 1346ms (Views: 1238.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:49:04 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:49:04 +0100
+Started GET "/auth/spotify/callback?code=AQBbmLm5dBK8cXltsxoxCcJcoAcXLhex-pFfegTFdh4rBuyhpGtWMigJCziY0Byp77QMwhsMTcfgI-kqPxKXTzXCWffVTcJSZC3LbXww9rq8bEIXN0GDY9xRkzrYBa_3NDC2uGxy7SMtdAhvXbZCea54Drk1F6Tn6zlJXsQytVJ7Y4n3f4saSEXVuQ3dOjdsM_R0GKGwpvn6gh0A-W6e-_Ynbcu8IBS23RAKMw3XJSBteganFy2TvdbTGeb_vP_9RYjno0Z1G0Z9ixH20CRgKyHTq8YeD-uAkGMHt9twBFAuEKs9gWFWMdhPOiZDdRpRxTeHcQiSHXquTbzxJ207PuE1uQ&state=ffbc150bfe9d82f758fa4459f30d1889503dc757a57db272" for ::1 at 2019-10-03 08:49:04 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBbmLm5dBK8cXltsxoxCcJcoAcXLhex-pFfegTFdh4rBuyhpGtWMigJCziY0Byp77QMwhsMTcfgI-kqPxKXTzXCWffVTcJSZC3LbXww9rq8bEIXN0GDY9xRkzrYBa_3NDC2uGxy7SMtdAhvXbZCea54Drk1F6Tn6zlJXsQytVJ7Y4n3f4saSEXVuQ3dOjdsM_R0GKGwpvn6gh0A-W6e-_Ynbcu8IBS23RAKMw3XJSBteganFy2TvdbTGeb_vP_9RYjno0Z1G0Z9ixH20CRgKyHTq8YeD-uAkGMHt9twBFAuEKs9gWFWMdhPOiZDdRpRxTeHcQiSHXquTbzxJ207PuE1uQ", "state"=>"ffbc150bfe9d82f758fa4459f30d1889503dc757a57db272"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1288.9ms)
+Completed 200 OK in 1679ms (Views: 1534.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:51:21 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:51:21 +0100
+Started GET "/auth/spotify/callback?code=AQBZhu7Rdz2DHWzieAIVJwP7t2dkk0NGdgfVGClyn4pl0fdR_ha35lWLo8BCvMdOAHhdXXg0O7-l9mRlaSWo9ijwDBa4VkbF4oOIjANw9SKusVNCbSYVxFp3LD9BdW_ieKvlYC-6ruiz9OwgMI2wKqPhbefuSyWFbSPiIg8Zt0RnIRw4KLpVIcge5y1YAQyYh5ZWm1oQhpTGXg3u4zP2J4ELXYDCx5DtW4KaNjl9GJ8g4vsVK9QSGI2UWim9_QHilWY79N9IP7l9vYS6K0vMd6ChfLBQrveEeXuKzqtCXmVE68eXL0oEU7rnI1-5uunWfayYWK50AVgvGV1ojBIez1wJhw&state=175b81a448b3a1fe547d560a77083636be04e3bc2134e95b" for ::1 at 2019-10-03 08:51:22 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBZhu7Rdz2DHWzieAIVJwP7t2dkk0NGdgfVGClyn4pl0fdR_ha35lWLo8BCvMdOAHhdXXg0O7-l9mRlaSWo9ijwDBa4VkbF4oOIjANw9SKusVNCbSYVxFp3LD9BdW_ieKvlYC-6ruiz9OwgMI2wKqPhbefuSyWFbSPiIg8Zt0RnIRw4KLpVIcge5y1YAQyYh5ZWm1oQhpTGXg3u4zP2J4ELXYDCx5DtW4KaNjl9GJ8g4vsVK9QSGI2UWim9_QHilWY79N9IP7l9vYS6K0vMd6ChfLBQrveEeXuKzqtCXmVE68eXL0oEU7rnI1-5uunWfayYWK50AVgvGV1ojBIez1wJhw", "state"=>"175b81a448b3a1fe547d560a77083636be04e3bc2134e95b"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1799.8ms)
+Completed 200 OK in 2038ms (Views: 1864.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:52:58 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:52:58 +0100
+Started GET "/auth/spotify/callback?code=AQCVKzATN7O_tCr1istIt5iPIifVbKhSM20id6R2LrmaSqwuEaNsBr2cfYrCWiAzC8pM5JqZeKQch-P1cl7L8qzEWzyEKj7mIcUs_7azUCrhBqPRuX7seou_WSH3Nijuki2_oKmUtR4N4SE51-LPOxvxWoZlNofSkwjlaEXJKpgTDvCfg1qjucMKh0BSDEg3MfnDrP7oXcNRGIh-9rg83hJsx6_5c49HNXxGhFExbk8sZ6J7nmy_s67NeBUeTJIQ-CxkeHcH43XtTthM6FCN9Lu3kZvNQegNTGxgdIth2-f7gk_kgVy4rbRbYhh5BncaeVGZR02fskv-QBnhwhQ_hbYttA&state=29cefaf3c68291680c35148763719aec84947b700ae73564" for ::1 at 2019-10-03 08:52:58 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQCVKzATN7O_tCr1istIt5iPIifVbKhSM20id6R2LrmaSqwuEaNsBr2cfYrCWiAzC8pM5JqZeKQch-P1cl7L8qzEWzyEKj7mIcUs_7azUCrhBqPRuX7seou_WSH3Nijuki2_oKmUtR4N4SE51-LPOxvxWoZlNofSkwjlaEXJKpgTDvCfg1qjucMKh0BSDEg3MfnDrP7oXcNRGIh-9rg83hJsx6_5c49HNXxGhFExbk8sZ6J7nmy_s67NeBUeTJIQ-CxkeHcH43XtTthM6FCN9Lu3kZvNQegNTGxgdIth2-f7gk_kgVy4rbRbYhh5BncaeVGZR02fskv-QBnhwhQ_hbYttA", "state"=>"29cefaf3c68291680c35148763719aec84947b700ae73564"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1306.1ms)
+Completed 200 OK in 1822ms (Views: 1511.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 08:54:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 90ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:54:06 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:54:06 +0100
+Started GET "/auth/spotify/callback?code=AQAD0ZcwM9XAVm6f94TDVwviNiIZLrQpDYOeswFEU7NFw7SHKMM-664z_XqnaJwr3gmjbbpon-3bobjh_caH7k_oCl-TPkaVORY_-S-eatvLx3qGKD9Nx4d859fNeJxH5mtvlk4XK2sT1rXUce1TJ88hPsU_psfKiKP60QxWRT0QgMiGkyFQctbKv8R-UE6n4IN6mrxIfCtH1EAYGlhMMt8JtPE2sZ8I51dBjGhP-AJi2pS2vM_W_MQqMna43UwvROvFVP3mQ_Va84zNa6P2osj1it91ofAlu9qowEjAP09xgbqsn3lPZ6IcWGuQBMh83x8nQSAkUHOjsjAtHBZXXSsdqg&state=fb70f59c5f75a3440fa6cb5861e740eb94cd5553590a4434" for ::1 at 2019-10-03 08:54:06 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQAD0ZcwM9XAVm6f94TDVwviNiIZLrQpDYOeswFEU7NFw7SHKMM-664z_XqnaJwr3gmjbbpon-3bobjh_caH7k_oCl-TPkaVORY_-S-eatvLx3qGKD9Nx4d859fNeJxH5mtvlk4XK2sT1rXUce1TJ88hPsU_psfKiKP60QxWRT0QgMiGkyFQctbKv8R-UE6n4IN6mrxIfCtH1EAYGlhMMt8JtPE2sZ8I51dBjGhP-AJi2pS2vM_W_MQqMna43UwvROvFVP3mQ_Va84zNa6P2osj1it91ofAlu9qowEjAP09xgbqsn3lPZ6IcWGuQBMh83x8nQSAkUHOjsjAtHBZXXSsdqg", "state"=>"fb70f59c5f75a3440fa6cb5861e740eb94cd5553590a4434"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (2.0ms)
+Completed 500  in 166ms (ActiveRecord: 0.0ms)
+
+
+
+Haml::SyntaxError - Illegal nesting: content can't be both given on the same line as %div and nested within it.:
+  app/views/home/spotify.html.haml:5:in `'
+
+Started POST "/__better_errors/de0fe4c71147a559/variables" for ::1 at 2019-10-03 08:54:06 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:54:13 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:54:13 +0100
+Started GET "/auth/spotify/callback?code=AQCu-ASzgzWcGFQosjRiNROycD5do1WuocYBXe7atqZ5miGeBoGJ4eX8GQ01YXqfPyJAh69lqK11My3rSTxE-1Tsq1m-GRTfj8fOi0jif8AbOkbVZtvxjMiB0ijcHqccYd5tIOCjw1P-kDR6xEObQn__veAhJaIoY9Vi7Rrje5EiQKHCIaW77p6ghoukrF2w4xfJack8OWDP5_le_meNA8xyrxkves4Swl1Ct2AgRSTt0lTaRP3VHjrunXb-8-kNewUcuIQILUYr7IW4MOYKhOFla5Ns6QcTmJYsvJoUX_Co6w06y3y-99_Ih30KmUEVtLUNtBqK4Lc4ZUHyAlf-VjpMBw&state=c0221cf15fffc2c3638946f73185db3bdc39cc36dd6ec458" for ::1 at 2019-10-03 08:54:13 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQCu-ASzgzWcGFQosjRiNROycD5do1WuocYBXe7atqZ5miGeBoGJ4eX8GQ01YXqfPyJAh69lqK11My3rSTxE-1Tsq1m-GRTfj8fOi0jif8AbOkbVZtvxjMiB0ijcHqccYd5tIOCjw1P-kDR6xEObQn__veAhJaIoY9Vi7Rrje5EiQKHCIaW77p6ghoukrF2w4xfJack8OWDP5_le_meNA8xyrxkves4Swl1Ct2AgRSTt0lTaRP3VHjrunXb-8-kNewUcuIQILUYr7IW4MOYKhOFla5Ns6QcTmJYsvJoUX_Co6w06y3y-99_Ih30KmUEVtLUNtBqK4Lc4ZUHyAlf-VjpMBw", "state"=>"c0221cf15fffc2c3638946f73185db3bdc39cc36dd6ec458"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1412.6ms)
+Completed 200 OK in 1596ms (Views: 1466.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 08:58:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 286ms (Views: 283.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:58:18 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:58:18 +0100
+Started GET "/auth/spotify/callback?code=AQA2LMM-S33skQLEFigXlw92XI-QLLzvG7j2Ui0B1rw7m9tm4-rmqGAzZYVo7WhVducalQTQ9zUeJAbyv3eDbKcZpMZb2Di_zDmO6CJQSiDOKDCgA22Qr_pHVLgMCpcH17DsdVsE4U_gN1RvZmq4fWrkcplyI4CGCywRZhD054X8_NkOicWezO6yIFFuQ0LyRSHf7CInZRZsjq86qoU2DjgEsAD_qPHAg4vPIzsb4wBHFiw5Vx4MGYD-VmFpBmnkhl_72KdPOdRFAWrBgHrV3NBzyaZM_wuBnQnocrLJ26Hn_27zxAQaD0tY4M6idRB7sgIp_YsZ7Gw5ceg1qsbY6zmP_Q&state=daedd830316f5d0b35d027d7ff53ce1a6f15d75e4e61241e" for ::1 at 2019-10-03 08:58:18 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQA2LMM-S33skQLEFigXlw92XI-QLLzvG7j2Ui0B1rw7m9tm4-rmqGAzZYVo7WhVducalQTQ9zUeJAbyv3eDbKcZpMZb2Di_zDmO6CJQSiDOKDCgA22Qr_pHVLgMCpcH17DsdVsE4U_gN1RvZmq4fWrkcplyI4CGCywRZhD054X8_NkOicWezO6yIFFuQ0LyRSHf7CInZRZsjq86qoU2DjgEsAD_qPHAg4vPIzsb4wBHFiw5Vx4MGYD-VmFpBmnkhl_72KdPOdRFAWrBgHrV3NBzyaZM_wuBnQnocrLJ26Hn_27zxAQaD0tY4M6idRB7sgIp_YsZ7Gw5ceg1qsbY6zmP_Q", "state"=>"daedd830316f5d0b35d027d7ff53ce1a6f15d75e4e61241e"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1189.1ms)
+Completed 200 OK in 1610ms (Views: 1298.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 08:58:56 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 312ms (Views: 307.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:58:57 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 08:58:57 +0100
+Started GET "/auth/spotify/callback?code=AQDm8bgqs8mQUkr07G7I-k4oozsrJBn1tqIKiHl807dnHDrQ4DdDePjy3VpLFbyNhWl4S9cgjV57FciB8BLGrZxiY45wvJ2OnM3wRjS9xbZHHZh8XA7WqR2DouIGyx2qvUQ08q90lMFp_RRYH2k8xmwqa7JqVbcyu-8iEkwz1-JXixb3-QqNAC2Imybc6lgO45z7lu2rmPjKqR2MeFSk1mKzN3wQNhs8ffmcXILWZOWw1xj3dRy_zQJcmF_DrZFFQC3eWs6dtnDinPKR4Nr575eK6nCLQCf0qJCRLwBdS8g4DNfaBG7xgxGQ9Y7ad3Cu0D-7JhDZVfvVaQ7oMROBELq15w&state=ba371d087debc57a2a84bad0b39907ad9e9719540e71353b" for ::1 at 2019-10-03 08:58:57 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDm8bgqs8mQUkr07G7I-k4oozsrJBn1tqIKiHl807dnHDrQ4DdDePjy3VpLFbyNhWl4S9cgjV57FciB8BLGrZxiY45wvJ2OnM3wRjS9xbZHHZh8XA7WqR2DouIGyx2qvUQ08q90lMFp_RRYH2k8xmwqa7JqVbcyu-8iEkwz1-JXixb3-QqNAC2Imybc6lgO45z7lu2rmPjKqR2MeFSk1mKzN3wQNhs8ffmcXILWZOWw1xj3dRy_zQJcmF_DrZFFQC3eWs6dtnDinPKR4Nr575eK6nCLQCf0qJCRLwBdS8g4DNfaBG7xgxGQ9Y7ad3Cu0D-7JhDZVfvVaQ7oMROBELq15w", "state"=>"ba371d087debc57a2a84bad0b39907ad9e9719540e71353b"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1306.2ms)
+Completed 200 OK in 1476ms (Views: 1356.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 09:00:07 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 100ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:00:08 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:00:08 +0100
+Started GET "/auth/spotify/callback?code=AQBP56Y9fgoGo_2LDILKpi1xfWkhk-psSzzj-HCaMWLmMHkUW-QtTanTndZBXBLjVHceKMjD6lwZfdQG4QsY2iekCCV1_QTp46TU9Lx_cHpTUqSlPYa0G3V6GsNvAyxDwMRwpjftxa7f2Yz4ktCQusoShB-b2q9f_-ah1cyfoFGooAcH6ymJRg-_lIc_BuU_VyH5frg03LmS8-yKm1klnZYgoYYBoYU0sB9EjMPZavB4qMg2pe6mKUeQsDJSjEyGgkXGYYrTjDEnp0d6Futuw7SziGmS7Bppze6CTIv7e1N2OoU7nnHQhpey5YsaaziIqjE0Ug1jBEmIVeWwjKok2IXf5A&state=0d6915f5656302935fd2fc90f9c581df5c272559113941ed" for ::1 at 2019-10-03 09:00:08 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBP56Y9fgoGo_2LDILKpi1xfWkhk-psSzzj-HCaMWLmMHkUW-QtTanTndZBXBLjVHceKMjD6lwZfdQG4QsY2iekCCV1_QTp46TU9Lx_cHpTUqSlPYa0G3V6GsNvAyxDwMRwpjftxa7f2Yz4ktCQusoShB-b2q9f_-ah1cyfoFGooAcH6ymJRg-_lIc_BuU_VyH5frg03LmS8-yKm1klnZYgoYYBoYU0sB9EjMPZavB4qMg2pe6mKUeQsDJSjEyGgkXGYYrTjDEnp0d6Futuw7SziGmS7Bppze6CTIv7e1N2OoU7nnHQhpey5YsaaziIqjE0Ug1jBEmIVeWwjKok2IXf5A", "state"=>"0d6915f5656302935fd2fc90f9c581df5c272559113941ed"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1.7ms)
+Completed 500  in 327ms (ActiveRecord: 0.0ms)
+
+
+
+Haml::SyntaxError - Illegal element: classes and ids must have values.:
+  app/views/home/spotify.html.haml:1:in `'
+
+Started POST "/__better_errors/ea305a3ac0cd8f84/variables" for ::1 at 2019-10-03 09:00:09 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:00:16 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:00:16 +0100
+Started GET "/auth/spotify/callback?code=AQCm5mgnIhkfaXr-A3UsmNds8v71I4u91r_BXMYxNXYhlU8f0S7zOPZxOOzZQknoA481L_nzrwl4B_C64U9b_u5nO3J8GziuXkWqgUE0c6zoKLoC97uOC_D_jwyh5-pMAkLirwhU7yEXX1O4Q6u-tS1dG01eUGN3LcjOotdS0Y0OjNP-hKE5OKs3stH2oLICNI7oAdbzbpeMip2wiAkD_kBAvi8hOr7kV9Z7tyaCn9j3rXK8vDkJr6YcX1nmArAJR246ErY-4p2TSUCgbxy9Wzl51lRipyty0WaeZT29lo54twY_NLkxcBsTV9Q-Eax-HId22KsWA7NaPv9YeT_EtcG1Og&state=6b7c2b06dee4331f31918cf65e925dd41b361a48947c8151" for ::1 at 2019-10-03 09:00:16 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQCm5mgnIhkfaXr-A3UsmNds8v71I4u91r_BXMYxNXYhlU8f0S7zOPZxOOzZQknoA481L_nzrwl4B_C64U9b_u5nO3J8GziuXkWqgUE0c6zoKLoC97uOC_D_jwyh5-pMAkLirwhU7yEXX1O4Q6u-tS1dG01eUGN3LcjOotdS0Y0OjNP-hKE5OKs3stH2oLICNI7oAdbzbpeMip2wiAkD_kBAvi8hOr7kV9Z7tyaCn9j3rXK8vDkJr6YcX1nmArAJR246ErY-4p2TSUCgbxy9Wzl51lRipyty0WaeZT29lo54twY_NLkxcBsTV9Q-Eax-HId22KsWA7NaPv9YeT_EtcG1Og", "state"=>"6b7c2b06dee4331f31918cf65e925dd41b361a48947c8151"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1246.2ms)
+Completed 200 OK in 1437ms (Views: 1284.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:01:54 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:01:55 +0100
+Started GET "/auth/spotify/callback?code=AQDyeXE8i51n_ZkgVDOgtsydDmMPPBhlO8-qMBvaC6LrQwEwGKn0uGXsn8Q1xYJdiejAw7m3PPgMo9pjxbC4tpZnWm8QsWE3Q6nMNoaQCJrzi6ObP10OidFZZOLZjsZeP4wwrXfkWzZ837QSFrslUG8fbaUoS-kWDHGrt-xX6_UdWc8DWv8gKAcsNa2zJHLeBlADOj-5RjQ8ZmKh6xunh8TCqQubLnocYNiQjyMu7Xtay5YlRQ1WJm5uhdXMNzq9f_HB5l3b-6e6AnSKiGyR96UynBldHCcK5SUObCpUQHXz4J8ePR20aJyvhx5DEvbHMUjSCM3xLAp5stuSgDa1jGUjAg&state=93454b927c8c126cf4308c643ca4a56c610e8d96a290e640" for ::1 at 2019-10-03 09:01:55 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDyeXE8i51n_ZkgVDOgtsydDmMPPBhlO8-qMBvaC6LrQwEwGKn0uGXsn8Q1xYJdiejAw7m3PPgMo9pjxbC4tpZnWm8QsWE3Q6nMNoaQCJrzi6ObP10OidFZZOLZjsZeP4wwrXfkWzZ837QSFrslUG8fbaUoS-kWDHGrt-xX6_UdWc8DWv8gKAcsNa2zJHLeBlADOj-5RjQ8ZmKh6xunh8TCqQubLnocYNiQjyMu7Xtay5YlRQ1WJm5uhdXMNzq9f_HB5l3b-6e6AnSKiGyR96UynBldHCcK5SUObCpUQHXz4J8ePR20aJyvhx5DEvbHMUjSCM3xLAp5stuSgDa1jGUjAg", "state"=>"93454b927c8c126cf4308c643ca4a56c610e8d96a290e640"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1321.9ms)
+Completed 200 OK in 1535ms (Views: 1380.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 09:02:56 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (21.1ms)
+Completed 200 OK in 135ms (Views: 126.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:02:57 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:02:58 +0100
+Started GET "/auth/spotify/callback?code=AQDmWRbQ1tpq9G68NFQhAyHYryt2ah679iQcdYJUAo5nrNU95fUvVthg80ZYlC3xVxhePTv4UR_wW4E29KyqLGzu0gPCMI5bi0Hm2yBqiSaGH6bfX9N2kpChQmNEUb9-ih-B5IdxwxlalfAhPQYzehe5OcJnCa87iYf88qLCW1BOdZPFFN7Ef_dnMFqHyCJknrYemdv1MAbiI6dMScXiN8_tPr6MLAHqhWUrPIwi8-vtH44mGHxm22SRtMZRNgi2M2LZTS2b1Q28Quv7g-o5rN9kkfTYqdjaZ1VlQsvtklB0g4I73lgh5vSYi0OsqYulp9wYsErlx62u8pwIgTief_DT3A&state=127b5735f34ba7fd814ab61f7178afacc554bb8340a079a4" for ::1 at 2019-10-03 09:02:58 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDmWRbQ1tpq9G68NFQhAyHYryt2ah679iQcdYJUAo5nrNU95fUvVthg80ZYlC3xVxhePTv4UR_wW4E29KyqLGzu0gPCMI5bi0Hm2yBqiSaGH6bfX9N2kpChQmNEUb9-ih-B5IdxwxlalfAhPQYzehe5OcJnCa87iYf88qLCW1BOdZPFFN7Ef_dnMFqHyCJknrYemdv1MAbiI6dMScXiN8_tPr6MLAHqhWUrPIwi8-vtH44mGHxm22SRtMZRNgi2M2LZTS2b1Q28Quv7g-o5rN9kkfTYqdjaZ1VlQsvtklB0g4I73lgh5vSYi0OsqYulp9wYsErlx62u8pwIgTief_DT3A", "state"=>"127b5735f34ba7fd814ab61f7178afacc554bb8340a079a4"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1502.0ms)
+Completed 200 OK in 1914ms (Views: 1744.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify/callback?code=AQDmWRbQ1tpq9G68NFQhAyHYryt2ah679iQcdYJUAo5nrNU95fUvVthg80ZYlC3xVxhePTv4UR_wW4E29KyqLGzu0gPCMI5bi0Hm2yBqiSaGH6bfX9N2kpChQmNEUb9-ih-B5IdxwxlalfAhPQYzehe5OcJnCa87iYf88qLCW1BOdZPFFN7Ef_dnMFqHyCJknrYemdv1MAbiI6dMScXiN8_tPr6MLAHqhWUrPIwi8-vtH44mGHxm22SRtMZRNgi2M2LZTS2b1Q28Quv7g-o5rN9kkfTYqdjaZ1VlQsvtklB0g4I73lgh5vSYi0OsqYulp9wYsErlx62u8pwIgTief_DT3A&state=127b5735f34ba7fd814ab61f7178afacc554bb8340a079a4" for ::1 at 2019-10-03 09:06:24 +0100
+
+OmniAuth::Strategies::OAuth2::CallbackError - csrf_detected | CSRF detected:
+
+Started POST "/__better_errors/8c3ce21dbb6ed3bb/variables" for ::1 at 2019-10-03 09:06:24 +0100
+Started GET "/" for ::1 at 2019-10-03 09:06:33 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 90ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:06:34 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:06:34 +0100
+Started GET "/auth/spotify/callback?code=AQDJZTgdHxYFAbaPig1Ssld_ofMh4QDJU2QhjPP1_nSgcVNm2bedUsjtxBQpa1RYYBNvUHTCXNwc6tzAek8_416_PPST8ll9Eqb53CROIItvz-L343c02VGg2HzoZtadJ1IbZKWNYotPWb8ckyhAavH91U9OOoM3lAvIqZS0e_C9hSBYG5qpYeS9BM-ww33_DjEzRhEeJH6R_2i03x7VRwxY_VJAYSShI4u_APRajwMEa1poag1hbZqXcJ1SEJJcCYl8paiSsoCEQf35BrXLgScfqdgARR5U7EHXvE0Hf2I9jrXUs3F5vZ1oknPo94C3XjO9q-ftJmGCUKUGMOMI6VA88Q&state=bcf1dd4f7eb3ee0586218f625773da515754d58451cdbd58" for ::1 at 2019-10-03 09:06:34 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDJZTgdHxYFAbaPig1Ssld_ofMh4QDJU2QhjPP1_nSgcVNm2bedUsjtxBQpa1RYYBNvUHTCXNwc6tzAek8_416_PPST8ll9Eqb53CROIItvz-L343c02VGg2HzoZtadJ1IbZKWNYotPWb8ckyhAavH91U9OOoM3lAvIqZS0e_C9hSBYG5qpYeS9BM-ww33_DjEzRhEeJH6R_2i03x7VRwxY_VJAYSShI4u_APRajwMEa1poag1hbZqXcJ1SEJJcCYl8paiSsoCEQf35BrXLgScfqdgARR5U7EHXvE0Hf2I9jrXUs3F5vZ1oknPo94C3XjO9q-ftJmGCUKUGMOMI6VA88Q", "state"=>"bcf1dd4f7eb3ee0586218f625773da515754d58451cdbd58"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1322.4ms)
+Completed 200 OK in 1595ms (Views: 1480.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 09:08:11 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 70ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:08:12 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:08:12 +0100
+Started GET "/auth/spotify/callback?code=AQBoKqHQd-oU3cbntpf7Npqry1Wyot68iX1RdXfVYvKhQOZyfOD4Rky1QW5tVqhAK7kQndDbCLhmhLaaTZfTFoufI21VqEZVJ9MRYEmwFliqeGQFGH_6IwZDbA3jFMkAOsVO2nCZnrsnRIml0ZIiHOW1fh22VrIggFQ6ul-olqsrEXexUADlLil9NZqGXExKXRkAgHLqTHS1XCSyB157YnYWFyJ00MXjtTGNWDAJbA17kbIgDm8rcFUpiXMZjBKP02AZrDdBwJyw8D2hr0IcJzSxPIFZ8gRo6oiwwZ1VRndlVY1AmT8mWkfag3fvojBim125AS2XsR2WarDHp_cmRKnDuA&state=7acac66bcb8ee5eb708e28da2a4cd55e45c2be4d0bf800ee" for ::1 at 2019-10-03 09:08:12 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBoKqHQd-oU3cbntpf7Npqry1Wyot68iX1RdXfVYvKhQOZyfOD4Rky1QW5tVqhAK7kQndDbCLhmhLaaTZfTFoufI21VqEZVJ9MRYEmwFliqeGQFGH_6IwZDbA3jFMkAOsVO2nCZnrsnRIml0ZIiHOW1fh22VrIggFQ6ul-olqsrEXexUADlLil9NZqGXExKXRkAgHLqTHS1XCSyB157YnYWFyJ00MXjtTGNWDAJbA17kbIgDm8rcFUpiXMZjBKP02AZrDdBwJyw8D2hr0IcJzSxPIFZ8gRo6oiwwZ1VRndlVY1AmT8mWkfag3fvojBim125AS2XsR2WarDHp_cmRKnDuA", "state"=>"7acac66bcb8ee5eb708e28da2a4cd55e45c2be4d0bf800ee"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1168.4ms)
+Completed 200 OK in 1328ms (Views: 1208.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:08:29 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:08:29 +0100
+Started GET "/auth/spotify/callback?code=AQB0QQ9zchgKpVCt1p1eNP_lEwOri7Pj0lSP-jzeKYWDTNpYvELeBd_zRwBH-RQhvllizSF0s9tejhQdnfaL2316B7dNVdAkl_vJvtzS22HfKDll7XKrWxCClGnseV8En421zTOxpz21bzqpQL8rouEfbJUUnravy0r6kHVrg3vaCxnGpxf4V-A4JgLq9AN21cadEirvMitg4esYxnW9aEVAXwW8Cz2j_TPU1g-96996o99nA2RO6_gahq1835qdojI4wNjua-rWIYu0DO7CKjTgp3Wuba4m-Usr4-guDPvBhEUdxdYAflfNuTWrpGESYbpR6G0UIqcEC5u5OclsTH3o2Q&state=be7a95619eff2ca74d20b3f04162bd6c360ba0e6312dfb10" for ::1 at 2019-10-03 09:08:30 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQB0QQ9zchgKpVCt1p1eNP_lEwOri7Pj0lSP-jzeKYWDTNpYvELeBd_zRwBH-RQhvllizSF0s9tejhQdnfaL2316B7dNVdAkl_vJvtzS22HfKDll7XKrWxCClGnseV8En421zTOxpz21bzqpQL8rouEfbJUUnravy0r6kHVrg3vaCxnGpxf4V-A4JgLq9AN21cadEirvMitg4esYxnW9aEVAXwW8Cz2j_TPU1g-96996o99nA2RO6_gahq1835qdojI4wNjua-rWIYu0DO7CKjTgp3Wuba4m-Usr4-guDPvBhEUdxdYAflfNuTWrpGESYbpR6G0UIqcEC5u5OclsTH3o2Q", "state"=>"be7a95619eff2ca74d20b3f04162bd6c360ba0e6312dfb10"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1365.8ms)
+Completed 200 OK in 1528ms (Views: 1404.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 09:08:50 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 105ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:08:52 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:08:52 +0100
+Started GET "/auth/spotify/callback?code=AQBul81ZIj6tu6yDW-4AP-WQzFv94NM6uzxv_zGpgU-0i-leiuRF5e0RHoByUceBQZIrCdxZXbvyLTiVEarKgdNjKRVQC4UfM5FVu2r0WR4aUOvk-XaoMj8Ux9oIGedYSvPEAxqO_rprEsCANk8gf_cKmrLy-UYdbz4UyoniQE20MQZwqMdgFYdwBRGVK25pkym00PhZLsonJyhM0FI7IvUkmO32Lob9ME1mLJAWXxSKOySC0kIbR10HpIxxMsmd3bXAtJ0TzzGDdK6QVmME173HYFe4uuGa5G4wcrecTjJjHUdvOvCniGoD64Tq3EebeMLfw20FIkFdIEZ3rUQ4Tz4lWw&state=5c12afe7e13848d708f93b16d60c4086f64482775bc9cd5c" for ::1 at 2019-10-03 09:08:52 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBul81ZIj6tu6yDW-4AP-WQzFv94NM6uzxv_zGpgU-0i-leiuRF5e0RHoByUceBQZIrCdxZXbvyLTiVEarKgdNjKRVQC4UfM5FVu2r0WR4aUOvk-XaoMj8Ux9oIGedYSvPEAxqO_rprEsCANk8gf_cKmrLy-UYdbz4UyoniQE20MQZwqMdgFYdwBRGVK25pkym00PhZLsonJyhM0FI7IvUkmO32Lob9ME1mLJAWXxSKOySC0kIbR10HpIxxMsmd3bXAtJ0TzzGDdK6QVmME173HYFe4uuGa5G4wcrecTjJjHUdvOvCniGoD64Tq3EebeMLfw20FIkFdIEZ3rUQ4Tz4lWw", "state"=>"5c12afe7e13848d708f93b16d60c4086f64482775bc9cd5c"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1382.5ms)
+Completed 200 OK in 1548ms (Views: 1421.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:09:19 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:09:19 +0100
+Started GET "/auth/spotify/callback?code=AQCPDUtsH2f7EPMosuK1taGGB0hhtmvTirfQtsVB0q21gu5x7oLQGz0QvMPSu6-UgPlo3ZL0sx2tsMuQJ3mHYvY8_v-0VQKKxP_etI51rt7Cxo5giaEgZdYH6CufdMHCjJSN3L5Rj2LnSDya9FtMxEeXwfYwgQ2HW4XOG91Md2r0tL5e04ZJcklmcHlQ8t8eCHZ6HUuLgU7gTU5M52xbmZ_o_GqcdYn79R8wtsqb0Tc5aJwDOo6IxuFkdHPgormwYCQBMjIF4LjpoZj6_AlZn5YC3e5V8EswCdDqcumkoXzN1CQ3-c7REbXof0gB5iO0cTSGoHMzdDVWuHHaJEXyzybPiQ&state=8278801e36583a2ab560d038e20d859c8fdcfd59ec81ebf2" for ::1 at 2019-10-03 09:09:19 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQCPDUtsH2f7EPMosuK1taGGB0hhtmvTirfQtsVB0q21gu5x7oLQGz0QvMPSu6-UgPlo3ZL0sx2tsMuQJ3mHYvY8_v-0VQKKxP_etI51rt7Cxo5giaEgZdYH6CufdMHCjJSN3L5Rj2LnSDya9FtMxEeXwfYwgQ2HW4XOG91Md2r0tL5e04ZJcklmcHlQ8t8eCHZ6HUuLgU7gTU5M52xbmZ_o_GqcdYn79R8wtsqb0Tc5aJwDOo6IxuFkdHPgormwYCQBMjIF4LjpoZj6_AlZn5YC3e5V8EswCdDqcumkoXzN1CQ3-c7REbXof0gB5iO0cTSGoHMzdDVWuHHaJEXyzybPiQ", "state"=>"8278801e36583a2ab560d038e20d859c8fdcfd59ec81ebf2"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1443.5ms)
+Completed 200 OK in 1668ms (Views: 1542.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:09:31 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:09:31 +0100
+Started GET "/auth/spotify/callback?code=AQDtSz1ReczFjNoLFh5z-6cdQ4fIoRAij_D5DvShsJ2EW2DaD5Wd9frOoRbCv0yqOjbuT0ZEBM-1I0Ddh82WuseA6QMmN7uxr8SC6D9tX8xloKZ8qFG8xRy_s0cxwjD3_XUWp1mxsxoCuucVD84o7gjD1JxEMLkzk7LXCGHM9TQeoLApahTqYYcLvi_dxTdMDMxcgeGu7vmHCVgCfzSlyulpkUE6jE6DE8rqcmz3MnbpMkaW9NaMLbPjlqQzFaSPd9JXZJeADwvKPQ49ijWekBSCX-QdUlYBn0R4cvkEppSj5B3KA07Z4-FXhUHExL699eJS14YJ2wzhC14Kv2abKVDSwg&state=2fcaa668eb4959fb575d7ba73c1d08745189490a4bf31a58" for ::1 at 2019-10-03 09:09:31 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDtSz1ReczFjNoLFh5z-6cdQ4fIoRAij_D5DvShsJ2EW2DaD5Wd9frOoRbCv0yqOjbuT0ZEBM-1I0Ddh82WuseA6QMmN7uxr8SC6D9tX8xloKZ8qFG8xRy_s0cxwjD3_XUWp1mxsxoCuucVD84o7gjD1JxEMLkzk7LXCGHM9TQeoLApahTqYYcLvi_dxTdMDMxcgeGu7vmHCVgCfzSlyulpkUE6jE6DE8rqcmz3MnbpMkaW9NaMLbPjlqQzFaSPd9JXZJeADwvKPQ49ijWekBSCX-QdUlYBn0R4cvkEppSj5B3KA07Z4-FXhUHExL699eJS14YJ2wzhC14Kv2abKVDSwg", "state"=>"2fcaa668eb4959fb575d7ba73c1d08745189490a4bf31a58"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1377.1ms)
+Completed 200 OK in 1576ms (Views: 1422.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:09:38 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:09:38 +0100
+Started GET "/auth/spotify/callback?code=AQBbKTR7QpJQr7zGoasRBx55jITTcVYO-2-H1bX_pK3zOn-1RSjzImrYyHeeHnJVg6CVhkUbtuiaJ2k1yBQEnPVJG6E_9YP6CcbEHl1g1t-Ptaz7BV1TFAsZehrlMGtJq7i8FVf4YRDvcnd7hsfyWMxgkryNQEjS89w7eShvFQo_syuUHHU_wt-gGogrhACySP1UuZUJtwK4PNv3QE_J9Ism8ARZpSv4yw27LpsPMsAo9yPC-94Ob6u_Rni4-8KTVPZ6SzhcT-whHAxuHrm9EB5s8RCdmWZfA2bxEt_z4-F5zuOeIPFAG30rbpVyunzaomJmznDa7Rd3V9W5tmqiIOe21w&state=6d950b9aa12ee977704ec1c21ef0458c9d889e38c469a191" for ::1 at 2019-10-03 09:09:38 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBbKTR7QpJQr7zGoasRBx55jITTcVYO-2-H1bX_pK3zOn-1RSjzImrYyHeeHnJVg6CVhkUbtuiaJ2k1yBQEnPVJG6E_9YP6CcbEHl1g1t-Ptaz7BV1TFAsZehrlMGtJq7i8FVf4YRDvcnd7hsfyWMxgkryNQEjS89w7eShvFQo_syuUHHU_wt-gGogrhACySP1UuZUJtwK4PNv3QE_J9Ism8ARZpSv4yw27LpsPMsAo9yPC-94Ob6u_Rni4-8KTVPZ6SzhcT-whHAxuHrm9EB5s8RCdmWZfA2bxEt_z4-F5zuOeIPFAG30rbpVyunzaomJmznDa7Rd3V9W5tmqiIOe21w", "state"=>"6d950b9aa12ee977704ec1c21ef0458c9d889e38c469a191"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1733.3ms)
+Completed 200 OK in 1897ms (Views: 1771.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:11:39 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:11:39 +0100
+Started GET "/auth/spotify/callback?code=AQA83I4SLAe7BBbqKYxn31q0TYfcANgLvWRYXIb8Lk1-sQj8ft1TbUmIOa9tABhmmTrdAVT3jBzVrys18B_JPYG0WB5E05K9pLCzmNrIcrneXY2JBhZ-7Czju4D83kSe2h9uth0meUSkYlrCvREpx9VVNfkufQ6NLUcGthR1J2QOU08mM0kIsg-vpT03sJcU17vWmFieV1w1o6m7ETb0mK2-z_5Nt8fJjDKgeh1IlZ6Qk31OrnUElYSMy-7YJYAqF1skAKe5AayZptHA4lwNKYIoxhsFJ8vYSTyyogzVx-IlEC17wLtkhGBpyfnUjGOHr-a-Qo9yQ1dkeJl6ZSTpllhPOA&state=e884e57d1bcaef04eda4f94ab6c9f0edcdf7025b5103430b" for ::1 at 2019-10-03 09:11:39 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQA83I4SLAe7BBbqKYxn31q0TYfcANgLvWRYXIb8Lk1-sQj8ft1TbUmIOa9tABhmmTrdAVT3jBzVrys18B_JPYG0WB5E05K9pLCzmNrIcrneXY2JBhZ-7Czju4D83kSe2h9uth0meUSkYlrCvREpx9VVNfkufQ6NLUcGthR1J2QOU08mM0kIsg-vpT03sJcU17vWmFieV1w1o6m7ETb0mK2-z_5Nt8fJjDKgeh1IlZ6Qk31OrnUElYSMy-7YJYAqF1skAKe5AayZptHA4lwNKYIoxhsFJ8vYSTyyogzVx-IlEC17wLtkhGBpyfnUjGOHr-a-Qo9yQ1dkeJl6ZSTpllhPOA", "state"=>"e884e57d1bcaef04eda4f94ab6c9f0edcdf7025b5103430b"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1380.6ms)
+Completed 200 OK in 1658ms (Views: 1500.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:11:51 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:11:51 +0100
+Started GET "/auth/spotify/callback?code=AQDKcEBFevpZjDW0fY_FnbuOUHbEDCN148Y_VytD4Fm9mTYyHDioo1i3-b9bURWpuY3An-b3XLg_0TjnzWpxoEO3_3UrNTz1Gw6UtzkIdozWLv5qxk-n8SKVWNmbfHixjoO0p4NA_8EG8SlyPhAaiq4--_Q0xLcGgubvFaQK1tiMpcqZUSmno_K1ZItdJiRMrHZ-BZ0yMg4Ki2DKzOj4SVSGxOdzcLjlaFNWCgfN0eSr83kzdsUZcxZF1020ga4gY1EUqR8UYZ-tCpvZMCkJW-tmoEk4BDs_wqwRqwKrP2xRnWWbjVt9Tje-JUkktoQR-cABxH_8v_ZzMMfnNkNfXGa1fA&state=e9cfee1ac002b4d7f8ba0a1d7f106d75dde7c2fa6cec4aa7" for ::1 at 2019-10-03 09:11:51 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDKcEBFevpZjDW0fY_FnbuOUHbEDCN148Y_VytD4Fm9mTYyHDioo1i3-b9bURWpuY3An-b3XLg_0TjnzWpxoEO3_3UrNTz1Gw6UtzkIdozWLv5qxk-n8SKVWNmbfHixjoO0p4NA_8EG8SlyPhAaiq4--_Q0xLcGgubvFaQK1tiMpcqZUSmno_K1ZItdJiRMrHZ-BZ0yMg4Ki2DKzOj4SVSGxOdzcLjlaFNWCgfN0eSr83kzdsUZcxZF1020ga4gY1EUqR8UYZ-tCpvZMCkJW-tmoEk4BDs_wqwRqwKrP2xRnWWbjVt9Tje-JUkktoQR-cABxH_8v_ZzMMfnNkNfXGa1fA", "state"=>"e9cfee1ac002b4d7f8ba0a1d7f106d75dde7c2fa6cec4aa7"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1078.8ms)
+Completed 200 OK in 1271ms (Views: 1117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:12:39 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:12:39 +0100
+Started GET "/auth/spotify/callback?code=AQDUZh4wDlnSeCs_6MbOvQ9PfUgmtPGMZnMmaubB9pa1aTB_F77O5gJ0iRVxUIf-5PYNFAqLOzztcOw2HKOynZT1rtYvFjyQWj8vtfIJIRGEd5sLNscL6FrfX1xu-tYdDwAydo5XbWxMWU50a4zmdGzvRFm9jwqn9m9oxP2albH5I2w5xEzhS8A67v-vPGKYHzxQ5tLyAc1OlIc6FAchy_YEFuYTtnxZT0XOmLAOzx-UlkR4D1E-Ol1fHEOnu6qWh1-ECvMvsSNXovsZdkfA3KEsMDAREki3FiKoRWbnjyIY7g5G2khw-RlVwaYdYXIfJRDVL0l2qIKKiHh7PAfg-NsN2A&state=f294f8c925ed6e017e9f50b8e1dfe3b319b54317eb1bf06a" for ::1 at 2019-10-03 09:12:39 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDUZh4wDlnSeCs_6MbOvQ9PfUgmtPGMZnMmaubB9pa1aTB_F77O5gJ0iRVxUIf-5PYNFAqLOzztcOw2HKOynZT1rtYvFjyQWj8vtfIJIRGEd5sLNscL6FrfX1xu-tYdDwAydo5XbWxMWU50a4zmdGzvRFm9jwqn9m9oxP2albH5I2w5xEzhS8A67v-vPGKYHzxQ5tLyAc1OlIc6FAchy_YEFuYTtnxZT0XOmLAOzx-UlkR4D1E-Ol1fHEOnu6qWh1-ECvMvsSNXovsZdkfA3KEsMDAREki3FiKoRWbnjyIY7g5G2khw-RlVwaYdYXIfJRDVL0l2qIKKiHh7PAfg-NsN2A", "state"=>"f294f8c925ed6e017e9f50b8e1dfe3b319b54317eb1bf06a"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1393.5ms)
+Completed 200 OK in 1555ms (Views: 1439.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 09:13:52 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 141ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:13:53 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:13:53 +0100
+Started GET "/auth/spotify/callback?code=AQDcddydkT_Unc9Ofnsk6qqErQWbEdb-UGV3GA8mmXwWBuTskBCe2wlttufiDB-twd_ZOs69nxesaExE-LABb7ZsHTTW13zHCSSlb0HyWe3kwiVlgKdwqi8MCkmskc1YyudtMpwT6Sia8-20_XuI4AzdH47HumyHuAfTF5xVN6uiORh8iY0xXhtLJubaO34Qeqg850NxuNBS0haYLNHLAHVNKHMIEe-SGGpnF8eAFfIDw2fYyOwsavECH7RvYxuwK_cu-dXBJ5LYeGSJz-030ryOgzsz1Km0eg8FlSDMMaULeQzSIGbMX47FpIpReAlch4vVtRmBNvkK6SJUGsVOuhVXhg&state=538f8694dc1dcace90f12b9ccac4690d5f67c9f98870d739" for ::1 at 2019-10-03 09:13:53 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDcddydkT_Unc9Ofnsk6qqErQWbEdb-UGV3GA8mmXwWBuTskBCe2wlttufiDB-twd_ZOs69nxesaExE-LABb7ZsHTTW13zHCSSlb0HyWe3kwiVlgKdwqi8MCkmskc1YyudtMpwT6Sia8-20_XuI4AzdH47HumyHuAfTF5xVN6uiORh8iY0xXhtLJubaO34Qeqg850NxuNBS0haYLNHLAHVNKHMIEe-SGGpnF8eAFfIDw2fYyOwsavECH7RvYxuwK_cu-dXBJ5LYeGSJz-030ryOgzsz1Km0eg8FlSDMMaULeQzSIGbMX47FpIpReAlch4vVtRmBNvkK6SJUGsVOuhVXhg", "state"=>"538f8694dc1dcace90f12b9ccac4690d5f67c9f98870d739"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1270.3ms)
+Completed 200 OK in 1477ms (Views: 1353.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 09:14:38 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 141ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:14:39 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:14:39 +0100
+Started GET "/auth/spotify/callback?code=AQDP2UtdafEW94w8clgJ95kjA4_laoJDD8TNCTcHG8fx2OaEcdsvIe0AoW0EdZpN_al_lCINZnxaPYJ3iXKTnpcpKXAfixCzXh8R9pA62md3SDOV9QtqNVovtxqwSOaX3n-1HXlyZJwG0cfNK8eaUnvfhjfeyI9Pz0ESjq5jso6F1TOWiguAOVcBKuM2YVHW_L2vZlKu6Kx8otWEW81F2KOvMpnGoYcW0_oUu2dlzd3jinS9zx-HYaFxMvJMcU3QhPvf0umfG5W5FCnscCBID019ujn4QjOpU9ryriG4dHmL4glGQN0YwsvHmI4FqpiGyaGJFbJYQuQRyxucX4ORcbcdfw&state=7e639fd0521496fe2de71ecf407e0378e9dcc17e73dc829c" for ::1 at 2019-10-03 09:14:39 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDP2UtdafEW94w8clgJ95kjA4_laoJDD8TNCTcHG8fx2OaEcdsvIe0AoW0EdZpN_al_lCINZnxaPYJ3iXKTnpcpKXAfixCzXh8R9pA62md3SDOV9QtqNVovtxqwSOaX3n-1HXlyZJwG0cfNK8eaUnvfhjfeyI9Pz0ESjq5jso6F1TOWiguAOVcBKuM2YVHW_L2vZlKu6Kx8otWEW81F2KOvMpnGoYcW0_oUu2dlzd3jinS9zx-HYaFxMvJMcU3QhPvf0umfG5W5FCnscCBID019ujn4QjOpU9ryriG4dHmL4glGQN0YwsvHmI4FqpiGyaGJFbJYQuQRyxucX4ORcbcdfw", "state"=>"7e639fd0521496fe2de71ecf407e0378e9dcc17e73dc829c"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1191.7ms)
+Completed 200 OK in 1397ms (Views: 1223.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 09:15:12 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 65ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:15:14 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:15:14 +0100
+Started GET "/auth/spotify/callback?code=AQC9tETADosWBPziPhmclslib63V2pJuuvn5oINJLO2REc0to-m0V4LWTZAgPTm0IiUKfKj_fiNOawK8eQCDdQ6FkNb5DG79GOw1XmVZN4WhP7pq22B4GvWP66UAyAHk2lrV_PwlrdzDmtLpab893x1npfwpbHkGIWW69Q_qMLPZ_T2zc4PniTXbQPWPzZfVZ6sJBDOMi1bNjz5ScnsMh4lIz44nFB_XctyqqM_f8aR6PrshFOkdMuhUe49zrpSAKAHn15g8hgQZJ0K4gumfQxKNo2mucn4Dk_3LtuUP-Zc6_Qio8SbE29zLgKdb2J7Xo40qvQS75z4wMQV2LHl70r7rZg&state=a0da15ad37e1bceb8b559b232775dca59b23bc1838312dcd" for ::1 at 2019-10-03 09:15:14 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQC9tETADosWBPziPhmclslib63V2pJuuvn5oINJLO2REc0to-m0V4LWTZAgPTm0IiUKfKj_fiNOawK8eQCDdQ6FkNb5DG79GOw1XmVZN4WhP7pq22B4GvWP66UAyAHk2lrV_PwlrdzDmtLpab893x1npfwpbHkGIWW69Q_qMLPZ_T2zc4PniTXbQPWPzZfVZ6sJBDOMi1bNjz5ScnsMh4lIz44nFB_XctyqqM_f8aR6PrshFOkdMuhUe49zrpSAKAHn15g8hgQZJ0K4gumfQxKNo2mucn4Dk_3LtuUP-Zc6_Qio8SbE29zLgKdb2J7Xo40qvQS75z4wMQV2LHl70r7rZg", "state"=>"a0da15ad37e1bceb8b559b232775dca59b23bc1838312dcd"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1087.6ms)
+Completed 200 OK in 1250ms (Views: 1133.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 09:15:51 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 103ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:15:52 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-03 09:15:52 +0100
+Started GET "/auth/spotify/callback?code=AQBPU14TeRGy03ZeyAXA7Ok28h59hn7gpr5tpNk2V2IoXa1NsVpTbVkdRC4uqBNayxEztrCde9k-sAkoyrqIKokUvnQgLfsZuNsitkBAksKGrv8AOkBwBZxUprQvatZMmNH5wXQWQC7-rXnBDP2m3NZ0JAzOE47sCUHzPfEbFAHqjGU-0eB_2zE8sLoCG5VHxl7VBMvwuP_NehxCb3stzTs3yQNhjp6XR6gsebGzZa97feNEEGDLpRJ0Woul1HtkQwxfMjzdHWcMA5y7g9jqKffWf7hznPbpWzOU2LsGgHYIFJxrI_l4vcDevV8ukiad2dPWseb12Kpgk32l7KfCcy1EpA&state=1a4eac3a5d89768a4bacb51f75e74c895625c9c9a62ebaaa" for ::1 at 2019-10-03 09:15:52 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBPU14TeRGy03ZeyAXA7Ok28h59hn7gpr5tpNk2V2IoXa1NsVpTbVkdRC4uqBNayxEztrCde9k-sAkoyrqIKokUvnQgLfsZuNsitkBAksKGrv8AOkBwBZxUprQvatZMmNH5wXQWQC7-rXnBDP2m3NZ0JAzOE47sCUHzPfEbFAHqjGU-0eB_2zE8sLoCG5VHxl7VBMvwuP_NehxCb3stzTs3yQNhjp6XR6gsebGzZa97feNEEGDLpRJ0Woul1HtkQwxfMjzdHWcMA5y7g9jqKffWf7hznPbpWzOU2LsGgHYIFJxrI_l4vcDevV8ukiad2dPWseb12Kpgk32l7KfCcy1EpA", "state"=>"1a4eac3a5d89768a4bacb51f75e74c895625c9c9a62ebaaa"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1351.1ms)
+Completed 200 OK in 1579ms (Views: 1450.3ms | ActiveRecord: 0.0ms)
