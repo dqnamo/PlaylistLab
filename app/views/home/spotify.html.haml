@@ -1,15 +1,19 @@
-.col-md-8.col-lg-6
+.container
   .row
-    = @playlists.each do |x|
-      .card.mb-3{:style => "max-width: 400px;"}
-        .row.no-gutters
-          .col-md-4
-            %img.card-img{:alt => "...", :src => "#{x.images.first.try(:fetch, "url")}"}/
-          .col-md-8
-            .card-body
-              %h5.card-title
-                = x.name
-                %p.card-text
-                %p.card-text
-                %small.text-muted
-                  = "#{x.tracks.count} songs in this playlist."
+    %h3.login-heading.my-5 Your Playlists.
+
+  .row
+    - @playlists.each do |x|
+      .col-md-4
+        .card
+          .row.no-gutters
+            .col-md-4
+              %img.card-img{:alt => "...", :src => "#{x.images.first.try(:fetch, "url")}"}/
+            .col-md-8
+              .card-body
+                %h5.card-title
+                  = x.name
+                  %p.card-text
+                  %p.card-text
+                  %small.text-muted
+                    = "#{x.tracks.count} songs in this playlist."
