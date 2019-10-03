@@ -8260,5 +8260,3 @@ Processing by HomeController#spotify as HTML
   Rendering home/spotify.html.haml within layouts/application
   Rendered home/spotify.html.haml within layouts/application (1351.1ms)
 Completed 200 OK in 1579ms (Views: 1450.3ms | ActiveRecord: 0.0ms)
-
-
