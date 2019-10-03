@@ -8,7 +8,14 @@ class HomeController < ApplicationController
 
   def spotify
     @spotify_user = RSpotify::User.new(request.env['omniauth.auth'])
+    @name = @spotify_user.display_name
     @playlists = @spotify_user.playlists
+  end
+
+  def playlist
+    name = params[:name]
+    id = params[:id]
+    @playlist = RSpotify::Playlist.find(name, id)
   end
 
   private
@@ -31,5 +38,9 @@ class HomeController < ApplicationController
     danceability_average = (danceability_average * 100).to_i
 
     features = { energy: energy_average, danceability: danceability_average }
+  end
+
+  def home_params
+    params.permit(:x)
   end
 end
