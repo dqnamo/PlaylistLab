@@ -1,9 +1,11 @@
-
-
-.container-fluid.h-100.vertical-center
-  .row
-    .col.text-center
-      = link_to 'Sign in with Spotify', '/auth/spotify'
-    .col
-    /
-      %img.img-fluid{:alt => "Responsive image", :src => "index_bg.jpg"}/
+.container-fluid
+  .row.no-gutter
+    .col-md-8.col-lg-6
+      .login.d-flex.align-items-center.py-5
+        .container
+          .row
+            .col-md-9.col-lg-8.mx-auto
+              %h3.login-heading.mb-2 Spice Up Your Playlists.
+              %p.mb-4 Analysing spotify track audio features, add more energy, dancebility and tempo to your existing playlists.
+              = link_to('Sign in with Spotify', '/auth/spotify', class: "btn btn-lg btn-primary btn-login text-uppercase font-weight-medium mb-2")
+    .d-none.d-md-flex.col-md-4.col-lg-6.bg-image
