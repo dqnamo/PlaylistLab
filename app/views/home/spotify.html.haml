@@ -1,11 +1,12 @@
+
 .container
   .row
-    %h3.login-heading.my-5 Your Playlists.
+    %h3.login-heading.my-4 🎶 Your Playlists.
 
   .row
     - @playlists.each do |x|
       .col-md-4
-        .card
+        .card.mb-4
           .row.no-gutters
             .col-md-4
               %img.card-img{:alt => "...", :src => "#{x.images.first.try(:fetch, "url")}"}/
@@ -13,7 +14,11 @@
               .card-body
                 %h5.card-title
                   = x.name
-                  %p.card-text
-                  %p.card-text
                   %small.text-muted
-                    = "#{x.tracks.count} songs in this playlist."
+                    = "#{x.tracks.count} songs"
+                  .row
+                    %small.text-muted.mx-0
+                      = "⚡ Energy: #{get_features(x)[:energy]}"
+                  .row
+                    %small.text-muted
+                      = "💃 Dancebility: #{get_features(x)[:danceability]}"
