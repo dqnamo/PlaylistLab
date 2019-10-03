@@ -1,0 +1,41 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.bg-image {
+  background-image: url('https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 500;
+}
+
+.btn-primary {
+  border-radius: 2rem;
+
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  background-color: #1ad85e;
+  border-color: #1ad85e;
+}
