@@ -14203,3 +14203,1074 @@ Processing by HomeController#playlist as HTML
 Completed 200 OK in 6168ms (Views: 5892.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:17:18 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (5.5ms)
+  Rendered home/playlist.html.haml within layouts/application (4697.1ms)
+Completed 200 OK in 4998ms (Views: 4797.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/" for ::1 at 2019-10-04 22:21:58 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/playlist"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-10-04 22:22:03 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.5ms)
+  Rendered home/playlists.html.haml within layouts/application (1375.4ms)
+Completed 200 OK in 1662ms (Views: 1472.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:23:23 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.6ms)
+  Rendered home/playlists.html.haml within layouts/application (1481.1ms)
+Completed 200 OK in 1753ms (Views: 1613.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:23:43 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.9ms)
+  Rendered home/playlists.html.haml within layouts/application (2324.0ms)
+Completed 200 OK in 2524ms (Views: 2394.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:24:11 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlists.html.haml within layouts/application (1381.0ms)
+Completed 200 OK in 1624ms (Views: 1498.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:25:45 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (4.3ms)
+  Rendered home/playlists.html.haml within layouts/application (1495.0ms)
+Completed 200 OK in 1731ms (Views: 1554.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:26:19 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (3.6ms)
+Completed 500  in 146ms (ActiveRecord: 0.0ms)
+
+
+
+Haml::SyntaxError - Illegal element: classes and ids must have values.:
+  app/views/home/playlists.html.haml:25:in `'
+
+Started POST "/__better_errors/82c31b1ac55a8fa9/variables" for ::1 at 2019-10-04 22:26:19 +0100
+Started GET "/playlists" for ::1 at 2019-10-04 22:26:25 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.2ms)
+  Rendered home/playlists.html.haml within layouts/application (1515.6ms)
+Completed 200 OK in 1782ms (Views: 1586.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:26:34 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlists.html.haml within layouts/application (1371.1ms)
+Completed 200 OK in 1561ms (Views: 1412.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:26:44 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.2ms)
+  Rendered home/playlists.html.haml within layouts/application (1537.9ms)
+Completed 200 OK in 1784ms (Views: 1666.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:27:01 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlists.html.haml within layouts/application (1339.3ms)
+Completed 200 OK in 1499ms (Views: 1383.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:27:12 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.3ms)
+  Rendered home/playlists.html.haml within layouts/application (1275.8ms)
+Completed 200 OK in 1455ms (Views: 1319.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:28:18 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.9ms)
+  Rendered home/playlists.html.haml within layouts/application (1221.3ms)
+Completed 200 OK in 2793ms (Views: 2639.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:28:40 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (6.2ms)
+  Rendered home/playlists.html.haml within layouts/application (1518.0ms)
+Completed 200 OK in 2843ms (Views: 2709.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:28:53 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.2ms)
+  Rendered home/playlists.html.haml within layouts/application (2362.7ms)
+Completed 200 OK in 4082ms (Views: 3597.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:29:05 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.9ms)
+  Rendered home/playlists.html.haml within layouts/application (1526.1ms)
+Completed 200 OK in 1734ms (Views: 1585.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:30:21 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:30:21 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlists.html.haml within layouts/application (1673.0ms)
+Completed 200 OK in 1879ms (Views: 1740.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:32:25 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlists.html.haml within layouts/application (1452.3ms)
+Completed 200 OK in 1648ms (Views: 1498.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 22:32:52 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:32:52 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 73ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:32:55 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:32:55 +0100
+Started GET "/auth/spotify/callback?code=AQBlVOCTauLtiRmKuxj8iuO2n-XKyY75qxzZDR4EOoje2HRBD-AByK2_-BxkzcVeEegDEGjl8-uw2MPfw-JXD2uy9GZOlAyU3vnavViaBXmlaTyGi1HR70rqqEjdN-lgn3sAuPAGYlyKZlbGnp-mN6g9PhArF9AEI43P2hdA14RwN4jrQ7X-Z795Ld8fvfjm-11Zzc5a2Uek6fLQuOnyKvFKs9qL28y_WL4AO786ynFIo5-eylORhiulzpT3dproFlGmdT1v4NzifszfGL2KERe9z9KQFvMQM5OuJb7abH7sBEYtHDvUq15ZyBcZCQfXYeuon5PW41Plwq8PjX-ho2Tgxw&state=54dc7bfbb07c892a31742d83efd411366709738e2c953249" for ::1 at 2019-10-04 22:32:55 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQBlVOCTauLtiRmKuxj8iuO2n-XKyY75qxzZDR4EOoje2HRBD-AByK2_-BxkzcVeEegDEGjl8-uw2MPfw-JXD2uy9GZOlAyU3vnavViaBXmlaTyGi1HR70rqqEjdN-lgn3sAuPAGYlyKZlbGnp-mN6g9PhArF9AEI43P2hdA14RwN4jrQ7X-Z795Ld8fvfjm-11Zzc5a2Uek6fLQuOnyKvFKs9qL28y_WL4AO786ynFIo5-eylORhiulzpT3dproFlGmdT1v4NzifszfGL2KERe9z9KQFvMQM5OuJb7abH7sBEYtHDvUq15ZyBcZCQfXYeuon5PW41Plwq8PjX-ho2Tgxw", "state"=>"54dc7bfbb07c892a31742d83efd411366709738e2c953249"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:32:55 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:32:55 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.4ms)
+  Rendered home/playlists.html.haml within layouts/application (1435.3ms)
+Completed 200 OK in 1619ms (Views: 1492.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/2XJm4ZKC835vaxvncjQvKO" for ::1 at 2019-10-04 22:33:03 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"2XJm4ZKC835vaxvncjQvKO"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlist.html.haml within layouts/application (5361.6ms)
+Completed 200 OK in 5574ms (Views: 5421.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 22:34:13 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:34:13 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:34:15 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:34:15 +0100
+Started GET "/auth/spotify/callback?code=AQAu3geRs3E0ZhMfJArRUaKZQl6dI0gloNOABzfsVWXiliy8ST1yIQccbIfO9s7LSe_aX7H7aSTroKH8rVyiyAzMpSFpSAPRY7-m7Cq2BZyv9YcycxPZxHhg5vIclvtlRtbnO46VmSIEGPMBasCpZCZ_sO69WbHbWWdeUID5sZH-mnRlhWcN-U8e_6caYFr3hEqahOQ6h-jDz3DvUi7-E4erjSu0r7xjV_JjF8J5W7hi7hGtqKpx5icMECXKl5Djcp_I-ckGwQ3wO1bSmjOetbNDQLI_Je4REVxfExNSwVZeyD01OQlaYpnX4PtehjWR-ob6Lpa_-k2OUGSsPt2ueV6_xA&state=3004295e6bc19fab8b57b3ece03cef008facd3c521a3d380" for ::1 at 2019-10-04 22:34:15 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQAu3geRs3E0ZhMfJArRUaKZQl6dI0gloNOABzfsVWXiliy8ST1yIQccbIfO9s7LSe_aX7H7aSTroKH8rVyiyAzMpSFpSAPRY7-m7Cq2BZyv9YcycxPZxHhg5vIclvtlRtbnO46VmSIEGPMBasCpZCZ_sO69WbHbWWdeUID5sZH-mnRlhWcN-U8e_6caYFr3hEqahOQ6h-jDz3DvUi7-E4erjSu0r7xjV_JjF8J5W7hi7hGtqKpx5icMECXKl5Djcp_I-ckGwQ3wO1bSmjOetbNDQLI_Je4REVxfExNSwVZeyD01OQlaYpnX4PtehjWR-ob6Lpa_-k2OUGSsPt2ueV6_xA", "state"=>"3004295e6bc19fab8b57b3ece03cef008facd3c521a3d380"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:34:15 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:34:15 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  Rendered home/playlists.html.haml within layouts/application (1412.8ms)
+Completed 200 OK in 1695ms (Views: 1574.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:37:05 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlist.html.haml within layouts/application (4054.6ms)
+Completed 200 OK in 4284ms (Views: 4115.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:38:12 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:38:12 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.1ms)
+  Rendered home/playlists.html.haml within layouts/application (1719.8ms)
+Completed 200 OK in 3129ms (Views: 2943.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 22:38:18 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:38:18 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 77ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:38:58 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 1185ms (Views: 1181.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:39:01 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:39:01 +0100
+Started GET "/auth/spotify/callback?code=AQCmgYM5vOGQYf9h5-2IlPmkJydHNrBuQyAMtsK_6Q8IjY8JrmEko6TZYWQMyHydzyUnP6uuFQhxp332mlYruGb7z_HbVH7n0KvRLn3JYHIC_nXDn9wxuj89C6JBiU2DPjbbZQiYS_G78xxSvJ9D1gS0OE5sFcCVfRUL125Q635lOR2A36ZUeTFAA_-AtE5rqVESjkCx7GOspfySsjJOHbOoKyLz00AHr_wmf0gCyRGM4vIuN0tthNZVeiR0KQZCJXqhXXKYK38DgrjHoWBzVxQ36CxlwO49q4yKJeJ32fydXhj6LL1LnO7bg23dLijnTHlGKDIsO3iowNHHtg4dOr0wdw&state=8833ea8f10c4b0ed38e9b9fe515d5ab0de444ce85a4c15c5" for ::1 at 2019-10-04 22:39:02 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQCmgYM5vOGQYf9h5-2IlPmkJydHNrBuQyAMtsK_6Q8IjY8JrmEko6TZYWQMyHydzyUnP6uuFQhxp332mlYruGb7z_HbVH7n0KvRLn3JYHIC_nXDn9wxuj89C6JBiU2DPjbbZQiYS_G78xxSvJ9D1gS0OE5sFcCVfRUL125Q635lOR2A36ZUeTFAA_-AtE5rqVESjkCx7GOspfySsjJOHbOoKyLz00AHr_wmf0gCyRGM4vIuN0tthNZVeiR0KQZCJXqhXXKYK38DgrjHoWBzVxQ36CxlwO49q4yKJeJ32fydXhj6LL1LnO7bg23dLijnTHlGKDIsO3iowNHHtg4dOr0wdw", "state"=>"8833ea8f10c4b0ed38e9b9fe515d5ab0de444ce85a4c15c5"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:39:02 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:39:02 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlists.html.haml within layouts/application (1402.8ms)
+Completed 200 OK in 1571ms (Views: 1440.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:39:12 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlists.html.haml within layouts/application (1373.2ms)
+Completed 200 OK in 2743ms (Views: 2620.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 22:39:15 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:39:16 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 127ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:39:53 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:40:02 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 79ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:40:07 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:40:17 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:40:31 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:40:33 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 60ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:40:35 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:40:35 +0100
+Started GET "/auth/spotify/callback?code=AQBoPTmPm1RD4GdGuA-RKelsPJlwxQ2eJ54_LxwjFhcIYrLNMtsMel184E3GLH8cjFflXCa9w-H1Kg64p7UIOHSA7KLLIyGXzuIWtVPMM6Cl9fO_Yhq-anuR-IA_pq27hmp98hx7PtixQugKCDvBws5BM3xPR8QHVRGbsQdqvysJIt7KwfOwt5IAiAoXBz-kj9L4CoY3r6FtIkQB5mpNJjttjlZlT3a5kmnZQIPuNkG_RSkD6XcIgiBUgUgCxNLcU0HtSYVTkxDS7Dk9GiMpssBNCcvfZN7YFsWnVQdv_g6zCjRkckqzHchcj00Ao_symbQHYiHrFkOXVNp3X12WlBdTtg&state=613ff46535ff2d396667d2cac1e1be22915b1179bc004a3b" for ::1 at 2019-10-04 22:40:35 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQBoPTmPm1RD4GdGuA-RKelsPJlwxQ2eJ54_LxwjFhcIYrLNMtsMel184E3GLH8cjFflXCa9w-H1Kg64p7UIOHSA7KLLIyGXzuIWtVPMM6Cl9fO_Yhq-anuR-IA_pq27hmp98hx7PtixQugKCDvBws5BM3xPR8QHVRGbsQdqvysJIt7KwfOwt5IAiAoXBz-kj9L4CoY3r6FtIkQB5mpNJjttjlZlT3a5kmnZQIPuNkG_RSkD6XcIgiBUgUgCxNLcU0HtSYVTkxDS7Dk9GiMpssBNCcvfZN7YFsWnVQdv_g6zCjRkckqzHchcj00Ao_symbQHYiHrFkOXVNp3X12WlBdTtg", "state"=>"613ff46535ff2d396667d2cac1e1be22915b1179bc004a3b"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:40:35 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:40:35 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlists.html.haml within layouts/application (1442.2ms)
+Completed 200 OK in 2676ms (Views: 1547.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 22:41:03 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:41:03 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 96ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:41:05 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:41:05 +0100
+Started GET "/auth/spotify/callback?code=AQC21SiS5Te16r_jmbQS8GZa8y_q6zAljPHc7xhDkvDQ9OoCk-oJN5YCU5U2CKQq2NTS7wDc83V5R_J3z2PQT9zxQEeuqmAQfAAWhMVxJ7bGb82qd3FTcg6AGnnQ2TlfEFZYgTwwCl3ghY4PKbMgFLB5WRk9uOWo_qIwm_AuL-cBmaRBT7pI3xb3GbRNQwGt49CWYrDaDXhqJdnYfRtvbk06OPQVBU7JeZNrq94calBcGvK0Ro0kQTquuUgl65HLfl7Dy_1RvfpGod_AeMBCRmCZ0vjtN1cF_ZEabVLjljS1X58SddwGA1K7xzCYWXTHxiJUmPvtNdIZtQ8b0O1ggRuKZg&state=6537ed066670caf577872e4a7206ee130859b8af288a192f" for ::1 at 2019-10-04 22:41:05 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQC21SiS5Te16r_jmbQS8GZa8y_q6zAljPHc7xhDkvDQ9OoCk-oJN5YCU5U2CKQq2NTS7wDc83V5R_J3z2PQT9zxQEeuqmAQfAAWhMVxJ7bGb82qd3FTcg6AGnnQ2TlfEFZYgTwwCl3ghY4PKbMgFLB5WRk9uOWo_qIwm_AuL-cBmaRBT7pI3xb3GbRNQwGt49CWYrDaDXhqJdnYfRtvbk06OPQVBU7JeZNrq94calBcGvK0Ro0kQTquuUgl65HLfl7Dy_1RvfpGod_AeMBCRmCZ0vjtN1cF_ZEabVLjljS1X58SddwGA1K7xzCYWXTHxiJUmPvtNdIZtQ8b0O1ggRuKZg", "state"=>"6537ed066670caf577872e4a7206ee130859b8af288a192f"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:41:05 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:41:05 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlists.html.haml within layouts/application (1661.7ms)
+Completed 200 OK in 2134ms (Views: 1703.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:41:36 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.1ms)
+  Rendered home/playlist.html.haml within layouts/application (5089.2ms)
+Completed 200 OK in 5295ms (Views: 5134.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:41:47 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlist.html.haml within layouts/application (4852.4ms)
+Started GET "/playlists" for ::1 at 2019-10-04 22:41:52 +0100
+Completed 200 OK in 5079ms (Views: 4928.8ms | ActiveRecord: 0.0ms)
+
+
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.4ms)
+  Rendered home/playlists.html.haml within layouts/application (1442.0ms)
+Completed 200 OK in 1646ms (Views: 1524.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:41:57 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:41:57 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.5ms)
+  Rendered home/playlists.html.haml within layouts/application (1315.9ms)
+Completed 200 OK in 1494ms (Views: 1358.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 22:42:00 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:42:00 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:42:01 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 22:42:01 +0100
+Started GET "/auth/spotify/callback?code=AQAK-K1w5iz3Gc9H8vI7R7thM3JC70YFGq-F11gVWN9gjLu4RUW7l9f0TlNFyrkg870oVZz05-Tni5Jh4ajlNlDj6pk6C6Dva0PaXjZlcYi9YzRvOnqwTFrgntGe4TCy91ss7MiV77F3HQeruBoms0lyY-mquswfz7XxfkHaky2nglsQou9E6LUHoWZbAwElj3v1OaAgM_8f2zhUFQhzP6DjvtiJiAzYtGRCTVbvmrLcpEw-v6VVyeiA7ErY0brdjDQXGft4ShtBrbO8tt2Lrmf8QS0wPQjlt7uBlmoNaTvsrxSY8ztVhQOSBSV1lKI3gP8VGqAeToJTm0it19I28hYIiA&state=98418e680a8db9725f4214fe61db9d27e9b4b151b24af019" for ::1 at 2019-10-04 22:42:01 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQAK-K1w5iz3Gc9H8vI7R7thM3JC70YFGq-F11gVWN9gjLu4RUW7l9f0TlNFyrkg870oVZz05-Tni5Jh4ajlNlDj6pk6C6Dva0PaXjZlcYi9YzRvOnqwTFrgntGe4TCy91ss7MiV77F3HQeruBoms0lyY-mquswfz7XxfkHaky2nglsQou9E6LUHoWZbAwElj3v1OaAgM_8f2zhUFQhzP6DjvtiJiAzYtGRCTVbvmrLcpEw-v6VVyeiA7ErY0brdjDQXGft4ShtBrbO8tt2Lrmf8QS0wPQjlt7uBlmoNaTvsrxSY8ztVhQOSBSV1lKI3gP8VGqAeToJTm0it19I28hYIiA", "state"=>"98418e680a8db9725f4214fe61db9d27e9b4b151b24af019"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 22:42:02 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:42:02 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.5ms)
+  Rendered home/playlists.html.haml within layouts/application (1642.2ms)
+Completed 200 OK in 1952ms (Views: 1679.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:42:14 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.9ms)
+  Rendered home/playlist.html.haml within layouts/application (4265.9ms)
+Completed 200 OK in 4609ms (Views: 4437.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:43:08 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4462.6ms)
+Completed 200 OK in 4832ms (Views: 4637.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:44:16 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.7ms)
+  Rendered home/playlist.html.haml within layouts/application (4382.8ms)
+Completed 200 OK in 4709ms (Views: 4565.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:45:15 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  Rendered home/playlist.html.haml within layouts/application (4725.3ms)
+Completed 200 OK in 5057ms (Views: 4900.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:45:54 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlist.html.haml within layouts/application (4692.1ms)
+Completed 200 OK in 4892ms (Views: 4745.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:47:16 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.3ms)
+  Rendered home/playlist.html.haml within layouts/application (4688.2ms)
+Completed 200 OK in 4887ms (Views: 4744.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:47:31 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlist.html.haml within layouts/application (4680.6ms)
+Completed 200 OK in 4921ms (Views: 4752.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:47:39 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.2ms)
+  Rendered home/playlist.html.haml within layouts/application (3962.8ms)
+Completed 200 OK in 4142ms (Views: 3999.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:48:10 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.5ms)
+  Rendered home/playlist.html.haml within layouts/application (4841.4ms)
+Completed 200 OK in 5096ms (Views: 4890.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:48:28 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.9ms)
+  Rendered home/playlist.html.haml within layouts/application (4487.7ms)
+Completed 200 OK in 4790ms (Views: 4655.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:49:07 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4188.0ms)
+Completed 200 OK in 4452ms (Views: 4266.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:49:23 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.3ms)
+  Rendered home/playlist.html.haml within layouts/application (4363.3ms)
+Completed 200 OK in 4543ms (Views: 4419.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:50:29 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4505.6ms)
+Completed 200 OK in 6202ms (Views: 6053.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:50:47 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.0ms)
+  Rendered home/playlists.html.haml within layouts/application (1543.5ms)
+Completed 200 OK in 1764ms (Views: 1615.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:50:54 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4318.3ms)
+Completed 200 OK in 4532ms (Views: 4374.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 22:51:05 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.6ms)
+Started GET "/playlist/2XJm4ZKC835vaxvncjQvKO" for ::1 at 2019-10-04 22:51:06 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"2XJm4ZKC835vaxvncjQvKO"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.3ms)
+  Rendered home/playlists.html.haml within layouts/application (1402.5ms)
+Completed 200 OK in 1591ms (Views: 1464.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendered home/playlist.html.haml within layouts/application (4657.4ms)
+Completed 200 OK in 4843ms (Views: 4714.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/2XJm4ZKC835vaxvncjQvKO" for ::1 at 2019-10-04 22:51:31 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"2XJm4ZKC835vaxvncjQvKO"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.5ms)
+  Rendered home/playlist.html.haml within layouts/application (5011.9ms)
+Completed 200 OK in 5208ms (Views: 5055.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/2XJm4ZKC835vaxvncjQvKO" for ::1 at 2019-10-04 22:53:44 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"2XJm4ZKC835vaxvncjQvKO"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.4ms)
+  Rendered home/playlist.html.haml within layouts/application (660.4ms)
+Completed 500  in 858ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `x' for #<#<Class:0x00007fbc86896008>:0x00007fbc8d23d628>:
+  app/views/home/playlist.html.haml:12:in `_app_views_home_playlist_html_haml__411040481893682231_70223899258740'
+
+Started POST "/__better_errors/19cf4a33c86b2bfa/variables" for ::1 at 2019-10-04 22:53:45 +0100
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:54:01 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.9ms)
+  Rendered home/playlist.html.haml within layouts/application (7461.0ms)
+Completed 200 OK in 7861ms (Views: 7537.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:54:36 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4143.2ms)
+Completed 200 OK in 4333ms (Views: 4183.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:54:49 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.5ms)
+  Rendered home/playlist.html.haml within layouts/application (4476.7ms)
+Completed 200 OK in 4842ms (Views: 4690.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:56:51 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.2ms)
+  Rendered home/playlist.html.haml within layouts/application (4299.0ms)
+Completed 200 OK in 4519ms (Views: 4361.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:57:39 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.5ms)
+  Rendered home/playlist.html.haml within layouts/application (4146.0ms)
+Completed 200 OK in 4343ms (Views: 4204.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:57:58 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.3ms)
+  Rendered home/playlist.html.haml within layouts/application (4501.7ms)
+Completed 200 OK in 4720ms (Views: 4585.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:58:44 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlist.html.haml within layouts/application (4553.8ms)
+Completed 200 OK in 4779ms (Views: 4615.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:59:26 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  Rendered home/playlist.html.haml within layouts/application (4558.1ms)
+Completed 200 OK in 4746ms (Views: 4603.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 22:59:50 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.9ms)
+  Rendered home/playlist.html.haml within layouts/application (4778.2ms)
+Completed 200 OK in 5042ms (Views: 4825.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:00:08 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.8ms)
+  Rendered home/playlist.html.haml within layouts/application (4642.1ms)
+Completed 200 OK in 5031ms (Views: 4878.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:01:31 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (6.5ms)
+  Rendered home/playlist.html.haml within layouts/application (4309.5ms)
+Completed 200 OK in 6078ms (Views: 5830.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:02:29 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.7ms)
+  Rendered home/playlist.html.haml within layouts/application (4285.8ms)
+Completed 200 OK in 5903ms (Views: 5736.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:03:03 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlist.html.haml within layouts/application (4148.5ms)
+Completed 200 OK in 5747ms (Views: 5566.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:03:16 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.8ms)
+  Rendered home/playlist.html.haml within layouts/application (4382.9ms)
+Completed 200 OK in 5593ms (Views: 5442.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:05:23 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.9ms)
+  Rendered home/playlist.html.haml within layouts/application (4181.4ms)
+Completed 200 OK in 4467ms (Views: 4284.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:05:54 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.3ms)
+  Rendered home/playlist.html.haml within layouts/application (4693.6ms)
+Completed 200 OK in 4909ms (Views: 4757.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 23:06:12 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (6.4ms)
+  Rendered home/playlists.html.haml within layouts/application (1396.2ms)
+Completed 200 OK in 1592ms (Views: 1439.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 23:06:16 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.2ms)
+  Rendered home/playlist.html.haml within layouts/application (15362.1ms)
+Completed 200 OK in 15744ms (Views: 15560.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 23:06:53 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 23:06:53 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 23:06:56 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 23:06:56 +0100
+Started GET "/auth/spotify/callback?code=AQDQBD5JRmG__H8_aOEsHAvic9G-n7AOn9DJOv0a5oVh0CgzW6KUzUCsX2M7lcajtivxCT1S9978GPCGc_P5qZdIC060Kr4y8inqjkYkPlVSLv20cR8HM-i497rDOJaePZujiG00rDt8aSGfEMlKiFK32odpSTOxf4CIM02o-a9MwC8RzuZQ2oxO4tzmYnllSWjC8aEMhcdQVKCHYz0ryGLK00iSYfhx4LrKcjSUgY_w5XMuaE8JFCR77tNswz2-EtWvi0mgkIV3wxR1xzTzgsOUM6tNLIOwbKK6WDFlcsTLXTGZ-dTIt8w4ikGPmDjk_4Cr6kaO6HfBkQFTAokozbjFaQ&state=89e862d4ef053962d6ebc8f2ab522fad86933fd5c10da9e7" for ::1 at 2019-10-04 23:06:57 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQDQBD5JRmG__H8_aOEsHAvic9G-n7AOn9DJOv0a5oVh0CgzW6KUzUCsX2M7lcajtivxCT1S9978GPCGc_P5qZdIC060Kr4y8inqjkYkPlVSLv20cR8HM-i497rDOJaePZujiG00rDt8aSGfEMlKiFK32odpSTOxf4CIM02o-a9MwC8RzuZQ2oxO4tzmYnllSWjC8aEMhcdQVKCHYz0ryGLK00iSYfhx4LrKcjSUgY_w5XMuaE8JFCR77tNswz2-EtWvi0mgkIV3wxR1xzTzgsOUM6tNLIOwbKK6WDFlcsTLXTGZ-dTIt8w4ikGPmDjk_4Cr6kaO6HfBkQFTAokozbjFaQ", "state"=>"89e862d4ef053962d6ebc8f2ab522fad86933fd5c10da9e7"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 23:06:57 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 23:06:57 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.3ms)
+  Rendered home/playlists.html.haml within layouts/application (1415.0ms)
+Completed 200 OK in 1776ms (Views: 1457.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:07:01 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4603.2ms)
+Completed 200 OK in 5021ms (Views: 4871.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 23:09:43 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 23:09:43 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (5.9ms)
+  Rendered home/playlists.html.haml within layouts/application (1697.1ms)
+Completed 200 OK in 1951ms (Views: 1740.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:12:28 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.9ms)
+  Rendered home/playlist.html.haml within layouts/application (4372.6ms)
+Completed 200 OK in 4584ms (Views: 4419.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:15:40 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.1ms)
+  Rendered home/playlist.html.haml within layouts/application (4165.1ms)
+Completed 200 OK in 5818ms (Views: 5645.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:16:22 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.2ms)
+  Rendered home/playlist.html.haml within layouts/application (4165.3ms)
+Completed 200 OK in 4382ms (Views: 4243.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:17:15 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.1ms)
+  Rendered home/playlist.html.haml within layouts/application (4902.1ms)
+Completed 200 OK in 5101ms (Views: 4970.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:17:58 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlist.html.haml within layouts/application (4428.2ms)
+Completed 200 OK in 4622ms (Views: 4476.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:19:22 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.4ms)
+  Rendered home/playlist.html.haml within layouts/application (4202.5ms)
+Completed 200 OK in 4633ms (Views: 4475.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:19:38 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.9ms)
+  Rendered home/playlist.html.haml within layouts/application (4566.5ms)
+Completed 200 OK in 4773ms (Views: 4626.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:20:26 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.5ms)
+  Rendered home/playlist.html.haml within layouts/application (4455.2ms)
+Completed 200 OK in 4640ms (Views: 4510.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:20:49 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlist.html.haml within layouts/application (4331.3ms)
+Completed 200 OK in 4545ms (Views: 4407.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:21:12 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.4ms)
+  Rendered home/playlist.html.haml within layouts/application (4254.5ms)
+Completed 200 OK in 4661ms (Views: 4486.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:21:24 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  Rendered home/playlist.html.haml within layouts/application (4386.3ms)
+Completed 200 OK in 4591ms (Views: 4438.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:21:42 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.1ms)
+  Rendered home/playlist.html.haml within layouts/application (4248.4ms)
+Completed 200 OK in 4555ms (Views: 4291.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:21:53 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  Rendered home/playlist.html.haml within layouts/application (4449.1ms)
+Completed 200 OK in 4639ms (Views: 4496.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:22:31 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  Rendered home/playlist.html.haml within layouts/application (4276.6ms)
+Completed 200 OK in 4524ms (Views: 4373.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:22:55 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.9ms)
+  Rendered home/playlist.html.haml within layouts/application (4328.2ms)
+Completed 200 OK in 4516ms (Views: 4379.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 23:25:30 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  Rendered home/playlist.html.haml within layouts/application (4299.8ms)
+Completed 200 OK in 4717ms (Views: 4532.3ms | ActiveRecord: 0.0ms)
+
+

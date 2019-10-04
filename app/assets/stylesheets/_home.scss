@@ -40,9 +40,12 @@
   font-weight: 500;
 }
 
-.btn-primary {
+.btn {
   border-radius: 2rem;
+}
 
+.btn-block {
+  border-radius: 0rem;
 }
 
 .btn-login {
