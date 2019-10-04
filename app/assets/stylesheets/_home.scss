@@ -11,9 +11,17 @@
   min-height: 100vh;
 }
 
+.btn span.glyphicon {
+	opacity: 0;
+}
+.btn.active span.glyphicon {
+	opacity: 1;
+}
+
 .sticky {
-  position: -webkit-sticky;
+  position: -webkit-sticky; /* Safari */
   position: sticky;
+  top: 0;
 }
 
 .bg-image {

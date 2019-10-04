@@ -8,14 +8,25 @@
 
   .row
     .col-md-6
-      %img.img-fluid{:alt => "Responsive image", :src => "#{@playlist.images.first.try(:fetch, "url")}"}/
+      %img.sticky.img-fluid{:alt => "Responsive image", :src => "#{@playlist.images.first.try(:fetch, "url")}"}/
+      .card.sticky.p-3.mt-3
+        %label.btn.btn-info
+          %input{:autocomplete => "off", :type => "checkbox"} Increase Energy
+        %label.btn.btn-info
+          %input{:autocomplete => "off", :type => "checkbox"} Increase Energy
     .col-md-6
       .card.p-4.mb-4.bg-dark.text-white
-        .col-6.w-50
-          %h3.login-heading
-            = @playlist.name
-          %p.text-white
-            = "#{@playlist.tracks.count} Songs"
+        .row
+          .col
+            %h3.login-heading
+              = @playlist.name
+            %p.text-white
+              = "#{@playlist.tracks.count} Songs"
+          .col
+            %p.text-white
+              = "⚡ Energy: #{get_features(@playlist)[:energy]}"
+            %p.text-white
+              = "💃 Danceability: #{get_features(@playlist)[:danceability]}"
       .card.p-3.bg-light
         %table.table.table-sm.table-borderless
           %thead
