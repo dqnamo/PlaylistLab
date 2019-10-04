@@ -12687,3 +12687,33 @@ RestClient::TooManyRequests - 429 Too Many Requests:
   app/views/home/playlists.html.haml:35:in `_app_views_home_playlists_html_haml__2184119043026419306_70247642382600'
 
 Started POST "/__better_errors/83de5a4225a82fe4/variables" for ::1 at 2019-10-04 20:38:43 +0100
+Started GET "/" for ::1 at 2019-10-04 20:42:39 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (24.7ms)
+Completed 200 OK in 467ms (Views: 457.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:42:41 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:42:41 +0100
+Started GET "/auth/spotify/callback?code=AQAVcLhK3WTMAJylD6Z_fdF7SIhR-CUskS1GmfimdANN_fbiddJT-mZAaV1FtEo_rZn0eWJ3yWdfh1OaX3JnQ-64xU_m-gw2hUvO8JG1Rf3_uW_eyfc-wChDZk0DZrjqX4BZqcWsw5pEH-01nGZAP-hBXjsgMw97JEB6zSiJ5h6i5PZrgEBrXUINS3jcwr1pNOIGBYtjls2UXNU1A6lyCfI3JLrXDSGfb3KWHlgjN-jSQoEid1Jr0bjo53L9CcTqokt0Coh8K1ezZqXsnZp9dXRznVlQ-6fWiTgrCNObnBZdfW8HdtVAsajEJ0zLo_BXGx3uoFES0uDIMlZfzLYcdXkE8g&state=1696f6eeb66cdb539a5446618ba97990bdc75cb41fc4d3ed" for ::1 at 2019-10-04 20:42:41 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQAVcLhK3WTMAJylD6Z_fdF7SIhR-CUskS1GmfimdANN_fbiddJT-mZAaV1FtEo_rZn0eWJ3yWdfh1OaX3JnQ-64xU_m-gw2hUvO8JG1Rf3_uW_eyfc-wChDZk0DZrjqX4BZqcWsw5pEH-01nGZAP-hBXjsgMw97JEB6zSiJ5h6i5PZrgEBrXUINS3jcwr1pNOIGBYtjls2UXNU1A6lyCfI3JLrXDSGfb3KWHlgjN-jSQoEid1Jr0bjo53L9CcTqokt0Coh8K1ezZqXsnZp9dXRznVlQ-6fWiTgrCNObnBZdfW8HdtVAsajEJ0zLo_BXGx3uoFES0uDIMlZfzLYcdXkE8g", "state"=>"1696f6eeb66cdb539a5446618ba97990bdc75cb41fc4d3ed"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 48ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:42:41 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:42:41 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.7ms)
+  Rendered home/playlists.html.haml within layouts/application (1538.6ms)
+Completed 200 OK in 1851ms (Views: 1674.1ms | ActiveRecord: 0.0ms)
+
+
