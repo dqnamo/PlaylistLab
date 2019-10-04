@@ -3,7 +3,7 @@ class HomeController < ApplicationController
 
   before_action :authenticate_user, except: [:landing]
 
-  helper_method :get_features
+  helper_method :get_features, :make_playlist
 
   def landing
     if $spotify_user != nil
@@ -42,6 +42,17 @@ class HomeController < ApplicationController
     danceability_average = (danceability_average * 100).to_i
 
     features = { energy: energy_average, danceability: danceability_average }
+  end
+
+  def make_playlist
+    songs = []
+
+    @spotify_user.top_artists(time_range: 'short_term', limit: 5).each do |artist|
+       artist.related_artists.each do |i|
+         songs << i.top_tracks(:US).first.name
+       end
+    end
+    puts songs
   end
 
   def home_params
