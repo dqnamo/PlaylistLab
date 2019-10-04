@@ -36,3 +36,5 @@ yarn-debug.log*
 .DS_Store
 *.pid
 *.cache
+tmp/cache/bootsnap-load-path-cache
+tmp/cache/bootsnap-compile-cache/1e/33ddc105c5a1cd
