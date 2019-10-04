@@ -7,14 +7,14 @@
       = link_to('Open Spotify', 'https://open.spotify.com/browse', class: "btn btn-sm bg-success text-white float-right")
 
   .row
-    .col-md-6
-      %img.sticky.img-fluid{:alt => "Responsive image", :src => "#{@playlist.images.first.try(:fetch, "url")}"}/
-      .card.sticky.p-3.mt-3
+    .col-6.sticky
+      %img.img-fluid{:alt => "Responsive image", :src => "#{@playlist.images.first.try(:fetch, "url")}"}/
+      .card.p-3.mt-3
         %label.btn.btn-info
           %input{:autocomplete => "off", :type => "checkbox"} Increase Energy
         %label.btn.btn-info
           %input{:autocomplete => "off", :type => "checkbox"} Increase Energy
-    .col-md-6
+    .col-6
       .card.p-4.mb-4.bg-dark.text-white
         .row
           .col
