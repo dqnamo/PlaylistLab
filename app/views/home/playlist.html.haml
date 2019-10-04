@@ -7,14 +7,23 @@
 
   .row
     .col-6.sticky
-      %img.img-fluid{:alt => "Responsive image", :src => "#{@playlist.images.first.try(:fetch, "url")}"}/
-      .card.p-3.mt-3
-        %label.btn.btn-info
-          %input{:autocomplete => "off", :type => "checkbox"} Increase Energy
-        %label.btn.btn-info
-          %input{:autocomplete => "off", :type => "checkbox"} Increase Energy
+      %img.img-fluid{"data-tilt" => "", :alt => "Responsive image", :src => "#{@playlist.images.first.try(:fetch, "url")}"}/
+      .row.mt-3.mx-0
+        .col-2.m-0.p-0
+          = link_to('⚡', playlists_path, class: "btn  btn-block btn-lg bg-success text-white")
+        .col-2.m-0.p-0
+          = link_to('💃', playlists_path, class: "btn  btn-block btn-lg bg-success text-white")
+        .col-2.m-0.p-0
+          = link_to('🤗', playlists_path, class: "btn  btn-block btn-lg bg-success text-white")
+        .col-2.m-0.p-0
+          = link_to('⚡', playlists_path, class: "btn  btn-block btn-lg bg-danger text-white")
+        .col-2.m-0.p-0
+          = link_to('💃', playlists_path, class: "btn  btn-block btn-lg bg-danger text-white")
+        .col-2.m-0.p-0
+          = link_to('🤗', playlists_path, class: "btn  btn-block btn-lg bg-danger text-white")
+
     .col-6
-      .card.p-4.mb-4.bg-dark.text-white
+      .card.p-4.mb-4.text-white.bg-gradient-primary
         .row
           .col
             %h3.login-heading
