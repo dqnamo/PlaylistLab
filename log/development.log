@@ -1527,9 +1527,9 @@ Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.0ms)
   
 ActionView::Template::Error (403 Forbidden):
     1: hello
-    2: <%= @spotify_user.email %>
+    2: <%= $spotify_user.email %>
     3: 
-    4: <% @spotify_user.top_artists.each do |x| %>
+    4: <% $spotify_user.top_artists.each do |x| %>
     5:   <%= x.name  %>
     6: <% end %>
   
@@ -1554,7 +1554,7 @@ Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
   
 ActionView::Template::Error (403 Forbidden):
     1: hello
-    2: <% @spotify_user.top_artists.each do |x| %>
+    2: <% $spotify_user.top_artists.each do |x| %>
     3:   <%= x.name  %>
     4: <% end %>
   
@@ -1649,7 +1649,7 @@ Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.0ms)
   
 ActionView::Template::Error (undefined method `call' for #<Array:0x00007fc5e5b21468>):
     1: hello
-    2: <% @spotify_user.top_artists.(time_range: 'short_term', limit: 10).each do |x| %>
+    2: <% $spotify_user.top_artists.(time_range: 'short_term', limit: 10).each do |x| %>
     3:   <%= x.name  %>
     4: <% end %>
   
@@ -1674,7 +1674,7 @@ Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms)
   
 ActionView::Template::Error (undefined method `call' for #<Array:0x00007fc5e6660108>):
     1: hello
-    2: <% @spotify_user.top_artists.(time_range: 'short_term').each do |x| %>
+    2: <% $spotify_user.top_artists.(time_range: 'short_term').each do |x| %>
     3:   <%= x.name  %>
     4: <% end %>
   
@@ -1699,7 +1699,7 @@ Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
   
 ActionView::Template::Error (undefined method `call' for #<Array:0x00007fa9ebb6aae8>):
     1: hello
-    2: <% alan = @spotify_user.top_artists.(time_range: 'short_term') %>
+    2: <% alan = $spotify_user.top_artists.(time_range: 'short_term') %>
     3: <% alan.each do |x| %>
     4:   <%= x.name  %>
     5: <% end %>
@@ -1810,7 +1810,7 @@ Completed 500 Internal Server Error in 161ms (ActiveRecord: 0.0ms)
   
 ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
     2: 
-    3: <% @spotify_user.top_artists(time_range: 'short_term', limit: 5).each do |x| %>
+    3: <% $spotify_user.top_artists(time_range: 'short_term', limit: 5).each do |x| %>
     4:   <%= x.related_artists.first.name  %>
     5:   <%= x.related_artists.first.top_tracks.first.name  %>
     6: <% end %>
@@ -11864,3 +11864,826 @@ Processing by HomeController#spotify as HTML
 Completed 200 OK in 2934ms (Views: 2617.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-04 15:40:36 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 293ms (Views: 290.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:41:20 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:41:21 +0100
+Started GET "/auth/spotify/callback?code=AQBEIxuiR0KOSWLcBx3GvwEq2o3NAbmFwRD6lY6FdW97dPqX5ZH52nCCvDFvifI405mLBd8Y8Rsd7Oa_o7O9nEVzINoU6zsGXJz57qHt22GwInT3OrnMl6qrQjsVLXHyVh7KUlK-1JDFAqW8c1UqG1nRxIJ-jGkNLKwdMMjl5jV_CVseT-Y57PC5XvgPRy9cMpJUyfBOImWK_LnkzH9z4m0CjoNblJ_-SFCifUhtsnBZRB5T-ozU84aZXNucwgaeqmzkqj5vOrLnSLjiElxuwnZRNWObMQ4ytZea__xhqB2idFd5yST4lJnQghRk9YBrFo4j7CiWwUCzwbWkXbUWyVWuvw&state=b21553a29f57ead4d42b9e1299c5f291953b8657a675bb5c" for ::1 at 2019-10-04 15:41:22 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBEIxuiR0KOSWLcBx3GvwEq2o3NAbmFwRD6lY6FdW97dPqX5ZH52nCCvDFvifI405mLBd8Y8Rsd7Oa_o7O9nEVzINoU6zsGXJz57qHt22GwInT3OrnMl6qrQjsVLXHyVh7KUlK-1JDFAqW8c1UqG1nRxIJ-jGkNLKwdMMjl5jV_CVseT-Y57PC5XvgPRy9cMpJUyfBOImWK_LnkzH9z4m0CjoNblJ_-SFCifUhtsnBZRB5T-ozU84aZXNucwgaeqmzkqj5vOrLnSLjiElxuwnZRNWObMQ4ytZea__xhqB2idFd5yST4lJnQghRk9YBrFo4j7CiWwUCzwbWkXbUWyVWuvw", "state"=>"b21553a29f57ead4d42b9e1299c5f291953b8657a675bb5c"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (3121.4ms)
+Completed 200 OK in 3582ms (Views: 3170.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:42:41 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:42:41 +0100
+Started GET "/auth/spotify/callback?code=AQD4GF9ZTRyYVAdNSWcLsKpl-UfvZybGqol_hxI_J1Ymo24MGjUO-QwqkN4LbZM3m044qR9Drv9Jn3mGW9YNyDLReqwNEzH2E-5xGeUz3l8GMAAmvqVMaS59dleoYIRT6v7BSs8spFWxJhpHR8nK4QN_cvMcPMFCv-a_GVZnycdYHEMuNJk1ZD9EL6wvdllfkkr2XvxY6KIvfK5wKqLiIz8C3OFuGFcGXljF3x6IPInLd1nCoCeAXspPRv63F-ZvpVcT-g4SSqdOhD0Rt6ugm7EzyRxkWUgxPCrxoXw8y_Yi07Y6bYFg-AsoKd6jJlWfBqBr7FMoGLhjqbHj6V03aMW3jg&state=d2670708f7b8912c40b4e53c4c23cca9d1d0e390d65880f8" for ::1 at 2019-10-04 15:42:41 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQD4GF9ZTRyYVAdNSWcLsKpl-UfvZybGqol_hxI_J1Ymo24MGjUO-QwqkN4LbZM3m044qR9Drv9Jn3mGW9YNyDLReqwNEzH2E-5xGeUz3l8GMAAmvqVMaS59dleoYIRT6v7BSs8spFWxJhpHR8nK4QN_cvMcPMFCv-a_GVZnycdYHEMuNJk1ZD9EL6wvdllfkkr2XvxY6KIvfK5wKqLiIz8C3OFuGFcGXljF3x6IPInLd1nCoCeAXspPRv63F-ZvpVcT-g4SSqdOhD0Rt6ugm7EzyRxkWUgxPCrxoXw8y_Yi07Y6bYFg-AsoKd6jJlWfBqBr7FMoGLhjqbHj6V03aMW3jg", "state"=>"d2670708f7b8912c40b4e53c4c23cca9d1d0e390d65880f8"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (5379.9ms)
+Completed 200 OK in 5702ms (Views: 5417.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:43:04 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:43:04 +0100
+Started GET "/auth/spotify/callback?code=AQCQMEdRkF5-85VGQqZw-533WMzXoRLkHaWe1GqNwlnMhhtOh80k0U0b77YlX0dhJhUplzHGIueftOhpYOO2K2WD-dzPbsUWLEN8LCc0eQcMFV4fmaUS8HMis0PVIpswRGGjM8Bgmgg0SP4dG5u7C_ixwVnQjjl5R3ANPaTNgO9dhaB6Rh6WulkvHflR66H0o0pJjrzcdd3MBJbF5ddBcXLDG9dDtCFamUZhByTYSe6FA-Ubq8Gu9TknNDxlysnLqqkhjzzeTjFLdt5o_M8WfuCTuLXxZEQc1-kq4YGkDvAcl-hZsYrefqAdKfZKg6ui8sTsFBzI91hy7IAWZb8sgtMP8Q&state=ce7c7ef141afab119e133a21eb15bc7ad17255b5ed83dcb2" for ::1 at 2019-10-04 15:43:04 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQCQMEdRkF5-85VGQqZw-533WMzXoRLkHaWe1GqNwlnMhhtOh80k0U0b77YlX0dhJhUplzHGIueftOhpYOO2K2WD-dzPbsUWLEN8LCc0eQcMFV4fmaUS8HMis0PVIpswRGGjM8Bgmgg0SP4dG5u7C_ixwVnQjjl5R3ANPaTNgO9dhaB6Rh6WulkvHflR66H0o0pJjrzcdd3MBJbF5ddBcXLDG9dDtCFamUZhByTYSe6FA-Ubq8Gu9TknNDxlysnLqqkhjzzeTjFLdt5o_M8WfuCTuLXxZEQc1-kq4YGkDvAcl-hZsYrefqAdKfZKg6ui8sTsFBzI91hy7IAWZb8sgtMP8Q", "state"=>"ce7c7ef141afab119e133a21eb15bc7ad17255b5ed83dcb2"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (2688.3ms)
+Completed 200 OK in 3190ms (Views: 2731.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify/callback?code=AQCQMEdRkF5-85VGQqZw-533WMzXoRLkHaWe1GqNwlnMhhtOh80k0U0b77YlX0dhJhUplzHGIueftOhpYOO2K2WD-dzPbsUWLEN8LCc0eQcMFV4fmaUS8HMis0PVIpswRGGjM8Bgmgg0SP4dG5u7C_ixwVnQjjl5R3ANPaTNgO9dhaB6Rh6WulkvHflR66H0o0pJjrzcdd3MBJbF5ddBcXLDG9dDtCFamUZhByTYSe6FA-Ubq8Gu9TknNDxlysnLqqkhjzzeTjFLdt5o_M8WfuCTuLXxZEQc1-kq4YGkDvAcl-hZsYrefqAdKfZKg6ui8sTsFBzI91hy7IAWZb8sgtMP8Q&state=ce7c7ef141afab119e133a21eb15bc7ad17255b5ed83dcb2" for ::1 at 2019-10-04 15:44:55 +0100
+
+OmniAuth::Strategies::OAuth2::CallbackError - csrf_detected | CSRF detected:
+
+Started POST "/__better_errors/c583dbea6e39f946/variables" for ::1 at 2019-10-04 15:44:55 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:44:58 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:44:58 +0100
+Started GET "/auth/spotify/callback?code=AQB7mCLJ_QCuhaozhe6O0QeO1lutjBLTJlnNxIjb3OQfJJ3Qun30a1vtSVj_WCHsAK9XjSASBolTHygP3_9JXNjZ35yc-UvpjQMLrNaJVH56PgLsDzowhA311QXGTJHHi0xL3iFVfKEFbc08jhRXxtGTvzafjWEacbUSVqmKtUTYCBML_JzQ0_8JV7STgKsvl-Q1pKts27pLnAGwgOucfxZCAxmxtfg1DUtY2yny3BNqVhpWWnpv9VqkWyGPtrE9UqA0bwmJwxjKAKV_6SYDNZHMwS1Siu0KglLA3polVTZotJe4sNZqqi252-Cf7vY3I0qbhP8m-uSTSTJm7ZiQd_IeWw&state=96c64f7dd00dd8a28163145b69d543bce614729710c7f025" for ::1 at 2019-10-04 15:44:58 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQB7mCLJ_QCuhaozhe6O0QeO1lutjBLTJlnNxIjb3OQfJJ3Qun30a1vtSVj_WCHsAK9XjSASBolTHygP3_9JXNjZ35yc-UvpjQMLrNaJVH56PgLsDzowhA311QXGTJHHi0xL3iFVfKEFbc08jhRXxtGTvzafjWEacbUSVqmKtUTYCBML_JzQ0_8JV7STgKsvl-Q1pKts27pLnAGwgOucfxZCAxmxtfg1DUtY2yny3BNqVhpWWnpv9VqkWyGPtrE9UqA0bwmJwxjKAKV_6SYDNZHMwS1Siu0KglLA3polVTZotJe4sNZqqi252-Cf7vY3I0qbhP8m-uSTSTJm7ZiQd_IeWw", "state"=>"96c64f7dd00dd8a28163145b69d543bce614729710c7f025"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (4791.6ms)
+Completed 200 OK in 5170ms (Views: 4855.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:14:02 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (100.6ms)
+Completed 200 OK in 1134ms (Views: 1072.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:26:32 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (16.6ms)
+Completed 200 OK in 188ms (Views: 180.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:26:37 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 199ms (Views: 183.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:26:39 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:26:40 +0100
+Started GET "/auth/spotify/callback?code=AQC7Id6tkzKcNhVRXw2nLvHtqpWUQd9Tlkx2Ix_65ZV46x1UXac7efvvIRmSmiMmwwC0Xv2oQWARugMhd82fs8DEHc9KSJQ1uMcigGIYQeW5zixz6yD-hTL-sbfP3fPuHaE0w4S42ZSgBOoNLK0SyGVyPaXYDAeYUI-IiWokc5AzSIzWhz3IsxkgUsBgS5A5IKeEOQvprsvoSc-J4lO-8RHIQMwKwkXLwyhKV05rk09IXokCsYqjtGzgDXrFyQMuc6Jq1F0lHk1J7kaBLo4ynVQVg3nvuMvlKj2HjVQ6oi9k8V3oDzA1wsaFIhoqnoxTT59gIGFtjNlLG4NZEAg5mtzGoQ&state=a0610b1ab48762d249bc1c19983abfa8605c2a3afb954da6" for ::1 at 2019-10-04 19:26:40 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQC7Id6tkzKcNhVRXw2nLvHtqpWUQd9Tlkx2Ix_65ZV46x1UXac7efvvIRmSmiMmwwC0Xv2oQWARugMhd82fs8DEHc9KSJQ1uMcigGIYQeW5zixz6yD-hTL-sbfP3fPuHaE0w4S42ZSgBOoNLK0SyGVyPaXYDAeYUI-IiWokc5AzSIzWhz3IsxkgUsBgS5A5IKeEOQvprsvoSc-J4lO-8RHIQMwKwkXLwyhKV05rk09IXokCsYqjtGzgDXrFyQMuc6Jq1F0lHk1J7kaBLo4ynVQVg3nvuMvlKj2HjVQ6oi9k8V3oDzA1wsaFIhoqnoxTT59gIGFtjNlLG4NZEAg5mtzGoQ", "state"=>"a0610b1ab48762d249bc1c19983abfa8605c2a3afb954da6"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1567.4ms)
+Completed 200 OK in 1874ms (Views: 1720.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:28:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 82ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:29:41 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 107ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:31:15 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:31:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:31:37 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 77ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:31:39 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:31:53 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:32:37 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:32:39 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:32:39 +0100
+Started GET "/auth/spotify/callback?code=AQDTf4SdthmBY8iAD5x_bwMwyrzlLtbGw8dI16PR0jyX1zj3hPTfNXmbWYethshXk5UGkabL2pHZ2FmL_R05FpdlmTfosIT8OyaxRiwTNWAFGTh8oJVpAlEhIQQPvBi9RPU5mNwDkgbZXCNUkPzO94Yj2MxB0SrNvJEwZUORnGcFszBwYbgRc1yjXcmU4vQ34VHCRsmYojvsD1tRVCr-QNtIqvdwHdH0J4s0JORLNy8hOxCBjr7PdGeSJvpXHDY256I0qIuGoKjf1ZMxmp-vicHRw_QV_UEUzxR8KEdRrCA9cG4p2bxvybZB1z1IxqPd-j4gC8P_kIRITHWOqcTxHduu3w&state=869b8df702bbb0b6707e6f7a0d7a125f82b95bb724cf624e" for ::1 at 2019-10-04 19:32:39 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDTf4SdthmBY8iAD5x_bwMwyrzlLtbGw8dI16PR0jyX1zj3hPTfNXmbWYethshXk5UGkabL2pHZ2FmL_R05FpdlmTfosIT8OyaxRiwTNWAFGTh8oJVpAlEhIQQPvBi9RPU5mNwDkgbZXCNUkPzO94Yj2MxB0SrNvJEwZUORnGcFszBwYbgRc1yjXcmU4vQ34VHCRsmYojvsD1tRVCr-QNtIqvdwHdH0J4s0JORLNy8hOxCBjr7PdGeSJvpXHDY256I0qIuGoKjf1ZMxmp-vicHRw_QV_UEUzxR8KEdRrCA9cG4p2bxvybZB1z1IxqPd-j4gC8P_kIRITHWOqcTxHduu3w", "state"=>"869b8df702bbb0b6707e6f7a0d7a125f82b95bb724cf624e"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1279.5ms)
+Completed 200 OK in 1461ms (Views: 1317.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:35:31 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 390ms (Views: 384.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:35:33 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:35:33 +0100
+Started GET "/auth/spotify/callback?code=AQB4Ii3rz6Xk-lwhyXTKizic8iYHdsXPlkFIamP3TnXgs6MkUjAfdTQipjJKV6w_cUptlPtgfsmUyEAhqZ-Dg8i9UfTYV8X4xPve8xctoWdjDVzlSOhM5Gi6bZnIBEJt-GwC6RRzuPpZq-BfrBmsWVz7HozDTJ_as40B3Lpm37xO0SAPH6KibUOENkirtvjMVnIaZxGXad1QvxWnA0-vV2XHnpA_c2lRNP8GBR0HFaHRtgEuZP48aWqygZZHQ_H9emHc4Nre4I0-xhGjTOsCd25m1ZifUdwHbmh43fjeuZddmNOnas3GGA8p3xH92B3CVNR9F2lP6tv8Uu-d7OyHcUT6CA&state=5b52604da63dd4d8140ae0311aef59de9df67b72dc3878c4" for ::1 at 2019-10-04 19:35:33 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQB4Ii3rz6Xk-lwhyXTKizic8iYHdsXPlkFIamP3TnXgs6MkUjAfdTQipjJKV6w_cUptlPtgfsmUyEAhqZ-Dg8i9UfTYV8X4xPve8xctoWdjDVzlSOhM5Gi6bZnIBEJt-GwC6RRzuPpZq-BfrBmsWVz7HozDTJ_as40B3Lpm37xO0SAPH6KibUOENkirtvjMVnIaZxGXad1QvxWnA0-vV2XHnpA_c2lRNP8GBR0HFaHRtgEuZP48aWqygZZHQ_H9emHc4Nre4I0-xhGjTOsCd25m1ZifUdwHbmh43fjeuZddmNOnas3GGA8p3xH92B3CVNR9F2lP6tv8Uu-d7OyHcUT6CA", "state"=>"5b52604da63dd4d8140ae0311aef59de9df67b72dc3878c4"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1401.1ms)
+Completed 200 OK in 1654ms (Views: 1508.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 19:35:38 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+Completed 500  in 6ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/controllers/home_controller.rb:16:in `playlist'
+
+Started POST "/__better_errors/335a2a046bbd706d/variables" for ::1 at 2019-10-04 19:35:38 +0100
+Started GET "/" for ::1 at 2019-10-04 19:53:14 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (18.6ms)
+Completed 200 OK in 824ms (Views: 754.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:53:20 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:53:20 +0100
+Started GET "/auth/spotify/callback?code=AQDQYkD8H06bZEl_zE6hY86Ey3qjTc5ELDhsOKsdB48sNhxwL6MYeGBFX_5gQRd6SEudx8FZLpDh0eKz5CcbLNMaD9BZwAPXbkT1uTuP5stMwAcBu6aY9PyQs7GVpCg3HEqjgIQ-WvL_UBGwqxz-qxVyU4z6S3PBKHC9qZSCB31txsAvxzvTPhkM2ySnESM5o0JXaiEgrHKiQ2RBk8KVy9g8-biJju_FQg-l6mGLNgIn0-JeOyMpRcKw7O8QvS1H0snMHOL52hqYgjJDqjMdWbFfmipaNGOhvaVoJmfg6qnArGw2US0PoeOchrNfmtTlU8ZSa_nQOndouofSj54_UazxZw&state=b438ca9f366724319263bf7c5abcc617d2d81b8f2cea1d55" for ::1 at 2019-10-04 19:53:20 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQDQYkD8H06bZEl_zE6hY86Ey3qjTc5ELDhsOKsdB48sNhxwL6MYeGBFX_5gQRd6SEudx8FZLpDh0eKz5CcbLNMaD9BZwAPXbkT1uTuP5stMwAcBu6aY9PyQs7GVpCg3HEqjgIQ-WvL_UBGwqxz-qxVyU4z6S3PBKHC9qZSCB31txsAvxzvTPhkM2ySnESM5o0JXaiEgrHKiQ2RBk8KVy9g8-biJju_FQg-l6mGLNgIn0-JeOyMpRcKw7O8QvS1H0snMHOL52hqYgjJDqjMdWbFfmipaNGOhvaVoJmfg6qnArGw2US0PoeOchrNfmtTlU8ZSa_nQOndouofSj54_UazxZw", "state"=>"b438ca9f366724319263bf7c5abcc617d2d81b8f2cea1d55"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:53:20 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 118ms (Views: 116.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:53:38 +0100
+Processing by HomeController#landing as HTML
+Started GET "/" for ::1 at 2019-10-04 19:53:46 +0100
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 7159ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 5357ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:53:56 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:53:56 +0100
+Started GET "/auth/spotify/callback?code=AQAEhbdT4epwmiwUifrhSExZAaIaoTYVb7JMEgDEtSmqY8tALgfmht6i8vd4RIg2FBesE2ZDp0vRHJ73MjACaeTpARcpzxW-FT_laMZ2T_ydrWZAVoqOZvM4_aLTvL80I7Sfkk-coimJap2Q89K-zURxI1JdKyVpLayNDlBScwNTCO1sVSPVzRFSNnRqd3eKw9sh_ZuX4v9ef0fUxtxJj5C12teeosjbgViAIxpxsEs4fCvREzwFkm5Zq2E0dQ70W7zKx_QqH_P_wEiPbV7Y3wbzKgXTptQq2_NnqxFDOXmpxxsi6IANMfYEoha5bGnJwRjORWKPIDIrxrkKtzpPa9NI8Q&state=9fde74e02529b6383a612c2cd9fe4bde1e2dda2296f62d57" for ::1 at 2019-10-04 19:53:56 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQAEhbdT4epwmiwUifrhSExZAaIaoTYVb7JMEgDEtSmqY8tALgfmht6i8vd4RIg2FBesE2ZDp0vRHJ73MjACaeTpARcpzxW-FT_laMZ2T_ydrWZAVoqOZvM4_aLTvL80I7Sfkk-coimJap2Q89K-zURxI1JdKyVpLayNDlBScwNTCO1sVSPVzRFSNnRqd3eKw9sh_ZuX4v9ef0fUxtxJj5C12teeosjbgViAIxpxsEs4fCvREzwFkm5Zq2E0dQ70W7zKx_QqH_P_wEiPbV7Y3wbzKgXTptQq2_NnqxFDOXmpxxsi6IANMfYEoha5bGnJwRjORWKPIDIrxrkKtzpPa9NI8Q", "state"=>"9fde74e02529b6383a612c2cd9fe4bde1e2dda2296f62d57"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:53:57 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 9444ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:55:32 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:55:32 +0100
+Started GET "/auth/spotify/callback?code=AQCX6qW7DWqkqElm8Bbi8yRlvSZBI5nX60TMQ_4PruvxdVY_fKqkyFDdPFUYTsc3wDonVFOk0Tm-JNaF5SDZDlzlu3RS6fcqlCYrNhBvP1F6y0-EsCqlWpD9dL_m6H_3zEcpbd9L54qoFZUWb6407_hY5UA3Sws3SdEjmZnYe5y2WU8OOIao3ZolPbI8sEwPj5C7If-QBX1Jq_Zg7ORJRyUh_nKWoqMfDa0PTj9oEirOLOHvfPaN82lxlAzLBuhttc7OXAizQe2CqukSlGLeL5kU7Cnr58tkbuabzQQj_veo5jbLLK6lUURzMBlZ5ISBuKiPA9OGfsZLXN4stMUNQggDSg&state=521a5c4a212914ded8ab07381b5c7560d4c9f4979981a46d" for ::1 at 2019-10-04 19:55:32 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQCX6qW7DWqkqElm8Bbi8yRlvSZBI5nX60TMQ_4PruvxdVY_fKqkyFDdPFUYTsc3wDonVFOk0Tm-JNaF5SDZDlzlu3RS6fcqlCYrNhBvP1F6y0-EsCqlWpD9dL_m6H_3zEcpbd9L54qoFZUWb6407_hY5UA3Sws3SdEjmZnYe5y2WU8OOIao3ZolPbI8sEwPj5C7If-QBX1Jq_Zg7ORJRyUh_nKWoqMfDa0PTj9oEirOLOHvfPaN82lxlAzLBuhttc7OXAizQe2CqukSlGLeL5kU7Cnr58tkbuabzQQj_veo5jbLLK6lUURzMBlZ5ISBuKiPA9OGfsZLXN4stMUNQggDSg", "state"=>"521a5c4a212914ded8ab07381b5c7560d4c9f4979981a46d"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 20028ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:55:52 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (44.4ms)
+Completed 200 OK in 144ms (Views: 141.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:55:56 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:55:57 +0100
+Started GET "/auth/spotify/callback?code=AQDE1fuzqdxXLb3IWhCwbjijWbDA1VRrsTfXLp-nWep1z7fRjnolR1RmqnjqM5SMn6ISou3ulVo8cu-f489kHAjh-ssIuSamCD89s-vfpP78rtXlIlWIs9KZoF4BQlU3MBR40Ot1cXFaia_W5sWrzUfr_lJoZv35tBZR3iFfRMB26yeBcF307-qSKz6nmSXFxN1izt_49Csv7opbRQvOtjNY2rfnprcbrmf2EQeMYWZgvIELYkMlwAa6zS0AqOzlNLX_uJpUmrZqXqBJvyIcVq0C6T1MPGyQDjSgGGy70Llc59E804EDX1ISHNPYzCza1_2FVkZ7-vHmPMYt55uIVxg07Q&state=e321764c4254ec6eefce028a72fa790be6233029dcdbf880" for ::1 at 2019-10-04 19:55:57 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQDE1fuzqdxXLb3IWhCwbjijWbDA1VRrsTfXLp-nWep1z7fRjnolR1RmqnjqM5SMn6ISou3ulVo8cu-f489kHAjh-ssIuSamCD89s-vfpP78rtXlIlWIs9KZoF4BQlU3MBR40Ot1cXFaia_W5sWrzUfr_lJoZv35tBZR3iFfRMB26yeBcF307-qSKz6nmSXFxN1izt_49Csv7opbRQvOtjNY2rfnprcbrmf2EQeMYWZgvIELYkMlwAa6zS0AqOzlNLX_uJpUmrZqXqBJvyIcVq0C6T1MPGyQDjSgGGy70Llc59E804EDX1ISHNPYzCza1_2FVkZ7-vHmPMYt55uIVxg07Q", "state"=>"e321764c4254ec6eefce028a72fa790be6233029dcdbf880"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 186068ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:59:03 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (19.9ms)
+Completed 200 OK in 360ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:59:09 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 82ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:59:11 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 19:59:11 +0100
+Started GET "/auth/spotify/callback?code=AQCrWgc6XCpvJa9Mxf2rMtfbZWlwIXNYs0D1vkgP_xlh9XMIIBLEtR5HmPQoo6GodUnXM_37vM7MKvY21xf43KE9CvqFk9h1r93GxICo20cUeD8tbvzGdpIVYmUJ0VXYCfkJqNb5ZJgT4Liw60TKK-iFNdrYXJ0W0b0FwDlQ5znPNnOaeX3lB-TMQSrLDjdpa1qAWOHbaChWiieVgOwE-x9WHDmu6zqIjtDqR6oGoLJgn-Yt36cRSJUh8msJsQ3mfMadYbdV5P3Peuibk5kfBtNIxSyAStbixUF4WKAKVt_FR6sbQcg4R2m4ReBthiuCnW0hcj1T7X73kIulOL9rqKttjA&state=0db1b62767584d71d388a051e473870a10408fd5a6f03423" for ::1 at 2019-10-04 19:59:11 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQCrWgc6XCpvJa9Mxf2rMtfbZWlwIXNYs0D1vkgP_xlh9XMIIBLEtR5HmPQoo6GodUnXM_37vM7MKvY21xf43KE9CvqFk9h1r93GxICo20cUeD8tbvzGdpIVYmUJ0VXYCfkJqNb5ZJgT4Liw60TKK-iFNdrYXJ0W0b0FwDlQ5znPNnOaeX3lB-TMQSrLDjdpa1qAWOHbaChWiieVgOwE-x9WHDmu6zqIjtDqR6oGoLJgn-Yt36cRSJUh8msJsQ3mfMadYbdV5P3Peuibk5kfBtNIxSyAStbixUF4WKAKVt_FR6sbQcg4R2m4ReBthiuCnW0hcj1T7X73kIulOL9rqKttjA", "state"=>"0db1b62767584d71d388a051e473870a10408fd5a6f03423"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 10960ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 19:59:22 +0100
+Processing by HomeController#landing as HTML
+Completed 500  in 491ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `playlists_path' for #<HomeController:0x00007fc80cb014c8>
+Did you mean?  playlist_path:
+  app/controllers/home_controller.rb:8:in `landing'
+
+Started POST "/__better_errors/1eaa9c0523c270ec/variables" for ::1 at 2019-10-04 19:59:23 +0100
+Started GET "/" for ::1 at 2019-10-04 20:01:08 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 608ms (Views: 599.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:01:11 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:01:11 +0100
+Started GET "/auth/spotify/callback?code=AQANYXkEcAqlbF6B9fQoFpg6iB3Le_X1GOwjTZq3omX2z6dOBqSRNCGEetu30DSPcBxlOY7AHi61WoXC3Bp4ZRQnwqg5r-ULTnPMjgo0QKhPZrX2R0GXU3z6DEcOpSjQW-bPP5jnFqudBXkSLnIKjyEz_qc7il9UXs0cag5MTpAwcOaqEe8-HeKsR4-IPZAw3FPZ4msHNGzxcmDn__PogRGwhW29jbqZyJxHBCnRs03FbS3IInV-TGTmn-gVruwLAplOz88yPchYVUBb82cBQaFFc2h5NShmzsWx2OtESm04PC0TBwQG473n7_oAdnfM7LZ7L4vcxNUNOcYSXuMBsoxE1g&state=9a3b95a8916435658f0110d6eddeb3386267b8645af58208" for ::1 at 2019-10-04 20:01:11 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQANYXkEcAqlbF6B9fQoFpg6iB3Le_X1GOwjTZq3omX2z6dOBqSRNCGEetu30DSPcBxlOY7AHi61WoXC3Bp4ZRQnwqg5r-ULTnPMjgo0QKhPZrX2R0GXU3z6DEcOpSjQW-bPP5jnFqudBXkSLnIKjyEz_qc7il9UXs0cag5MTpAwcOaqEe8-HeKsR4-IPZAw3FPZ4msHNGzxcmDn__PogRGwhW29jbqZyJxHBCnRs03FbS3IInV-TGTmn-gVruwLAplOz88yPchYVUBb82cBQaFFc2h5NShmzsWx2OtESm04PC0TBwQG473n7_oAdnfM7LZ7L4vcxNUNOcYSXuMBsoxE1g", "state"=>"9a3b95a8916435658f0110d6eddeb3386267b8645af58208"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:01:11 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:01:11 +0100
+Processing by HomeController#playlists as HTML
+Completed 500  in 4ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `display_name' for nil:NilClass:
+  app/controllers/home_controller.rb:13:in `playlists'
+
+Started POST "/__better_errors/f937d81992ee2c9d/variables" for ::1 at 2019-10-04 20:01:12 +0100
+Started GET "/playlists" for ::1 at 2019-10-04 20:02:04 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1487.6ms)
+Completed 200 OK in 1702ms (Views: 1568.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:02:08 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:02:08 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1348.0ms)
+Completed 200 OK in 1583ms (Views: 1415.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:02:13 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1457.3ms)
+Completed 200 OK in 1746ms (Views: 1591.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:02:21 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1159.6ms)
+Completed 200 OK in 1314ms (Views: 1196.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:02:54 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+Started GET "/playlists" for ::1 at 2019-10-04 20:02:55 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1659.5ms)
+Completed 200 OK in 1894ms (Views: 1776.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:02:57 +0100
+Processing by HomeController#playlists as HTML
+  Rendered home/playlists.html.haml within layouts/application (1453.7ms)
+  Rendering home/playlists.html.haml within layouts/application
+Completed 200 OK in 1837ms (Views: 1619.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendered home/playlists.html.haml within layouts/application (1372.8ms)
+Completed 200 OK in 1601ms (Views: 1421.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 20:03:01 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (4261.6ms)
+Completed 200 OK in 4511ms (Views: 4348.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:03:31 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:03:31 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1531.5ms)
+Completed 200 OK in 1786ms (Views: 1662.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:03:36 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:03:36 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1321.6ms)
+Completed 200 OK in 1591ms (Views: 1445.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:03:40 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/landing" for ::1 at 2019-10-04 20:03:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/landing"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-10-04 20:03:46 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1372.5ms)
+Completed 200 OK in 1632ms (Views: 1483.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:08:15 +0100
+Processing by HomeController#playlists as HTML
+Completed 500  in 6ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `display_name' for nil:NilClass:
+  app/controllers/home_controller.rb:13:in `playlists'
+
+Started POST "/__better_errors/7da473984b965f2b/variables" for ::1 at 2019-10-04 20:08:15 +0100
+Started GET "/playlists" for ::1 at 2019-10-04 20:08:22 +0100
+Processing by HomeController#playlists as HTML
+Completed 500  in 9ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `display_name' for nil:NilClass:
+  app/controllers/home_controller.rb:13:in `playlists'
+
+Started POST "/__better_errors/20dd2f1add8ef6b3/variables" for ::1 at 2019-10-04 20:08:22 +0100
+Started GET "/playlists" for ::1 at 2019-10-04 20:10:15 +0100
+
+SyntaxError - syntax error, unexpected ':', expecting end
+  before_action: :authenticate_user, except: ...
+               ^:
+  app/controllers/home_controller.rb:4:in `'
+
+Started POST "/__better_errors/989a81c952c98f98/variables" for ::1 at 2019-10-04 20:10:15 +0100
+Started GET "/playlists" for ::1 at 2019-10-04 20:10:40 +0100
+Processing by HomeController#playlists as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:10:40 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 400ms (Views: 397.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:10:42 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:10:42 +0100
+Started GET "/auth/spotify/callback?code=AQC9d-GCxJab8epmWOuqisP2oE7UHtCq1VuZ6UuCgLNO08zL6LyDutSgN5W5H17tA4yPMwJjez-Z5dd5kKB60OJo5ALe2_3PYAkrxEAiljMPZbVAO6MRMAMi2ldElEHwmCdaXJES6chprSeueYn0JxqUtV_Rr51EMR3kHBvr-XXGrFVCcXkglEKisJ2fX6VT4_LYWVdhi1QoWTvON495AIIqmJox33mu7TWyuEwRiGI94zweor2uXtmnfzgNNQZhIbaKwa7OzcwTbErB1hc_BUyeabtArNnp5ZO3uCgJTO79RmmIqJaDzl5fgbNL3hvHmXyCapcsFJVwkAT8Xm7QEEyRHQ&state=5cf92c6d9067b6efe65972aff68443c27be282b120f442d7" for ::1 at 2019-10-04 20:10:42 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQC9d-GCxJab8epmWOuqisP2oE7UHtCq1VuZ6UuCgLNO08zL6LyDutSgN5W5H17tA4yPMwJjez-Z5dd5kKB60OJo5ALe2_3PYAkrxEAiljMPZbVAO6MRMAMi2ldElEHwmCdaXJES6chprSeueYn0JxqUtV_Rr51EMR3kHBvr-XXGrFVCcXkglEKisJ2fX6VT4_LYWVdhi1QoWTvON495AIIqmJox33mu7TWyuEwRiGI94zweor2uXtmnfzgNNQZhIbaKwa7OzcwTbErB1hc_BUyeabtArNnp5ZO3uCgJTO79RmmIqJaDzl5fgbNL3hvHmXyCapcsFJVwkAT8Xm7QEEyRHQ", "state"=>"5cf92c6d9067b6efe65972aff68443c27be282b120f442d7"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:10:43 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:10:43 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1325.4ms)
+Completed 200 OK in 1513ms (Views: 1363.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 20:10:46 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:10:46 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 114ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:10:48 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:10:48 +0100
+Started GET "/auth/spotify/callback?code=AQDMEJPDdhfBqd3DOmrpd5D6jDjr5PktgRECa95c5a05VxzmOGpNbtV0ZIGdlFFx-vJ1Dd0SROCvELydXBsA5uEToP7W8ra7htsrtgXPA5s03G8a8Tb9d7KrrEzsPYqBBW7W-OTaNTzcob9aPEhSgrehOLnqnMM3cGPd9UglQZILxgH6EQcybsSh40am12VoDZ1eZN_9itzjqFbYesz61TuNy_tuVCTeOnaCVOAE_nBb6cvoeJcKYSJMyF_Y8-csdTHpy-ASbMnFUacm2VWYX3Q3o1hQ7XHFTZqr0RHg6MT8eKTlCSyb9Nt4CFrqnTy5_cfryXB9T1O28boOqwvzfM5w3Q&state=446bcaa6d3dab2583647ada3d48170e7473cfe520744cb64" for ::1 at 2019-10-04 20:10:48 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQDMEJPDdhfBqd3DOmrpd5D6jDjr5PktgRECa95c5a05VxzmOGpNbtV0ZIGdlFFx-vJ1Dd0SROCvELydXBsA5uEToP7W8ra7htsrtgXPA5s03G8a8Tb9d7KrrEzsPYqBBW7W-OTaNTzcob9aPEhSgrehOLnqnMM3cGPd9UglQZILxgH6EQcybsSh40am12VoDZ1eZN_9itzjqFbYesz61TuNy_tuVCTeOnaCVOAE_nBb6cvoeJcKYSJMyF_Y8-csdTHpy-ASbMnFUacm2VWYX3Q3o1hQ7XHFTZqr0RHg6MT8eKTlCSyb9Nt4CFrqnTy5_cfryXB9T1O28boOqwvzfM5w3Q", "state"=>"446bcaa6d3dab2583647ada3d48170e7473cfe520744cb64"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:10:48 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:10:48 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1879.8ms)
+Completed 200 OK in 2174ms (Views: 1993.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:10:56 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1682.1ms)
+Completed 200 OK in 2046ms (Views: 1844.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 20:11:03 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:11:03 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 74ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 20:11:07 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:11:07 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:11:15 +0100
+Processing by HomeController#playlists as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:11:15 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:12:16 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:12:16 +0100
+Started GET "/auth/spotify/callback?code=AQBFXUN0DHRuo23gbkfW36zfVYQeYJq2UPZ_8iSdBjWT4EXDDYokpB8P895z4fp6I6Yp8xglv9X3r1rlabokw0xm7pO9rXyCAAg4UlQxzTyN9vYkC8RS69hCfye1nkDYDyK55LBOSH9UiGKXX1aZYzTVZ3MAUSiTi93yqPL8ZjPzNfo-k2-AIeWIQiYI0KbtK66Hb1e8nqqUktMgZkIkkDEB8bhVR5R32QFq2KitSXV3ghn11zqRepMR1CuihoOxoaRxPJEV9sxOPOPfGSVYQ8x8LdBRSEPXT2nT-vKgC_iWfScda8i9XrSY6q6q8x7AW3VxexRtYgXPPVAiQr-Qcyb1wg&state=3704c32cf07f49905ee50c1c60208032733ce83044a1842a" for ::1 at 2019-10-04 20:12:16 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQBFXUN0DHRuo23gbkfW36zfVYQeYJq2UPZ_8iSdBjWT4EXDDYokpB8P895z4fp6I6Yp8xglv9X3r1rlabokw0xm7pO9rXyCAAg4UlQxzTyN9vYkC8RS69hCfye1nkDYDyK55LBOSH9UiGKXX1aZYzTVZ3MAUSiTi93yqPL8ZjPzNfo-k2-AIeWIQiYI0KbtK66Hb1e8nqqUktMgZkIkkDEB8bhVR5R32QFq2KitSXV3ghn11zqRepMR1CuihoOxoaRxPJEV9sxOPOPfGSVYQ8x8LdBRSEPXT2nT-vKgC_iWfScda8i9XrSY6q6q8x7AW3VxexRtYgXPPVAiQr-Qcyb1wg", "state"=>"3704c32cf07f49905ee50c1c60208032733ce83044a1842a"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:12:17 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:12:17 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (2239.8ms)
+Completed 200 OK in 2400ms (Views: 2281.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for ::1 at 2019-10-04 20:13:03 +0100
+Processing by ApplicationController#log_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:13:03 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 76ms (Views: 72.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:13:05 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:13:05 +0100
+Started GET "/auth/spotify/callback?code=AQAIXYsFk8hOwZNUTFurncGXCNaf_gEU9TJEf3B9HHR_R2h7ZGoKFkXTXz0Om3T6EqN8kENRpXBKHayOgtOzk8pYnHft0_uLRORWmLF9uJRJofo7GO4_QjmFG65xqobfEAxpff3L1i5h9baZsfYXF85ahucp2_w1pkxNHtSWFO0A_n5Voi20MlF2BxFIzrj9FIEh__hrhf3LGTejTTsFMBpaRwK1uMggK4Lzo34v5MEPTTJGfngisdPrU6J5NLY-NokTzHl6H-9tWicA-nZP6ir08WyZBvuXMccaOJwgLFqMcB6zJkkqa0aR_5S5WxED2q9UtxFB18brkLdQxvlVMmz0ZA&state=5c502d35add9c60421ad9eb0c543f706baf1ba2fce40e496" for ::1 at 2019-10-04 20:13:05 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQAIXYsFk8hOwZNUTFurncGXCNaf_gEU9TJEf3B9HHR_R2h7ZGoKFkXTXz0Om3T6EqN8kENRpXBKHayOgtOzk8pYnHft0_uLRORWmLF9uJRJofo7GO4_QjmFG65xqobfEAxpff3L1i5h9baZsfYXF85ahucp2_w1pkxNHtSWFO0A_n5Voi20MlF2BxFIzrj9FIEh__hrhf3LGTejTTsFMBpaRwK1uMggK4Lzo34v5MEPTTJGfngisdPrU6J5NLY-NokTzHl6H-9tWicA-nZP6ir08WyZBvuXMccaOJwgLFqMcB6zJkkqa0aR_5S5WxED2q9UtxFB18brkLdQxvlVMmz0ZA", "state"=>"5c502d35add9c60421ad9eb0c543f706baf1ba2fce40e496"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:13:05 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:13:05 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1356.7ms)
+Completed 200 OK in 1606ms (Views: 1477.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:17:25 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 385ms (Views: 378.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:17:31 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:17:31 +0100
+Started GET "/auth/spotify/callback?code=AQB9T8gaqn-wmjRMCZl8SFWr32uZCLO4iS6scWApWp1s7TYKmyUy8kYVdpJjfE5Ivl-hRT3JDwD_Q5Np5pfIzU3KTn9XT_WPwkEbeuUFhMYkVHAUlqovemFhmnyce73rZvKPZxn15_ncGvBDMG4k5b1-P0h2Iy5-hrro8ZubAfrSJuYxNUs5spdpaD1AZIFu1wSnIoM6wJZM_QhbPI9T7ztsT_9z05N6kwhWcRA7Szn9iJP-y8ahAPNKg1_Vq1mKtm0r6k4AYIoTH_NB6y7Grg4gabrSfiBmq3DMYbHNFj5uaLVcSfTvzz34Mo7cjGCAjFMBOINbO6iLH-aG7Qrf9YBnsQ&state=bd1d53b9e92409fcec05c3e564a3aa5e283b8ac0b1337017" for ::1 at 2019-10-04 20:17:31 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQB9T8gaqn-wmjRMCZl8SFWr32uZCLO4iS6scWApWp1s7TYKmyUy8kYVdpJjfE5Ivl-hRT3JDwD_Q5Np5pfIzU3KTn9XT_WPwkEbeuUFhMYkVHAUlqovemFhmnyce73rZvKPZxn15_ncGvBDMG4k5b1-P0h2Iy5-hrro8ZubAfrSJuYxNUs5spdpaD1AZIFu1wSnIoM6wJZM_QhbPI9T7ztsT_9z05N6kwhWcRA7Szn9iJP-y8ahAPNKg1_Vq1mKtm0r6k4AYIoTH_NB6y7Grg4gabrSfiBmq3DMYbHNFj5uaLVcSfTvzz34Mo7cjGCAjFMBOINbO6iLH-aG7Qrf9YBnsQ", "state"=>"bd1d53b9e92409fcec05c3e564a3aa5e283b8ac0b1337017"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:17:31 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:17:31 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (1243.6ms)
+Completed 200 OK in 1474ms (Views: 1335.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 20:17:34 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (4280.7ms)
+Completed 200 OK in 4506ms (Views: 4336.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:23:10 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 532ms (Views: 526.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:23:14 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:23:14 +0100
+Started GET "/auth/spotify/callback?code=AQCrP55EoWlGxOhfg_QZEgpysnPSWrkSYcX0y25kOEo3O2xd9-Rq2pFyk8CEYn_-Ge0-Q5StGdd23g7Fc8O3emLA7ZD-Lwb4LZqnYDIFs7xgpMw2Gelv25XPSVuWNGiJ6QoJZTIBVCS1HK0zPJzMwzfZ1pdN04EU-pVGKNdGBWkXOmQbk_4lVOA_qlJ8Wf1Yp90Y90ZAUqWMt0gOjoqOssWzPkJ1ZSX0kKY3I-t3GP9c8pU3fwzTGJmf0JrThWRY-S01-Vx-bAc2yN32itQ9MQV7WBYigCFH2eTvSItccmAodeVteE_UyPqmE9E4axkRhyY6VOEbr9ekwzAyTb2yJhI8RA&state=c338385668bf1017a368dd39da2fab818d0066ebca30a101" for ::1 at 2019-10-04 20:23:15 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQCrP55EoWlGxOhfg_QZEgpysnPSWrkSYcX0y25kOEo3O2xd9-Rq2pFyk8CEYn_-Ge0-Q5StGdd23g7Fc8O3emLA7ZD-Lwb4LZqnYDIFs7xgpMw2Gelv25XPSVuWNGiJ6QoJZTIBVCS1HK0zPJzMwzfZ1pdN04EU-pVGKNdGBWkXOmQbk_4lVOA_qlJ8Wf1Yp90Y90ZAUqWMt0gOjoqOssWzPkJ1ZSX0kKY3I-t3GP9c8pU3fwzTGJmf0JrThWRY-S01-Vx-bAc2yN32itQ9MQV7WBYigCFH2eTvSItccmAodeVteE_UyPqmE9E4axkRhyY6VOEbr9ekwzAyTb2yJhI8RA", "state"=>"c338385668bf1017a368dd39da2fab818d0066ebca30a101"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:23:15 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:23:15 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/playlists.html.haml within layouts/application (72.3ms)
+Completed 500  in 255ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial home/_header_option, application/_header_option with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/jp/SpotifyApp/app/views"
+:
+  app/views/home/playlists.html.haml:7:in `_app_views_home_playlists_html_haml___3765391626484804479_70281052262800'
+
+Started POST "/__better_errors/d3fbe9f84361e460/variables" for ::1 at 2019-10-04 20:23:15 +0100
+Started GET "/playlists" for ::1 at 2019-10-04 20:23:30 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.3ms)
+  Rendered home/playlists.html.haml within layouts/application (1403.3ms)
+Completed 200 OK in 1719ms (Views: 1503.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:32:52 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (49.9ms)
+Completed 200 OK in 6054ms (Views: 6033.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:33:00 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:33:00 +0100
+Started GET "/auth/spotify/callback?code=AQBEsGKOmlx9UJOFvhVKz0df-P74LJ3zIiOsfZDYsEcEFBCBiCEKovWVQHJF3--AVfLXb6WmGQwh2i7CNOmIl3fe8FsaFcwDjonK5RD9eAGiIuFkzD_cuQCD1OoVJxg_2mHXY5nHbIeblHSs934Gpp64qnqXuOgrke0aLMJRYrh9q2O54iOFI6AJp7q5fiGGKwPai6isDIfXilUdvYcuCF1Q_9zzgdamzHZJOS1yTZKLw9fxpyd_IoAy3fkcphs0arQYktVcaqSsj_IVTbxcvVpYM-4gXuBDYIBWK2l_ycQolCiDPAYi0tWmTy4jWzfAmAii5kS0kwSplq7ty1cRDqs3WA&state=deb617b60201d92914c6a0925a4f84587c65e6eed4195813" for ::1 at 2019-10-04 20:33:00 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQBEsGKOmlx9UJOFvhVKz0df-P74LJ3zIiOsfZDYsEcEFBCBiCEKovWVQHJF3--AVfLXb6WmGQwh2i7CNOmIl3fe8FsaFcwDjonK5RD9eAGiIuFkzD_cuQCD1OoVJxg_2mHXY5nHbIeblHSs934Gpp64qnqXuOgrke0aLMJRYrh9q2O54iOFI6AJp7q5fiGGKwPai6isDIfXilUdvYcuCF1Q_9zzgdamzHZJOS1yTZKLw9fxpyd_IoAy3fkcphs0arQYktVcaqSsj_IVTbxcvVpYM-4gXuBDYIBWK2l_ycQolCiDPAYi0tWmTy4jWzfAmAii5kS0kwSplq7ty1cRDqs3WA", "state"=>"deb617b60201d92914c6a0925a4f84587c65e6eed4195813"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:33:01 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:33:01 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (7.5ms)
+  Rendered home/playlists.html.haml within layouts/application (1475.3ms)
+Completed 500  in 1616ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `top_artists' for nil:NilClass:
+  app/controllers/home_controller.rb:50:in `make_playlist'
+  app/views/home/playlists.html.haml:35:in `_app_views_home_playlists_html_haml__2184119043026419306_70247536725660'
+
+Started POST "/__better_errors/c6270516f882c8d4/variables" for ::1 at 2019-10-04 20:33:02 +0100
+Started GET "/playlists" for ::1 at 2019-10-04 20:33:30 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.3ms)
+  Rendered home/playlists.html.haml within layouts/application (15568.9ms)
+Completed 200 OK in 15956ms (Views: 15788.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:38:33 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:38:33 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.4ms)
+Started GET "/playlists" for ::1 at 2019-10-04 20:38:37 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.6ms)
+  Rendered home/playlists.html.haml within layouts/application (9699.7ms)
+Completed 500  in 9859ms (ActiveRecord: 0.0ms)
+
+
+
+RestClient::TooManyRequests - 429 Too Many Requests:
+  app/controllers/home_controller.rb:52:in `block (2 levels) in make_playlist'
+  app/controllers/home_controller.rb:51:in `block in make_playlist'
+  app/controllers/home_controller.rb:50:in `make_playlist'
+  app/views/home/playlists.html.haml:35:in `_app_views_home_playlists_html_haml__2184119043026419306_70247592656300'
+
+  Rendered home/playlists.html.haml within layouts/application (5631.2ms)
+Completed 500  in 5836ms (ActiveRecord: 0.0ms)
+
+
+
+RestClient::TooManyRequests - 429 Too Many Requests:
+  app/controllers/home_controller.rb:52:in `block (2 levels) in make_playlist'
+  app/controllers/home_controller.rb:51:in `block in make_playlist'
+  app/controllers/home_controller.rb:50:in `make_playlist'
+  app/views/home/playlists.html.haml:35:in `_app_views_home_playlists_html_haml__2184119043026419306_70247642382600'
+
+Started POST "/__better_errors/83de5a4225a82fe4/variables" for ::1 at 2019-10-04 20:38:43 +0100

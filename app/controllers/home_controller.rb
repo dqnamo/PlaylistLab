@@ -1,20 +1,23 @@
 class HomeController < ApplicationController
   require 'rspotify'
 
+  before_action :authenticate_user, except: [:landing]
+
   helper_method :get_features, :make_playlist
 
-  def index
+  def landing
+    if $spotify_user != nil
+      redirect_to playlists_path
+    end
   end
 
-  def spotify
-    @spotify_user = RSpotify::User.new(request.env['omniauth.auth'])
-    @name = @spotify_user.display_name
-    @playlists = @spotify_user.playlists
+  def playlists
+    @playlists = $spotify_user.playlists
   end
 
   def playlist
-    name = params[:name]
     id = params[:id]
+    name = $spotify_user.display_name
     @playlist = RSpotify::Playlist.find(name, id)
   end
 
@@ -44,7 +47,7 @@ class HomeController < ApplicationController
   def make_playlist
     songs = []
 
-    @spotify_user.top_artists(time_range: 'short_term', limit: 5).each do |artist|
+    $spotify_user.top_artists(time_range: 'short_term', limit: 5).each do |artist|
        artist.related_artists.each do |i|
          songs << i.top_tracks(:US).first.name
        end
@@ -53,6 +56,13 @@ class HomeController < ApplicationController
   end
 
   def home_params
-    params.permit(:x)
+    params.permit(:id)
   end
+
+  def authenticate_user
+    if $spotify_user == nil
+      redirect_to root_path
+    end
+  end
+
 end
