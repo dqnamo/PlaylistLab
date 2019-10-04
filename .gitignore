@@ -65,3 +65,7 @@ yarn-debug.log*
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+*.log
+*.cache
+tmp/cache/assets/sprockets/v3.0/nE/nEZxkz9bc7ewTOxsNl4Qasvor0hIS2V8dIdXdw5sZuk.cache
+*.cache

@@ -12717,3 +12717,1135 @@ Processing by HomeController#playlists as HTML
 Completed 200 OK in 1851ms (Views: 1674.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-04 20:49:30 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 431ms (Views: 422.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:49:33 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:49:33 +0100
+Started GET "/auth/spotify/callback?code=AQDa7F0l5IkuCbUAMZDZ5QrY8ebdfibjoTZR-IZWlR8YkquMAXOEnArLs6zzawyZooAq1Zw0pYL8t9CbcRB2ZUSgaitw2L9d1ymRK7ORXf0n5G1CloQU0n4FooaUcPhV3bkbQ6hRvJf5EsyeA766atT0YcoPm6Ez7SDahRNRkFvvtd6qkAmbVMMp9PArDwf2QjY-fbH9eeyhjpt26pwJw9Ra7amd2_GPweG9fPxb4S1iE9LyFegw9yEkKJVSZOinOQJVHCqbqY5ihovF3fOCEwxRJ70d_Lh8Jcgz9-yt2pVfIVsm9_UPPiYxKBu-j0ky4AFescP2MniouHYpyFiIexGEsg&state=b1a4ac76062a8412acd79cf604294014160cdde717e60e1c" for ::1 at 2019-10-04 20:49:33 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQDa7F0l5IkuCbUAMZDZ5QrY8ebdfibjoTZR-IZWlR8YkquMAXOEnArLs6zzawyZooAq1Zw0pYL8t9CbcRB2ZUSgaitw2L9d1ymRK7ORXf0n5G1CloQU0n4FooaUcPhV3bkbQ6hRvJf5EsyeA766atT0YcoPm6Ez7SDahRNRkFvvtd6qkAmbVMMp9PArDwf2QjY-fbH9eeyhjpt26pwJw9Ra7amd2_GPweG9fPxb4S1iE9LyFegw9yEkKJVSZOinOQJVHCqbqY5ihovF3fOCEwxRJ70d_Lh8Jcgz9-yt2pVfIVsm9_UPPiYxKBu-j0ky4AFescP2MniouHYpyFiIexGEsg", "state"=>"b1a4ac76062a8412acd79cf604294014160cdde717e60e1c"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:49:33 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:49:33 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.8ms)
+  Rendered home/playlists.html.haml within layouts/application (1266.8ms)
+Completed 200 OK in 1473ms (Views: 1323.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 20:49:37 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  Rendered home/playlist.html.haml within layouts/application (4485.4ms)
+Completed 200 OK in 4699ms (Views: 4543.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:56:13 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (83.0ms)
+Started GET "/" for ::1 at 2019-10-04 20:56:16 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 4495ms (Views: 4462.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1035ms (Views: 1031.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tilt.jquery.js" for ::1 at 2019-10-04 20:56:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/tilt.jquery.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:56:20 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:56:20 +0100
+Started GET "/auth/spotify/callback?code=AQApr5OTkGfBJ-BbZmyiEkDaloJyyzAWelMGIoYVXs3OhWbDWIU6EIV6OdGpHC4F-WZpmf7LH_Iq1WVy3ZsE6nF_vLPY2SuRUKtkcIMWQic3-Q9_yucEfXdB-Km9L97N1l_HerACsmKi4T6vSzJxrL3Ei-p9YhfIbLfz9ZKinEbl6Xq8lGdpCb8iH4g2wjr2V1ejLYE8Q_qNfcE1myOpvXSP6XJqx8AIEj419Y0C0Es_JZ3CjqhP-7teQadlJKZFCvuQJ3e1F6tbbd4vMgNrPFLLtuW4oW2u7lu947Tk2NQdDlw2QdJ8fLNBiq9TAiNbkGsnC4TSCccH5m5Vx19eT1DKmw&state=875a7b89c61f473bfe940471febf686eb530fc0b0f4d6e9b" for ::1 at 2019-10-04 20:56:21 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQApr5OTkGfBJ-BbZmyiEkDaloJyyzAWelMGIoYVXs3OhWbDWIU6EIV6OdGpHC4F-WZpmf7LH_Iq1WVy3ZsE6nF_vLPY2SuRUKtkcIMWQic3-Q9_yucEfXdB-Km9L97N1l_HerACsmKi4T6vSzJxrL3Ei-p9YhfIbLfz9ZKinEbl6Xq8lGdpCb8iH4g2wjr2V1ejLYE8Q_qNfcE1myOpvXSP6XJqx8AIEj419Y0C0Es_JZ3CjqhP-7teQadlJKZFCvuQJ3e1F6tbbd4vMgNrPFLLtuW4oW2u7lu947Tk2NQdDlw2QdJ8fLNBiq9TAiNbkGsnC4TSCccH5m5Vx19eT1DKmw", "state"=>"875a7b89c61f473bfe940471febf686eb530fc0b0f4d6e9b"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:56:21 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:56:21 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlists.html.haml within layouts/application (1650.3ms)
+Completed 200 OK in 1884ms (Views: 1747.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tilt.jquery.js" for ::1 at 2019-10-04 20:56:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/tilt.jquery.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 20:57:57 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4192.7ms)
+Completed 200 OK in 4484ms (Views: 4298.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/tilt.jquery.js" for ::1 at 2019-10-04 20:58:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/playlist/tilt.jquery.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tilt.jquery.js.map"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tilt.jquery.js.map"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:01:59 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 21:01:59 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (87.1ms)
+Completed 200 OK in 3428ms (Views: 3423.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tilt.jquery.min.js" for ::1 at 2019-10-04 21:02:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/tilt.jquery.min.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/auth/spotify" for ::1 at 2019-10-04 21:02:05 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 21:02:05 +0100
+Started GET "/auth/spotify/callback?code=AQA7MVpzCv7DhMe_5tfG0tmi-ktfOd0rprxToOEd5IXsfXReK8-x7Jmn2u3KhC_BixPWzH523RFdNoUqIYiapKGXP-1nJ6D_pk5pIZpXZoYhiSEVa7MJVp8PNpFLjSLso486aFvT8fzIm5u6NuMS3yX6nM6qpoOcAV74olHBxdCRFR9y5wf16Ga8UBAKoTpZ-zpDT04ESqqOfMFQNyslDTegyAi6u5DsSCwMtdIUf7gnJzippyb_5DNt_L__Bq3iqZBrPw5FApqh7pP9HxInvP0qmLV_l1mSHhhdZaWIX-AooVnPXjSO2-rJF9bv2aVRV7fiTcYwvmhM85OFuROQCSRJ3w&state=0694c430c5431c22c525bdb23c5c38e33874194799fcf67e" for ::1 at 2019-10-04 21:02:05 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQA7MVpzCv7DhMe_5tfG0tmi-ktfOd0rprxToOEd5IXsfXReK8-x7Jmn2u3KhC_BixPWzH523RFdNoUqIYiapKGXP-1nJ6D_pk5pIZpXZoYhiSEVa7MJVp8PNpFLjSLso486aFvT8fzIm5u6NuMS3yX6nM6qpoOcAV74olHBxdCRFR9y5wf16Ga8UBAKoTpZ-zpDT04ESqqOfMFQNyslDTegyAi6u5DsSCwMtdIUf7gnJzippyb_5DNt_L__Bq3iqZBrPw5FApqh7pP9HxInvP0qmLV_l1mSHhhdZaWIX-AooVnPXjSO2-rJF9bv2aVRV7fiTcYwvmhM85OFuROQCSRJ3w", "state"=>"0694c430c5431c22c525bdb23c5c38e33874194799fcf67e"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 21:02:06 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 21:02:06 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (6.7ms)
+  Rendered home/playlists.html.haml within layouts/application (1502.9ms)
+Completed 200 OK in 1761ms (Views: 1561.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tilt.jquery.min.js" for ::1 at 2019-10-04 21:02:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/tilt.jquery.min.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:02:13 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.1ms)
+  Rendered home/playlist.html.haml within layouts/application (4494.8ms)
+Completed 200 OK in 4765ms (Views: 4612.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/tilt.jquery.min.js" for ::1 at 2019-10-04 21:02:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/playlist/tilt.jquery.min.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:04:25 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.7ms)
+  Rendered home/playlist.html.haml within layouts/application (4631.1ms)
+Completed 200 OK in 4879ms (Views: 4703.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/javascripts/ilt.jquery.min.js" for ::1 at 2019-10-04 21:04:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/ilt.jquery.min.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-04 21:07:55 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (26.6ms)
+Completed 200 OK in 3288ms (Views: 3279.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/javascripts/tilt.jquery.min.js" for ::1 at 2019-10-04 21:07:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/tilt.jquery.min.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/auth/spotify" for ::1 at 2019-10-04 21:08:00 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 21:08:01 +0100
+Started GET "/auth/spotify/callback?code=AQC4OlIlNGUMBJC2P2thJrHm11yLRced1HwzlBvt5zwWiMe7lft3-8ju1VUk1OyUFwQr9T1UKk_QseegAL4G44XRMom382SDrpWDDqTnIsolEi6F-OmpIk-9euqodXSO8pBjvFgwznz1uMFYZjt-nQ0Q3TSRW2hPkpSiNPUpkCTfJdDASPxwlRZET08fHZzxhZgaEHI0rDftZHPiKSU0jYwMMUXp19pWt_hf1F73N9NkClAFXiTYPjLpqFqU9rkQQvT0pDqNrcXsOoy8pQLoTvR9r-w7dofCYmRLjd53GgI7Jgajb-IiGhGMYx1HcyPV5KeJkrwh_3jtvkF5N1CEMF_USg&state=2585bbda1ece97042f5a2f30e4931291f8721b3656da6a17" for ::1 at 2019-10-04 21:08:01 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQC4OlIlNGUMBJC2P2thJrHm11yLRced1HwzlBvt5zwWiMe7lft3-8ju1VUk1OyUFwQr9T1UKk_QseegAL4G44XRMom382SDrpWDDqTnIsolEi6F-OmpIk-9euqodXSO8pBjvFgwznz1uMFYZjt-nQ0Q3TSRW2hPkpSiNPUpkCTfJdDASPxwlRZET08fHZzxhZgaEHI0rDftZHPiKSU0jYwMMUXp19pWt_hf1F73N9NkClAFXiTYPjLpqFqU9rkQQvT0pDqNrcXsOoy8pQLoTvR9r-w7dofCYmRLjd53GgI7Jgajb-IiGhGMYx1HcyPV5KeJkrwh_3jtvkF5N1CEMF_USg", "state"=>"2585bbda1ece97042f5a2f30e4931291f8721b3656da6a17"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 21:08:01 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 21:08:01 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (4.2ms)
+  Rendered home/playlists.html.haml within layouts/application (1412.0ms)
+Completed 200 OK in 1801ms (Views: 1478.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/javascripts/tilt.jquery.min.js" for ::1 at 2019-10-04 21:08:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/tilt.jquery.min.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:08:05 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4293.0ms)
+Completed 200 OK in 4515ms (Views: 4367.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/javascripts/tilt.jquery.min.js" for ::1 at 2019-10-04 21:08:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/tilt.jquery.min.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:10:31 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.4ms)
+  Rendered home/playlist.html.haml within layouts/application (4605.0ms)
+Completed 200 OK in 6423ms (Views: 6218.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/javascripts/vanilla-tilt.js" for ::1 at 2019-10-04 21:10:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/vanilla-tilt.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:11:50 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 21:11:50 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (42.7ms)
+Completed 200 OK in 1040ms (Views: 1031.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/javascripts/vanilla-tilt.js" for ::1 at 2019-10-04 21:11:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/vanilla-tilt.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/auth/spotify" for ::1 at 2019-10-04 21:11:53 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 21:11:54 +0100
+Started GET "/auth/spotify/callback?code=AQBAhQSqAoF5hXiKSM8o4ePXQXFGj2Jgz8JTaEwQEQeSojir-9t6zGZsE_8KGzgX57AMmLeR1k9l51YB_NfMj7mp6swxIJ3L4HMwNXT6pwB2cWKy2AAb6Orq6IU0x2ZG4nHiyQKAgmNRFORkVccN9soN2BtDstS3bOEQh8Xc31YWS-ZBDdoudsmhSNCsX5qdrnhicUWDYUuFgjicWUEcPBgSCSwksoQGWDeakrFlRvbUVlqUbroSznwugkwhqK2ATjSlagU4tWBwg5qa5IlhGtVYJdh08zPlyHW987DFYaO78_oV6idu3X2KOOyhBNiAWh5hIqxgxQPGoJHi1yGJ_WRxnQ&state=01fdb95cbf7efd447376172ea51c2701300e9009a51c3603" for ::1 at 2019-10-04 21:11:54 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQBAhQSqAoF5hXiKSM8o4ePXQXFGj2Jgz8JTaEwQEQeSojir-9t6zGZsE_8KGzgX57AMmLeR1k9l51YB_NfMj7mp6swxIJ3L4HMwNXT6pwB2cWKy2AAb6Orq6IU0x2ZG4nHiyQKAgmNRFORkVccN9soN2BtDstS3bOEQh8Xc31YWS-ZBDdoudsmhSNCsX5qdrnhicUWDYUuFgjicWUEcPBgSCSwksoQGWDeakrFlRvbUVlqUbroSznwugkwhqK2ATjSlagU4tWBwg5qa5IlhGtVYJdh08zPlyHW987DFYaO78_oV6idu3X2KOOyhBNiAWh5hIqxgxQPGoJHi1yGJ_WRxnQ", "state"=>"01fdb95cbf7efd447376172ea51c2701300e9009a51c3603"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 21:11:54 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 21:11:54 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (4.3ms)
+  Rendered home/playlists.html.haml within layouts/application (1444.2ms)
+Completed 200 OK in 1695ms (Views: 1560.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/javascripts/vanilla-tilt.js" for ::1 at 2019-10-04 21:11:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/vanilla-tilt.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:11:57 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.1ms)
+  Rendered home/playlist.html.haml within layouts/application (4207.9ms)
+Completed 200 OK in 4484ms (Views: 4324.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/javascripts/vanilla-tilt.js" for ::1 at 2019-10-04 21:12:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/vanilla-tilt.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:12:41 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (147.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4421.5ms)
+Completed 200 OK in 4693ms (Views: 4529.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:14:23 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (5.6ms)
+  Rendered home/playlist.html.haml within layouts/application (4464.7ms)
+Completed 200 OK in 4692ms (Views: 4539.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:15:19 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlist.html.haml within layouts/application (4302.2ms)
+Completed 200 OK in 4529ms (Views: 4367.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/vanilla-tilt.js" for ::1 at 2019-10-04 21:15:24 +0100
+Processing by HomeController#playlist as JS
+  Parameters: {"id"=>"vanilla-tilt"}
+Completed 500  in 133ms (ActiveRecord: 0.0ms)
+
+
+
+RestClient::NotFound - 404 Not Found:
+  app/controllers/home_controller.rb:21:in `playlist'
+
+Started GET "/" for ::1 at 2019-10-04 21:15:34 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 21:15:34 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.6ms)
+  Rendered home/playlists.html.haml within layouts/application (1620.7ms)
+Completed 200 OK in 1873ms (Views: 1664.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vanilla-tilt.js" for ::1 at 2019-10-04 21:15:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/vanilla-tilt.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:17:25 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.9ms)
+  Rendered home/playlist.html.haml within layouts/application (4269.2ms)
+Completed 500  in 4836ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `javscript_include_tag' for #<#<Class:0x00007fc17d95c950>:0x00007fc17dfc0dc8>
+Did you mean?  javascript_include_tag:
+  app/views/layouts/application.html.haml:14:in `_app_views_layouts_application_html_haml___751675180538412996_70234544540960'
+
+Started POST "/__better_errors/90c913e3f6953806/variables" for ::1 at 2019-10-04 21:17:31 +0100
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:17:56 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.0ms)
+  Rendered home/playlist.html.haml within layouts/application (4236.6ms)
+Completed 500  in 4477ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( vanilla-tilt.js )` to `config/initializers/assets.rb` and restart your server:
+  app/views/layouts/application.html.haml:14:in `_app_views_layouts_application_html_haml___751675180538412996_70234573763160'
+
+Started POST "/__better_errors/8290aa49d638769f/variables" for ::1 at 2019-10-04 21:18:01 +0100
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:18:57 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/vanilla-tilt.js" for ::1 at 2019-10-04 21:18:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/vanilla-tilt.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:18:59 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 21:18:59 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 587ms (Views: 583.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/vanilla-tilt.js" for ::1 at 2019-10-04 21:19:00 +0100
+Processing by HomeController#playlist as JS
+  Parameters: {"id"=>"vanilla-tilt"}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 21:19:00 +0100
+Processing by HomeController#landing as */*
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 174ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 21:19:01 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 21:19:02 +0100
+Started GET "/auth/spotify/callback?code=AQC1Xn0yax9jjx8dflsCwjKnXk8gA_6-aVWP-S2JaTI4DHr652uWBwIl5ozNA4ZV0It0I1JThPfJcmPvzTn0GNj7AwxV2kjYq7qlr8u1tDO1urxZHMA-r_4lSwuI2MLIEILlojHllTrXisPHHcWY6RVZJ8hWyqiyPUM7wcWg6oduzUX2FmmdIoQ_XJVtP8rDKYvFGphTevrk4O3TnO6k6hgP_pRMEaCXhxKPqLovUsjm3_kgbTjPDSWL9jjjFr2GPbpTFgoXePtJNzIWTJwo8Cv8VOvwLNOcNENp15isJttnUj_DO5xzbCcYIrWVckd0USjA9LYcGS68gfswpzXMxL1FEA&state=d0126c5390814c97a16ff2ab13b0667be5fd537f7c480e28" for ::1 at 2019-10-04 21:19:02 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQC1Xn0yax9jjx8dflsCwjKnXk8gA_6-aVWP-S2JaTI4DHr652uWBwIl5ozNA4ZV0It0I1JThPfJcmPvzTn0GNj7AwxV2kjYq7qlr8u1tDO1urxZHMA-r_4lSwuI2MLIEILlojHllTrXisPHHcWY6RVZJ8hWyqiyPUM7wcWg6oduzUX2FmmdIoQ_XJVtP8rDKYvFGphTevrk4O3TnO6k6hgP_pRMEaCXhxKPqLovUsjm3_kgbTjPDSWL9jjjFr2GPbpTFgoXePtJNzIWTJwo8Cv8VOvwLNOcNENp15isJttnUj_DO5xzbCcYIrWVckd0USjA9LYcGS68gfswpzXMxL1FEA", "state"=>"d0126c5390814c97a16ff2ab13b0667be5fd537f7c480e28"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 58ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 21:19:02 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 21:19:02 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.9ms)
+  Rendered home/playlists.html.haml within layouts/application (1194.8ms)
+Completed 200 OK in 1460ms (Views: 1314.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vanilla-tilt.js" for ::1 at 2019-10-04 21:19:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/vanilla-tilt.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:19:05 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlist.html.haml within layouts/application (4340.2ms)
+Completed 200 OK in 4561ms (Views: 4397.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/vanilla-tilt.js" for ::1 at 2019-10-04 21:19:09 +0100
+Processing by HomeController#playlist as JS
+  Parameters: {"id"=>"vanilla-tilt"}
+Completed 500  in 118ms (ActiveRecord: 0.0ms)
+
+
+
+RestClient::NotFound - 404 Not Found:
+  app/controllers/home_controller.rb:21:in `playlist'
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:20:35 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.9ms)
+  Rendered home/playlist.html.haml within layouts/application (4557.4ms)
+Completed 200 OK in 4890ms (Views: 4733.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:22:07 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlist.html.haml within layouts/application (4667.2ms)
+Completed 200 OK in 4945ms (Views: 4763.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/" for ::1 at 2019-10-04 21:22:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/playlist"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists/" for ::1 at 2019-10-04 21:22:47 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.8ms)
+  Rendered home/playlists.html.haml within layouts/application (1422.1ms)
+Completed 200 OK in 1638ms (Views: 1516.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/1UR3sspL6NW5xBZKdmuMz1" for ::1 at 2019-10-04 21:23:00 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"1UR3sspL6NW5xBZKdmuMz1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (6.3ms)
+  Rendered home/playlist.html.haml within layouts/application (13880.4ms)
+Completed 200 OK in 14175ms (Views: 13928.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/1UR3sspL6NW5xBZKdmuMz1" for ::1 at 2019-10-04 21:24:15 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"1UR3sspL6NW5xBZKdmuMz1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.5ms)
+  Rendered home/playlist.html.haml within layouts/application (13577.4ms)
+Completed 200 OK in 13884ms (Views: 13646.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 21:26:02 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 21:26:02 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.1ms)
+  Rendered home/playlists.html.haml within layouts/application (1447.6ms)
+Completed 200 OK in 1705ms (Views: 1561.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 21:26:07 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.2ms)
+  Rendered home/playlist.html.haml within layouts/application (4301.6ms)
+Completed 200 OK in 4488ms (Views: 4345.0ms | ActiveRecord: 0.0ms)
+
+
