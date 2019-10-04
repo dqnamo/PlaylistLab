@@ -47,7 +47,7 @@ class HomeController < ApplicationController
   def make_playlist
     songs = []
 
-    @spotify_user.top_artists(time_range: 'short_term', limit: 5).each do |artist|
+    $spotify_user.top_artists(time_range: 'short_term', limit: 5).each do |artist|
        artist.related_artists.each do |i|
          songs << i.top_tracks(:US).first.name
        end

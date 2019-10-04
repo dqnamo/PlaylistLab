@@ -12606,3 +12606,84 @@ Processing by HomeController#playlists as HTML
 Completed 200 OK in 1719ms (Views: 1503.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-04 20:32:52 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (49.9ms)
+Completed 200 OK in 6054ms (Views: 6033.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:33:00 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 20:33:00 +0100
+Started GET "/auth/spotify/callback?code=AQBEsGKOmlx9UJOFvhVKz0df-P74LJ3zIiOsfZDYsEcEFBCBiCEKovWVQHJF3--AVfLXb6WmGQwh2i7CNOmIl3fe8FsaFcwDjonK5RD9eAGiIuFkzD_cuQCD1OoVJxg_2mHXY5nHbIeblHSs934Gpp64qnqXuOgrke0aLMJRYrh9q2O54iOFI6AJp7q5fiGGKwPai6isDIfXilUdvYcuCF1Q_9zzgdamzHZJOS1yTZKLw9fxpyd_IoAy3fkcphs0arQYktVcaqSsj_IVTbxcvVpYM-4gXuBDYIBWK2l_ycQolCiDPAYi0tWmTy4jWzfAmAii5kS0kwSplq7ty1cRDqs3WA&state=deb617b60201d92914c6a0925a4f84587c65e6eed4195813" for ::1 at 2019-10-04 20:33:00 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQBEsGKOmlx9UJOFvhVKz0df-P74LJ3zIiOsfZDYsEcEFBCBiCEKovWVQHJF3--AVfLXb6WmGQwh2i7CNOmIl3fe8FsaFcwDjonK5RD9eAGiIuFkzD_cuQCD1OoVJxg_2mHXY5nHbIeblHSs934Gpp64qnqXuOgrke0aLMJRYrh9q2O54iOFI6AJp7q5fiGGKwPai6isDIfXilUdvYcuCF1Q_9zzgdamzHZJOS1yTZKLw9fxpyd_IoAy3fkcphs0arQYktVcaqSsj_IVTbxcvVpYM-4gXuBDYIBWK2l_ycQolCiDPAYi0tWmTy4jWzfAmAii5kS0kwSplq7ty1cRDqs3WA", "state"=>"deb617b60201d92914c6a0925a4f84587c65e6eed4195813"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:33:01 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:33:01 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (7.5ms)
+  Rendered home/playlists.html.haml within layouts/application (1475.3ms)
+Completed 500  in 1616ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `top_artists' for nil:NilClass:
+  app/controllers/home_controller.rb:50:in `make_playlist'
+  app/views/home/playlists.html.haml:35:in `_app_views_home_playlists_html_haml__2184119043026419306_70247536725660'
+
+Started POST "/__better_errors/c6270516f882c8d4/variables" for ::1 at 2019-10-04 20:33:02 +0100
+Started GET "/playlists" for ::1 at 2019-10-04 20:33:30 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.3ms)
+  Rendered home/playlists.html.haml within layouts/application (15568.9ms)
+Completed 200 OK in 15956ms (Views: 15788.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 20:38:33 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-04 20:38:33 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.4ms)
+Started GET "/playlists" for ::1 at 2019-10-04 20:38:37 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.6ms)
+  Rendered home/playlists.html.haml within layouts/application (9699.7ms)
+Completed 500  in 9859ms (ActiveRecord: 0.0ms)
+
+
+
+RestClient::TooManyRequests - 429 Too Many Requests:
+  app/controllers/home_controller.rb:52:in `block (2 levels) in make_playlist'
+  app/controllers/home_controller.rb:51:in `block in make_playlist'
+  app/controllers/home_controller.rb:50:in `make_playlist'
+  app/views/home/playlists.html.haml:35:in `_app_views_home_playlists_html_haml__2184119043026419306_70247592656300'
+
+  Rendered home/playlists.html.haml within layouts/application (5631.2ms)
+Completed 500  in 5836ms (ActiveRecord: 0.0ms)
+
+
+
+RestClient::TooManyRequests - 429 Too Many Requests:
+  app/controllers/home_controller.rb:52:in `block (2 levels) in make_playlist'
+  app/controllers/home_controller.rb:51:in `block in make_playlist'
+  app/controllers/home_controller.rb:50:in `make_playlist'
+  app/views/home/playlists.html.haml:35:in `_app_views_home_playlists_html_haml__2184119043026419306_70247642382600'
+
+Started POST "/__better_errors/83de5a4225a82fe4/variables" for ::1 at 2019-10-04 20:38:43 +0100
