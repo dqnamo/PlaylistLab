@@ -11756,3 +11756,111 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-04 15:27:46 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (10.9ms)
+Started GET "/" for ::1 at 2019-10-04 15:27:50 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 4535ms (Views: 4526.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 394ms (Views: 391.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:28:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:28:25 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 66ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:29:40 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:29:54 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:30:49 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 120ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:30:52 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:30:55 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:31:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 79ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:32:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:32:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 90ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:32:28 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:32:31 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:32:35 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:32:35 +0100
+Started GET "/auth/spotify/callback?code=AQDy829tFENlAhd1RYD7PaWprfgUm9sI8STNLnCqL5IhmZcRMza1VgEEzJPZs2k72YoLqvOrp_W6bUETCKZtK5ylzJjQw-J0HN1QoSJ3DW-jP6rvsz5sIjzSE9GNy1c2rMr9r7xt4JzEtWsFcz8_t6U3Eq0_F1Pu-DLOCIBR6vLyf7288Qxfeg2tDr2vlJBE4AdVus1BfKzR9_Wno3bpBaSBqbc_IsdrHgkr2ijaFSyAT3V2ewHPIQjnC3iJYSBtq8rzMQFxe8KVChiJ8WI2aVJjiZY58XxhaXzC11R3Bf-XiE6MR3hYsiqxEAqDG1o57Dg6n2sidD3yHqQCPPbYYc-lcg&state=0d9f66e9cc35234ae42ca38b15f2f624dc2ec4e0e9043563" for ::1 at 2019-10-04 15:32:35 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDy829tFENlAhd1RYD7PaWprfgUm9sI8STNLnCqL5IhmZcRMza1VgEEzJPZs2k72YoLqvOrp_W6bUETCKZtK5ylzJjQw-J0HN1QoSJ3DW-jP6rvsz5sIjzSE9GNy1c2rMr9r7xt4JzEtWsFcz8_t6U3Eq0_F1Pu-DLOCIBR6vLyf7288Qxfeg2tDr2vlJBE4AdVus1BfKzR9_Wno3bpBaSBqbc_IsdrHgkr2ijaFSyAT3V2ewHPIQjnC3iJYSBtq8rzMQFxe8KVChiJ8WI2aVJjiZY58XxhaXzC11R3Bf-XiE6MR3hYsiqxEAqDG1o57Dg6n2sidD3yHqQCPPbYYc-lcg", "state"=>"0d9f66e9cc35234ae42ca38b15f2f624dc2ec4e0e9043563"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (2509.5ms)
+Completed 200 OK in 2934ms (Views: 2617.8ms | ActiveRecord: 0.0ms)
+
+
