@@ -11303,3 +11303,564 @@ Processing by HomeController#spotify as HTML
 Completed 200 OK in 1586ms (Views: 1460.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-03 16:57:36 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (97.2ms)
+Completed 200 OK in 382ms (Views: 340.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 13:03:45 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (102.0ms)
+Completed 200 OK in 633ms (Views: 573.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:03:52 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:03:53 +0100
+Started GET "/auth/spotify/callback?code=AQC-Dva7dH8XLWSb03pko-emzBQT9VNZGDkER31nXpK94GT5iAZQqSJZ2Dutzk3U-QCjg1x2DRJQtuqZHCvCx38m9zoVlMThT6rUVRkKcSPHSAER6_gUuUU80d0dpdGGLr4PxhA1AAAd3hZpkpfJxNIpb2Ty2_wEICf__UR0__51BuWoKZwAgZQftJuszcoFNYY5MmTUMg5lAadYOm6DDGVADrdl3XbTRAwA5JxOWuPckqpv4E9CQ6fEN2oBqcFhL-PWqqOQRw3deFBM-OeIQcg5qfje5a-DyDLdHjKnng8LsqFRYyw6YRkHoBXQKXP4zNhQF9WhaEVAh3-9AKuJ817ekg&state=8797c51a74d31787dbde3c9b97fca9a1fb016fcb39c0d3d6" for ::1 at 2019-10-04 13:03:53 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQC-Dva7dH8XLWSb03pko-emzBQT9VNZGDkER31nXpK94GT5iAZQqSJZ2Dutzk3U-QCjg1x2DRJQtuqZHCvCx38m9zoVlMThT6rUVRkKcSPHSAER6_gUuUU80d0dpdGGLr4PxhA1AAAd3hZpkpfJxNIpb2Ty2_wEICf__UR0__51BuWoKZwAgZQftJuszcoFNYY5MmTUMg5lAadYOm6DDGVADrdl3XbTRAwA5JxOWuPckqpv4E9CQ6fEN2oBqcFhL-PWqqOQRw3deFBM-OeIQcg5qfje5a-DyDLdHjKnng8LsqFRYyw6YRkHoBXQKXP4zNhQF9WhaEVAh3-9AKuJ817ekg", "state"=>"8797c51a74d31787dbde3c9b97fca9a1fb016fcb39c0d3d6"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1865.8ms)
+Completed 200 OK in 2066ms (Views: 1918.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/3V26JjOdj6zivA9M0kwnVf" for ::1 at 2019-10-04 13:04:01 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"3V26JjOdj6zivA9M0kwnVf"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 244ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/3V26JjOdj6zivA9M0kwnVf" for ::1 at 2019-10-04 13:05:46 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"3V26JjOdj6zivA9M0kwnVf"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 141ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify/callback?code=AQC-Dva7dH8XLWSb03pko-emzBQT9VNZGDkER31nXpK94GT5iAZQqSJZ2Dutzk3U-QCjg1x2DRJQtuqZHCvCx38m9zoVlMThT6rUVRkKcSPHSAER6_gUuUU80d0dpdGGLr4PxhA1AAAd3hZpkpfJxNIpb2Ty2_wEICf__UR0__51BuWoKZwAgZQftJuszcoFNYY5MmTUMg5lAadYOm6DDGVADrdl3XbTRAwA5JxOWuPckqpv4E9CQ6fEN2oBqcFhL-PWqqOQRw3deFBM-OeIQcg5qfje5a-DyDLdHjKnng8LsqFRYyw6YRkHoBXQKXP4zNhQF9WhaEVAh3-9AKuJ817ekg&state=8797c51a74d31787dbde3c9b97fca9a1fb016fcb39c0d3d6" for ::1 at 2019-10-04 13:05:58 +0100
+
+OmniAuth::Strategies::OAuth2::CallbackError - csrf_detected | CSRF detected:
+
+Started POST "/__better_errors/e3ca8e6030928db7/variables" for ::1 at 2019-10-04 13:05:58 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:06:03 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:06:03 +0100
+Started GET "/auth/spotify/callback?code=AQDQ4aQPvYpdGh5C9I4oV5gsOw3FaE5gCofqkTPOiSGpjBG-R8eJ5yQHdG9GVAPGk0cCixKVRI4ivKrCJ66-OrzxugjpmB6hq5rDa7ZFBL1Is-eZqFMU420LAdteqj0Ytwfxu9iYVZNjmJTClB9Wfv3bT1uKaclF2ReioHAdYQm-OLHRtok6Wpo8Jbf6sg1cxkWbvV2kIlAebfoFriXYSO90lNucvta72TE3WryBNusFo5ki0v-8x3P_U0usJeMmMNUdt4to4yLNz5PQQxWKt-vMIfz0MBdBBD7WeBpqZqtOnKYs2rJq43UMW7uRNU8xhV7wEwcCA10OCV-wNtj0x5Z70A&state=e8b306fa07d19d49c2960ad4224726daf379fb3d55c924e6" for ::1 at 2019-10-04 13:06:03 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDQ4aQPvYpdGh5C9I4oV5gsOw3FaE5gCofqkTPOiSGpjBG-R8eJ5yQHdG9GVAPGk0cCixKVRI4ivKrCJ66-OrzxugjpmB6hq5rDa7ZFBL1Is-eZqFMU420LAdteqj0Ytwfxu9iYVZNjmJTClB9Wfv3bT1uKaclF2ReioHAdYQm-OLHRtok6Wpo8Jbf6sg1cxkWbvV2kIlAebfoFriXYSO90lNucvta72TE3WryBNusFo5ki0v-8x3P_U0usJeMmMNUdt4to4yLNz5PQQxWKt-vMIfz0MBdBBD7WeBpqZqtOnKYs2rJq43UMW7uRNU8xhV7wEwcCA10OCV-wNtj0x5Z70A", "state"=>"e8b306fa07d19d49c2960ad4224726daf379fb3d55c924e6"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (2393.9ms)
+Completed 200 OK in 2594ms (Views: 2435.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 13:07:14 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 221ms (Views: 94.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:08:04 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:08:04 +0100
+Started GET "/auth/spotify/callback?code=AQA5uQGK5JcEpgHasw3OT6Go8eP-S7nX06vuxTkBLyBVikCKSdXjkVXw1oQDFkn1NxFOwSNu6ZSxnzXuPDb7D6DkeSVpmqlDvztiwf3YpgRS8ab4Ly06H0OgroefmxX8H8EIiSpiNuk-dxK3Xvjmq8hwDSe6Ps_fH5QCwWJ3WhpSpoVpTPe8mmNbOOcXvsf6UCO-vJp0CfDTr-BOpK0cz0Nid9voBKBOVlEJMk1DzU7AOT2lnIUE1pq9BtJIL2xS1Q41GzDqgEx7MZ8DYkajJ87tUopJSB8KTxw5iIDSTi_NGfb7OF6DZFEi6T1-yVPcuV52uYYZu9NN64eTnaDjitQotg&state=8552d5a7cf623c2088119df6a85314033826a43904dfbfd7" for ::1 at 2019-10-04 13:08:04 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQA5uQGK5JcEpgHasw3OT6Go8eP-S7nX06vuxTkBLyBVikCKSdXjkVXw1oQDFkn1NxFOwSNu6ZSxnzXuPDb7D6DkeSVpmqlDvztiwf3YpgRS8ab4Ly06H0OgroefmxX8H8EIiSpiNuk-dxK3Xvjmq8hwDSe6Ps_fH5QCwWJ3WhpSpoVpTPe8mmNbOOcXvsf6UCO-vJp0CfDTr-BOpK0cz0Nid9voBKBOVlEJMk1DzU7AOT2lnIUE1pq9BtJIL2xS1Q41GzDqgEx7MZ8DYkajJ87tUopJSB8KTxw5iIDSTi_NGfb7OF6DZFEi6T1-yVPcuV52uYYZu9NN64eTnaDjitQotg", "state"=>"8552d5a7cf623c2088119df6a85314033826a43904dfbfd7"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1003.1ms)
+Completed 200 OK in 1160ms (Views: 1053.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/3V26JjOdj6zivA9M0kwnVf" for ::1 at 2019-10-04 13:08:23 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"3V26JjOdj6zivA9M0kwnVf"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 240ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:26:16 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 3295ms (Views: 3166.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/2XJm4ZKC835vaxvncjQvKO" for ::1 at 2019-10-04 13:26:30 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"2XJm4ZKC835vaxvncjQvKO"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 188ms (Views: 83.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/2XJm4ZKC835vaxvncjQvKO" for ::1 at 2019-10-04 13:26:30 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"2XJm4ZKC835vaxvncjQvKO"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 300ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify/callback?code=AQA5uQGK5JcEpgHasw3OT6Go8eP-S7nX06vuxTkBLyBVikCKSdXjkVXw1oQDFkn1NxFOwSNu6ZSxnzXuPDb7D6DkeSVpmqlDvztiwf3YpgRS8ab4Ly06H0OgroefmxX8H8EIiSpiNuk-dxK3Xvjmq8hwDSe6Ps_fH5QCwWJ3WhpSpoVpTPe8mmNbOOcXvsf6UCO-vJp0CfDTr-BOpK0cz0Nid9voBKBOVlEJMk1DzU7AOT2lnIUE1pq9BtJIL2xS1Q41GzDqgEx7MZ8DYkajJ87tUopJSB8KTxw5iIDSTi_NGfb7OF6DZFEi6T1-yVPcuV52uYYZu9NN64eTnaDjitQotg&state=8552d5a7cf623c2088119df6a85314033826a43904dfbfd7" for ::1 at 2019-10-04 13:26:33 +0100
+
+OmniAuth::Strategies::OAuth2::CallbackError - csrf_detected | CSRF detected:
+
+Started POST "/__better_errors/bd8ceaddbe02ba2a/variables" for ::1 at 2019-10-04 13:26:33 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:26:37 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:26:37 +0100
+Started GET "/auth/spotify/callback?code=AQBF9pkGeF7jEpnGt-jiXLQpmLrLWsOQRVLxrBBXpuAAT0_8Yz65yLRUBWzTJ9uOe3S22_So5xJJaFY1nG8eqEk1Op_vQThPIR73WoElwEkcMlhf5p40Ey6qeCf4oxYG-fRqLLkhuE7jz5P-BlMNXjiPMSzuAReoqWTphKKqIf8ykAht--ug4zAAKmyyxGQdGNmnyqBRShy1_EKVmAUnsc-2XA99Jhfca0veTD6jag9o3b0QMrq7qsfMtk3LI2k83fXsf3VmgFZ0dXXh5A4s-cRrvRmnIow5h5aXXoWA7Azu2iQgTFDa7AXXmEBiWSsH0TzTmQveprOk0IHVHJ8cf8Ba0Q&state=48a30b8ec8d1270b742e52171f58316c3af49ab16b1ba3fc" for ::1 at 2019-10-04 13:26:37 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBF9pkGeF7jEpnGt-jiXLQpmLrLWsOQRVLxrBBXpuAAT0_8Yz65yLRUBWzTJ9uOe3S22_So5xJJaFY1nG8eqEk1Op_vQThPIR73WoElwEkcMlhf5p40Ey6qeCf4oxYG-fRqLLkhuE7jz5P-BlMNXjiPMSzuAReoqWTphKKqIf8ykAht--ug4zAAKmyyxGQdGNmnyqBRShy1_EKVmAUnsc-2XA99Jhfca0veTD6jag9o3b0QMrq7qsfMtk3LI2k83fXsf3VmgFZ0dXXh5A4s-cRrvRmnIow5h5aXXoWA7Azu2iQgTFDa7AXXmEBiWSsH0TzTmQveprOk0IHVHJ8cf8Ba0Q", "state"=>"48a30b8ec8d1270b742e52171f58316c3af49ab16b1ba3fc"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1206.3ms)
+Completed 200 OK in 1436ms (Views: 1306.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 13:26:40 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 194ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 13:27:16 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 1449ms (Views: 1308.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 13:27:23 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 373ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 13:27:32 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 269ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify/callback?code=AQBF9pkGeF7jEpnGt-jiXLQpmLrLWsOQRVLxrBBXpuAAT0_8Yz65yLRUBWzTJ9uOe3S22_So5xJJaFY1nG8eqEk1Op_vQThPIR73WoElwEkcMlhf5p40Ey6qeCf4oxYG-fRqLLkhuE7jz5P-BlMNXjiPMSzuAReoqWTphKKqIf8ykAht--ug4zAAKmyyxGQdGNmnyqBRShy1_EKVmAUnsc-2XA99Jhfca0veTD6jag9o3b0QMrq7qsfMtk3LI2k83fXsf3VmgFZ0dXXh5A4s-cRrvRmnIow5h5aXXoWA7Azu2iQgTFDa7AXXmEBiWSsH0TzTmQveprOk0IHVHJ8cf8Ba0Q&state=48a30b8ec8d1270b742e52171f58316c3af49ab16b1ba3fc" for ::1 at 2019-10-04 13:27:50 +0100
+
+OmniAuth::Strategies::OAuth2::CallbackError - csrf_detected | CSRF detected:
+
+Started POST "/__better_errors/c8bdb2382eaf2715/variables" for ::1 at 2019-10-04 13:27:50 +0100
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 13:27:53 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 332ms (Views: 108.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 13:30:59 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (10421.5ms)
+Completed 200 OK in 10639ms (Views: 10475.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 13:32:38 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 99ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:32:39 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 13:32:39 +0100
+Started GET "/auth/spotify/callback?code=AQDwvetWQOX9VoAtk7BdCIXHUtt9Bhcj82VdIaKTG6i4uEmiTE4IOE7HMYakD_IK6NGSU1jCLQaPkviavIFPCE3V5O345r8u2PgK5OticqUhAbuUC_ij6O_NHhDRC8XF_3-BXCzjt-yoRhmDHXUIIe_a5zxk8N3D6beOL2s8c2WIQfcQsVK2jQnchu6UrndQzlCLq29-kk4KW892tMLutir9cTNwL9sRGdg0GjGRe25NFFcOU-hpaDv65kg5mFpgTAqAwld3wF0047qLyXGMHAWpZV1zl_CqQ3MVURMHp2pIer1vnBeViAWZVjZnLSeVWNE1ocrxolxXrSqOlK57UQPOZw&state=e5055f810d0ab789915e1783331ba9fbc2ec9a0e1be0b2d7" for ::1 at 2019-10-04 13:32:39 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDwvetWQOX9VoAtk7BdCIXHUtt9Bhcj82VdIaKTG6i4uEmiTE4IOE7HMYakD_IK6NGSU1jCLQaPkviavIFPCE3V5O345r8u2PgK5OticqUhAbuUC_ij6O_NHhDRC8XF_3-BXCzjt-yoRhmDHXUIIe_a5zxk8N3D6beOL2s8c2WIQfcQsVK2jQnchu6UrndQzlCLq29-kk4KW892tMLutir9cTNwL9sRGdg0GjGRe25NFFcOU-hpaDv65kg5mFpgTAqAwld3wF0047qLyXGMHAWpZV1zl_CqQ3MVURMHp2pIer1vnBeViAWZVjZnLSeVWNE1ocrxolxXrSqOlK57UQPOZw", "state"=>"e5055f810d0ab789915e1783331ba9fbc2ec9a0e1be0b2d7"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1106.5ms)
+Completed 200 OK in 1583ms (Views: 1496.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:32:42 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (5768.0ms)
+Completed 200 OK in 6082ms (Views: 5985.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:34:22 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (108.1ms)
+Completed 500  in 213ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - `@[]' is not allowed as an instance variable name:
+  app/controllers/home_controller.rb:30:in `block in get_features'
+  app/controllers/home_controller.rb:28:in `get_features'
+  app/views/home/playlist.html.haml:21:in `_app_views_home_playlist_html_haml__4030265274983756891_70153792363740'
+
+Started POST "/__better_errors/a882a4b0ea625e7b/variables" for ::1 at 2019-10-04 13:34:23 +0100
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:36:03 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (52303.3ms)
+Completed 500  in 52440ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - `@[]' is not allowed as an instance variable name:
+  app/controllers/home_controller.rb:31:in `block in get_features'
+  app/controllers/home_controller.rb:28:in `get_features'
+  app/views/home/playlist.html.haml:21:in `_app_views_home_playlist_html_haml__4030265274983756891_70153795319380'
+
+Started POST "/__better_errors/2d777927f42ebc22/variables" for ::1 at 2019-10-04 13:36:55 +0100
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:36:57 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (69815.9ms)
+Completed 200 OK in 71183ms (Views: 69964.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:38:17 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (5677.7ms)
+Completed 200 OK in 6247ms (Views: 5820.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:43:55 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (11578.7ms)
+Completed 200 OK in 17329ms (Views: 16590.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:45:54 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (4070.1ms)
+Completed 200 OK in 4518ms (Views: 4348.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:46:34 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (6.6ms)
+Completed 500  in 260ms (ActiveRecord: 0.0ms)
+
+
+
+Haml::SyntaxError - Illegal nesting: nesting within a self-closing tag is illegal.:
+  app/views/home/playlist.html.haml:15:in `'
+
+Started POST "/__better_errors/e2e54c9293effbd7/variables" for ::1 at 2019-10-04 13:46:35 +0100
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:46:51 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (7481.8ms)
+Completed 200 OK in 7886ms (Views: 7727.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:47:18 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (5361.8ms)
+Completed 200 OK in 5848ms (Views: 5635.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:48:19 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (7637.2ms)
+Completed 200 OK in 9221ms (Views: 9051.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:49:22 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (5060.5ms)
+Completed 200 OK in 5456ms (Views: 5258.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:50:42 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (7610.6ms)
+Completed 200 OK in 8329ms (Views: 8114.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:51:40 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (5469.1ms)
+Completed 200 OK in 6760ms (Views: 6578.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:52:21 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (4538.1ms)
+Completed 200 OK in 5046ms (Views: 4860.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 13:53:22 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (4267.0ms)
+Completed 200 OK in 8812ms (Views: 8653.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 14:34:11 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (71.2ms)
+Completed 200 OK in 332ms (Views: 300.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 14:34:41 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 14:34:41 +0100
+Started GET "/auth/spotify/callback?code=AQCp8pmYpma7GSr4bKeTF2Xsagg-BHszTiVoSYYWzAyAmHb185F1qy1AHj7XH1e6Qmdh8Wy3eTNWJvp-W1pT2lUCjeREIdkSy87hQ2j0ZdBWpIZxXxQlbNDSo5RenWEuBCTd4DH1XN4JFf0VxLwJYBAUsuJzToG8jDncw1lPGOzEfKoqNel73oJoEKjt5_5ZN6fNf4VGjoVQlblfKLa4yg0Hhi91Zmb8TuwDbaScW8Uovv5a7UiLXKFOY8J4vFCg4HNGx-966AewwzTCPGZ_63v4tVJE2OINOIP9Co-RitjZhNpTRy1zjF2JHbftbN4jr6QUHfg9wAyopBvHGD9DvkFFcQ&state=fa2cb37f8fd70f27a033177e2869105712ae3bbe711f4eba" for ::1 at 2019-10-04 14:34:42 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQCp8pmYpma7GSr4bKeTF2Xsagg-BHszTiVoSYYWzAyAmHb185F1qy1AHj7XH1e6Qmdh8Wy3eTNWJvp-W1pT2lUCjeREIdkSy87hQ2j0ZdBWpIZxXxQlbNDSo5RenWEuBCTd4DH1XN4JFf0VxLwJYBAUsuJzToG8jDncw1lPGOzEfKoqNel73oJoEKjt5_5ZN6fNf4VGjoVQlblfKLa4yg0Hhi91Zmb8TuwDbaScW8Uovv5a7UiLXKFOY8J4vFCg4HNGx-966AewwzTCPGZ_63v4tVJE2OINOIP9Co-RitjZhNpTRy1zjF2JHbftbN4jr6QUHfg9wAyopBvHGD9DvkFFcQ", "state"=>"fa2cb37f8fd70f27a033177e2869105712ae3bbe711f4eba"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (1112.5ms)
+Completed 200 OK in 1239ms (Views: 1153.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:04:59 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 142ms (Views: 139.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:05:10 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:05:12 +0100
+Started GET "/auth/spotify/callback?code=AQArXnWL3Xwlez0I1Nhkr-i13gfMj1Rs1-gb-AT-UBYFXZZ4CzOSdr19pcaFgaS6ugjLg1Sfmr1qdq001EjyG4BAvmmM7Z4ejbcUyzOKcq3FJfhElx1XdG5U7bw1ACxzy-zHqkwvH5XCJdl6YtyEZ8MIEXkNN6HB0itfoRX9wBl3rKSE2cIQJ8dEMomeIqborVeiD38TgdN_Ri4jpN6Sl6QYk041aQeaNesFlfjG0KRxeLrxZkZ2EFcOcdECfDcnYe0ZO9-oKhrsP-s9gug0AJWX3YsAIKOk-fX4poUl8Mh6SSn0UKos5nqebOE5uS4X7oaxYNo7LDFTN6W495-sQkNjkw&state=67fdee82c43d9fb4d76c97dfae731fd330fbead88bbfc992" for ::1 at 2019-10-04 15:05:12 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQArXnWL3Xwlez0I1Nhkr-i13gfMj1Rs1-gb-AT-UBYFXZZ4CzOSdr19pcaFgaS6ugjLg1Sfmr1qdq001EjyG4BAvmmM7Z4ejbcUyzOKcq3FJfhElx1XdG5U7bw1ACxzy-zHqkwvH5XCJdl6YtyEZ8MIEXkNN6HB0itfoRX9wBl3rKSE2cIQJ8dEMomeIqborVeiD38TgdN_Ri4jpN6Sl6QYk041aQeaNesFlfjG0KRxeLrxZkZ2EFcOcdECfDcnYe0ZO9-oKhrsP-s9gug0AJWX3YsAIKOk-fX4poUl8Mh6SSn0UKos5nqebOE5uS4X7oaxYNo7LDFTN6W495-sQkNjkw", "state"=>"67fdee82c43d9fb4d76c97dfae731fd330fbead88bbfc992"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (8954.4ms)
+Completed 200 OK in 10310ms (Views: 9032.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:05:33 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:05:34 +0100
+Started GET "/auth/spotify/callback?code=AQBdEvgtJV4EnWthQ7M9FUBV7ulfVqBbN9Av7dPjAMsIsWY9G-2owAS3uLEZMJsiwlOLFqNPxtG9k-Q6sf2MQ6Ddz-xdmfn44Iw0F9eKOOgDx6-sv9N1VT1sjlpmnQeM9HnJpSlStJvI1SNGZ2kjLtHlF-RLZcu8I7NPnuVSS1fnDBySDrW_HU_SQgfIC8Awsp-bDLmCHBimNdkLtUzfdYCw7n9k2B26SNjow1v_D1RaqOiEvOB0bn9pAA6dNyvTDLFLolU6zDj1B9iVd31ztuaGYKkRjAheiQjx8yX27Dj691PzRcGEgLFoZ3dD_cfRzxaH2Bb0r11H9oCfLSxJi3U_xg&state=81801cd0fcf8475ef8f98d81dc92cca12c4295a0e0f0c8f7" for ::1 at 2019-10-04 15:05:34 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQBdEvgtJV4EnWthQ7M9FUBV7ulfVqBbN9Av7dPjAMsIsWY9G-2owAS3uLEZMJsiwlOLFqNPxtG9k-Q6sf2MQ6Ddz-xdmfn44Iw0F9eKOOgDx6-sv9N1VT1sjlpmnQeM9HnJpSlStJvI1SNGZ2kjLtHlF-RLZcu8I7NPnuVSS1fnDBySDrW_HU_SQgfIC8Awsp-bDLmCHBimNdkLtUzfdYCw7n9k2B26SNjow1v_D1RaqOiEvOB0bn9pAA6dNyvTDLFLolU6zDj1B9iVd31ztuaGYKkRjAheiQjx8yX27Dj691PzRcGEgLFoZ3dD_cfRzxaH2Bb0r11H9oCfLSxJi3U_xg", "state"=>"81801cd0fcf8475ef8f98d81dc92cca12c4295a0e0f0c8f7"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (5645.9ms)
+Completed 200 OK in 5875ms (Views: 5696.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6VOYSWLPrBMh1VHxddKfp1" for ::1 at 2019-10-04 15:05:42 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6VOYSWLPrBMh1VHxddKfp1"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (5175.5ms)
+Completed 200 OK in 5687ms (Views: 5437.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 15:06:19 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (20357.1ms)
+Completed 200 OK in 20576ms (Views: 20400.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 15:07:50 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (33201.9ms)
+Completed 200 OK in 33902ms (Views: 33251.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/6GcrlDZ9N409MZ7WPJZxmA" for ::1 at 2019-10-04 15:11:19 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"6GcrlDZ9N409MZ7WPJZxmA"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (11652.4ms)
+Completed 200 OK in 12089ms (Views: 11931.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:18:50 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 2448ms (Views: 2445.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:18:54 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:18:54 +0100
+Started GET "/auth/spotify/callback?code=AQCo3psmU6nBr4qHCi2sJ5ZbTXfzmX-aQMbCANziWiIWX5-wqwts5fhoZ7S48M3MqeKZJVaNPGrEjeBSXr0lW7-KLKx41hBHP28fnNYmedPOL7TFKVcRxqn237n_DOcBzZzekd6bP_P34zynknp-eRT0MlAKAiuyRnMdfaKcv65VVIlzbNNxp4UkQ7MTfqnUTB9_4nupPY1NDitmvjp5AaP5r4KWcAZxysbhBirBUdBmYbXB9ZXqd3dHcZP4AmCfkRzdvE_uc0MHb_Icy1Qei3JiiltQj9ISs5lX5L12kC7sX54wbSUWVT3WSkAlBloSZPEp86rIR3yERqJ91k7MPbSc9Q&state=a2dd6822bc1a7618ff13b9d8e8320ec560d3620dfa34dd93" for ::1 at 2019-10-04 15:18:55 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQCo3psmU6nBr4qHCi2sJ5ZbTXfzmX-aQMbCANziWiIWX5-wqwts5fhoZ7S48M3MqeKZJVaNPGrEjeBSXr0lW7-KLKx41hBHP28fnNYmedPOL7TFKVcRxqn237n_DOcBzZzekd6bP_P34zynknp-eRT0MlAKAiuyRnMdfaKcv65VVIlzbNNxp4UkQ7MTfqnUTB9_4nupPY1NDitmvjp5AaP5r4KWcAZxysbhBirBUdBmYbXB9ZXqd3dHcZP4AmCfkRzdvE_uc0MHb_Icy1Qei3JiiltQj9ISs5lX5L12kC7sX54wbSUWVT3WSkAlBloSZPEp86rIR3yERqJ91k7MPbSc9Q", "state"=>"a2dd6822bc1a7618ff13b9d8e8320ec560d3620dfa34dd93"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (2823.9ms)
+Completed 200 OK in 3718ms (Views: 2886.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/4weNQhI0OF2i7OEBoog3M3" for ::1 at 2019-10-04 15:19:12 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"4weNQhI0OF2i7OEBoog3M3"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (8347.4ms)
+Completed 200 OK in 8593ms (Views: 8407.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/alanbiju79/01xzLrQperCHSPV5vDhrIe" for ::1 at 2019-10-04 15:21:48 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"name"=>"alanbiju79", "id"=>"01xzLrQperCHSPV5vDhrIe"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/playlist.html.haml within layouts/application (21993.0ms)
+Completed 200 OK in 22410ms (Views: 22037.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:24:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:27:46 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (10.9ms)
+Started GET "/" for ::1 at 2019-10-04 15:27:50 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 4535ms (Views: 4526.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 394ms (Views: 391.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:28:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:28:25 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 66ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:29:40 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:29:54 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:30:49 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 120ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:30:52 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:30:55 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:31:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 79ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:32:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:32:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 90ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:32:28 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 15:32:31 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:32:35 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-04 15:32:35 +0100
+Started GET "/auth/spotify/callback?code=AQDy829tFENlAhd1RYD7PaWprfgUm9sI8STNLnCqL5IhmZcRMza1VgEEzJPZs2k72YoLqvOrp_W6bUETCKZtK5ylzJjQw-J0HN1QoSJ3DW-jP6rvsz5sIjzSE9GNy1c2rMr9r7xt4JzEtWsFcz8_t6U3Eq0_F1Pu-DLOCIBR6vLyf7288Qxfeg2tDr2vlJBE4AdVus1BfKzR9_Wno3bpBaSBqbc_IsdrHgkr2ijaFSyAT3V2ewHPIQjnC3iJYSBtq8rzMQFxe8KVChiJ8WI2aVJjiZY58XxhaXzC11R3Bf-XiE6MR3hYsiqxEAqDG1o57Dg6n2sidD3yHqQCPPbYYc-lcg&state=0d9f66e9cc35234ae42ca38b15f2f624dc2ec4e0e9043563" for ::1 at 2019-10-04 15:32:35 +0100
+Processing by HomeController#spotify as HTML
+  Parameters: {"code"=>"AQDy829tFENlAhd1RYD7PaWprfgUm9sI8STNLnCqL5IhmZcRMza1VgEEzJPZs2k72YoLqvOrp_W6bUETCKZtK5ylzJjQw-J0HN1QoSJ3DW-jP6rvsz5sIjzSE9GNy1c2rMr9r7xt4JzEtWsFcz8_t6U3Eq0_F1Pu-DLOCIBR6vLyf7288Qxfeg2tDr2vlJBE4AdVus1BfKzR9_Wno3bpBaSBqbc_IsdrHgkr2ijaFSyAT3V2ewHPIQjnC3iJYSBtq8rzMQFxe8KVChiJ8WI2aVJjiZY58XxhaXzC11R3Bf-XiE6MR3hYsiqxEAqDG1o57Dg6n2sidD3yHqQCPPbYYc-lcg", "state"=>"0d9f66e9cc35234ae42ca38b15f2f624dc2ec4e0e9043563"}
+  Rendering home/spotify.html.haml within layouts/application
+  Rendered home/spotify.html.haml within layouts/application (2509.5ms)
+Completed 200 OK in 2934ms (Views: 2617.8ms | ActiveRecord: 0.0ms)
+
+

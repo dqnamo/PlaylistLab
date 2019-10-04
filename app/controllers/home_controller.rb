@@ -26,8 +26,9 @@ class HomeController < ApplicationController
     count = 0
 
     playlist.tracks.each do |i|
-      total_energy += i.audio_features.energy
-      total_danceability += i.audio_features.danceability
+      features = i.audio_features
+      total_energy += features.energy
+      total_danceability += features.danceability
       count += 1
     end
 

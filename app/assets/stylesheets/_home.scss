@@ -11,9 +11,20 @@
   min-height: 100vh;
 }
 
+.btn span.glyphicon {
+	opacity: 0;
+}
+.btn.active span.glyphicon {
+	opacity: 1;
+}
+
+.col-6{
+  height: 100%
+}
 .sticky {
-  position: -webkit-sticky;
+  position: -webkit-sticky; /* Safari */
   position: sticky;
+  top: 0;
 }
 
 .bg-image {
