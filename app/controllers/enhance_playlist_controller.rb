@@ -4,6 +4,7 @@ class EnhancePlaylistController < ApplicationController
 
   def add_energy
     songs = []
+
     @artists.each do |i|
       i.top_tracks(:US).first(10).each do |j|
         energy = j.audio_features.energy * 100
@@ -24,6 +25,8 @@ class EnhancePlaylistController < ApplicationController
     end
 
     add_to_playlist(songs)
+
+    flash[:notice] = "Added #{songs.count} songs to increase energy."
     redirect_to playlist_path(params[:id])
   end
 
@@ -49,6 +52,8 @@ class EnhancePlaylistController < ApplicationController
     end
 
     add_to_playlist(songs)
+
+    flash[:notice] = "Added #{songs.count} songs to decrease energy."
     redirect_to playlist_path(params[:id])
   end
 
@@ -74,6 +79,8 @@ class EnhancePlaylistController < ApplicationController
     end
 
     add_to_playlist(songs)
+
+    flash[:notice] = "Added #{songs.count} songs to increase danceability."
     redirect_to playlist_path(params[:id])
   end
 
@@ -99,6 +106,8 @@ class EnhancePlaylistController < ApplicationController
     end
 
     add_to_playlist(songs)
+
+    "Added #{songs.count} songs to decrease danceability."
     redirect_to playlist_path(params[:id])
   end
 
