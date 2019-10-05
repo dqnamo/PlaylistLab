@@ -72,13 +72,11 @@ class HomeController < ApplicationController
   end
 
   def check_custom_playlist
-    exists = true
+    exists = false
 
     @playlists.each do |x|
       if CustomPlaylist.exists?(playlist_id: x.id)
         exists = true
-      else
-        exists = false
       end
     end
 

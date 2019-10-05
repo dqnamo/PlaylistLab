@@ -16718,3 +16718,506 @@ Processing by HomeController#playlists as HTML
 Completed 200 OK in 1863ms (Views: 1679.2ms | ActiveRecord: 10.1ms)
 
 
+Started GET "/playlists" for ::1 at 2019-10-05 10:49:08 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jp/.rvm/gems/ruby-2.6.4/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#playlists as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-05 10:49:08 +0100
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (16.4ms)
+Completed 200 OK in 510ms (Views: 506.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-10-05 10:49:11 +0100
+Started GET "/auth/spotify" for ::1 at 2019-10-05 10:49:11 +0100
+Started GET "/auth/spotify/callback?code=AQCvSvuHFs8wkTBhrJMH-OxtPrizS_ahS_xN_QLoO8uWmtg75T-tlVMbT8bzz2-S57n1ZeyVllrNWaaGqtWLOFKdTo5pZ6Rf3Y43bJabpzF_rXfRcfmZb-f5kuAINw-6JntPYdXassQ0giDEFrfpwzqGO32et5sZyDjOS41spr5Fc--8gThm6b40N-2gLZD-4G6nwlzE6zMybshFdJvn6z2IJ-b6ofxb1dfIxxhYrPb2kUodQD55sG1qBUwBFDo0gfEmOC3z4gza_YidnXatpcsIRrpbOGxWaCDdCN6XXJZtrcPTWQTWKCaIccbiQZ2wxvRzBBGo4Cwm2Ih21YPDJJNiOA&state=71c57917945003c3b85c5865030d1dad9819b04a55c0b2bf" for ::1 at 2019-10-05 10:49:11 +0100
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQCvSvuHFs8wkTBhrJMH-OxtPrizS_ahS_xN_QLoO8uWmtg75T-tlVMbT8bzz2-S57n1ZeyVllrNWaaGqtWLOFKdTo5pZ6Rf3Y43bJabpzF_rXfRcfmZb-f5kuAINw-6JntPYdXassQ0giDEFrfpwzqGO32et5sZyDjOS41spr5Fc--8gThm6b40N-2gLZD-4G6nwlzE6zMybshFdJvn6z2IJ-b6ofxb1dfIxxhYrPb2kUodQD55sG1qBUwBFDo0gfEmOC3z4gza_YidnXatpcsIRrpbOGxWaCDdCN6XXJZtrcPTWQTWKCaIccbiQZ2wxvRzBBGo4Cwm2Ih21YPDJJNiOA", "state"=>"71c57917945003c3b85c5865030d1dad9819b04a55c0b2bf"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-05 10:49:12 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-05 10:49:12 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.5ms)
+  [1m[36mCustomPlaylist Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6AaHgfHHlWZE3TXSw15quu"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (7226.8ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6AaHgfHHlWZE3TXSw15quu"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Load (0.4ms)[0m  [1m[34mSELECT "custom_playlists".* FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1[0m  [["user_id", "alanbiju79"]]
+  ↳ app/controllers/home_controller.rb:86
+Completed 200 OK in 7780ms (Views: 7273.6ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/create_playlist" for ::1 at 2019-10-05 10:50:43 +0100
+Processing by CustomPlaylistController#create_playlist as HTML
+  [1m[36mCustomPlaylist Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/custom_playlist_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/custom_playlist_controller.rb:20
+  [1m[36mCustomPlaylist Create (1.5ms)[0m  [1m[32mINSERT INTO "custom_playlists" ("user_id", "playlist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", "alanbiju79"], ["playlist_id", "1bzev0mKdxj6dOeP2fjr4n"], ["created_at", "2019-10-05 09:50:48.447434"], ["updated_at", "2019-10-05 09:50:48.447434"]]
+  ↳ app/controllers/custom_playlist_controller.rb:20
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/custom_playlist_controller.rb:20
+Redirected to http://localhost:3000/
+Completed 302 Found in 4893ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-05 10:50:48 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 195ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-05 10:50:48 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.5ms)
+  [1m[36mCustomPlaylist Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1bzev0mKdxj6dOeP2fjr4n"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6AaHgfHHlWZE3TXSw15quu"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (2164.5ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1bzev0mKdxj6dOeP2fjr4n"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6AaHgfHHlWZE3TXSw15quu"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Load (1.4ms)[0m  [1m[34mSELECT "custom_playlists".* FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1[0m  [["user_id", "alanbiju79"]]
+  ↳ app/controllers/home_controller.rb:86
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:86
+  [1m[36mCustomPlaylist Destroy (10.6ms)[0m  [1m[31mDELETE FROM "custom_playlists" WHERE "custom_playlists"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/home_controller.rb:86
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:86
+Completed 200 OK in 2408ms (Views: 2213.7ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-05 10:52:20 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.7ms)
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (1810.0ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Load (0.4ms)[0m  [1m[34mSELECT "custom_playlists".* FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1[0m  [["user_id", "alanbiju79"]]
+  ↳ app/controllers/home_controller.rb:86
+Completed 200 OK in 1992ms (Views: 1846.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/create_playlist" for ::1 at 2019-10-05 10:52:25 +0100
+Processing by CustomPlaylistController#create_playlist as HTML
+  [1m[36mCustomPlaylist Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/custom_playlist_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/custom_playlist_controller.rb:20
+  [1m[36mCustomPlaylist Create (0.7ms)[0m  [1m[32mINSERT INTO "custom_playlists" ("user_id", "playlist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", "alanbiju79"], ["playlist_id", "4Jnyoq54Y85oMwfDxr1FwH"], ["created_at", "2019-10-05 09:52:35.010356"], ["updated_at", "2019-10-05 09:52:35.010356"]]
+  ↳ app/controllers/custom_playlist_controller.rb:20
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/custom_playlist_controller.rb:20
+Redirected to http://localhost:3000/
+Completed 302 Found in 9799ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-05 10:52:35 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-05 10:52:35 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.3ms)
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4Jnyoq54Y85oMwfDxr1FwH"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (6.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (1702.5ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4Jnyoq54Y85oMwfDxr1FwH"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Load (3.8ms)[0m  [1m[34mSELECT "custom_playlists".* FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1[0m  [["user_id", "alanbiju79"]]
+  ↳ app/controllers/home_controller.rb:86
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:86
+  [1m[36mCustomPlaylist Destroy (1.5ms)[0m  [1m[31mDELETE FROM "custom_playlists" WHERE "custom_playlists"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/home_controller.rb:86
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:86
+Completed 200 OK in 1949ms (Views: 1751.8ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/playlist/4Jnyoq54Y85oMwfDxr1FwH" for ::1 at 2019-10-05 10:53:10 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"4Jnyoq54Y85oMwfDxr1FwH"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.4ms)
+  Rendered home/playlist.html.haml within layouts/application (7400.6ms)
+Completed 200 OK in 7757ms (Views: 7591.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-05 10:54:49 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.1ms)
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4Jnyoq54Y85oMwfDxr1FwH"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (2023.9ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4Jnyoq54Y85oMwfDxr1FwH"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Load (0.7ms)[0m  [1m[34mSELECT "custom_playlists".* FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1[0m  [["user_id", "alanbiju79"]]
+  ↳ app/controllers/home_controller.rb:86
+Completed 200 OK in 2323ms (Views: 2123.7ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-05 10:58:02 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.6ms)
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (1495.4ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Load (6.1ms)[0m  [1m[34mSELECT "custom_playlists".* FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1[0m  [["user_id", "alanbiju79"]]
+  ↳ app/controllers/home_controller.rb:84
+Completed 200 OK in 1738ms (Views: 1552.2ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/create_playlist" for ::1 at 2019-10-05 10:58:08 +0100
+Processing by CustomPlaylistController#create_playlist as HTML
+  [1m[36mCustomPlaylist Exists (21.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/custom_playlist_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/custom_playlist_controller.rb:20
+  [1m[36mCustomPlaylist Create (0.8ms)[0m  [1m[32mINSERT INTO "custom_playlists" ("user_id", "playlist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", "alanbiju79"], ["playlist_id", "6kyFW2jfuUPKPgs3s20mYm"], ["created_at", "2019-10-05 09:58:13.455145"], ["updated_at", "2019-10-05 09:58:13.455145"]]
+  ↳ app/controllers/custom_playlist_controller.rb:20
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/custom_playlist_controller.rb:20
+Redirected to http://localhost:3000/
+Completed 302 Found in 5104ms (ActiveRecord: 29.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-05 10:58:13 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-05 10:58:13 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.5ms)
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6kyFW2jfuUPKPgs3s20mYm"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (1758.1ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6kyFW2jfuUPKPgs3s20mYm"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+Completed 200 OK in 1985ms (Views: 1800.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/playlist/6kyFW2jfuUPKPgs3s20mYm" for ::1 at 2019-10-05 10:58:18 +0100
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"6kyFW2jfuUPKPgs3s20mYm"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (8.2ms)
+  Rendered home/playlist.html.haml within layouts/application (7344.2ms)
+Completed 200 OK in 7595ms (Views: 7418.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-05 10:58:27 +0100
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-10-05 10:58:27 +0100
+Processing by HomeController#playlists as HTML
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  [1m[36mCustomPlaylist Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6kyFW2jfuUPKPgs3s20mYm"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "alanbiju79"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (1438.8ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6kyFW2jfuUPKPgs3s20mYm"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6VOYSWLPrBMh1VHxddKfp1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "3V26JjOdj6zivA9M0kwnVf"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6nz34ENlBBQkwIva5sSxgE"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "1UR3sspL6NW5xBZKdmuMz1"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "2XJm4ZKC835vaxvncjQvKO"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "4weNQhI0OF2i7OEBoog3M3"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "01xzLrQperCHSPV5vDhrIe"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6GcrlDZ9N409MZ7WPJZxmA"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+Completed 200 OK in 1876ms (Views: 1691.0ms | ActiveRecord: 5.2ms)
+
+
