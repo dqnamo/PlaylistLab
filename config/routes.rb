@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get '/playlist/:id', to: 'home#playlist', as: :playlist
   get '/playlists', to: 'home#playlists'
   get '/create_playlist', to: 'custom_playlist#create_playlist'
+
+  get '/add_energy/:id', to: 'enhance_playlist#add_energy', as: :add_energy
+  get '/remove_energy/:id', to: 'enhance_playlist#remove_energy', as: :remove_energy
 end
