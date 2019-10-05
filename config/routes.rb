@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   get '/playlist/:id', to: 'home#playlist', as: :playlist
   get '/playlists', to: 'home#playlists'
+  get '/create_playlist', to: 'custom_playlist#create_playlist'
 end
