@@ -2,8 +2,9 @@ class HomeController < ApplicationController
   require 'rspotify'
 
   before_action :authenticate_user, except: [:landing]
+  after_action :check_custom_playlist, only: [:playlists]
 
-  helper_method :get_features, :make_playlist
+  helper_method :get_features, :make_playlist, :created_playlist?, :created_by_us?
 
   def landing
     if $spotify_user != nil
@@ -44,15 +45,20 @@ class HomeController < ApplicationController
     features = { energy: energy_average, danceability: danceability_average }
   end
 
-  def make_playlist
-    songs = []
-
-    $spotify_user.top_artists(time_range: 'short_term', limit: 5).each do |artist|
-       artist.related_artists.each do |i|
-         songs << i.top_tracks(:US).first.name
-       end
+  def created_playlist?
+    if CustomPlaylist.exists?(user_id: $spotify_user.display_name)
+      true
+    else
+      false
     end
-    puts songs
+  end
+
+  def created_by_us?(playlist)
+    if CustomPlaylist.exists?(playlist_id: playlist)
+      true
+    else
+      false
+    end
   end
 
   def home_params
@@ -65,4 +71,19 @@ class HomeController < ApplicationController
     end
   end
 
+  def check_custom_playlist
+    exists = true
+
+    @playlists.each do |x|
+      if CustomPlaylist.exists?(playlist_id: x.id)
+        exists = true
+      else
+        exists = false
+      end
+    end
+
+    if exists == false
+      CustomPlaylist.where(user_id: $spotify_user.display_name).destroy_all
+    end
+  end
 end
