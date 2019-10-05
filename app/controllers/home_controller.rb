@@ -42,7 +42,7 @@ class HomeController < ApplicationController
     danceability_average = (total_danceability/count).round(2)
     danceability_average = (danceability_average * 100).to_i
 
-    features = { energy: energy_average, danceability: danceability_average }
+    $features = { energy: energy_average, danceability: danceability_average }
   end
 
   def created_playlist?

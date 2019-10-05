@@ -1,0 +1,2 @@
+class EnhancePlaylist < ApplicationRecord
+end
