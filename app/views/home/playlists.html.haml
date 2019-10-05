@@ -1,6 +1,6 @@
 
 .container
-  .row.pl-4.d-flex.align-items-center
+  .row.pl-4.d-flex.align-items-center.animated.fadeIn
     .col-md-6.ml-0.pl-0
       %h3.login-heading.my-4 🎶 Your Playlists.
     .col-md-6
@@ -9,7 +9,7 @@
   .row
     - @playlists.each do |x|
       .col-md-4
-        .card.mb-4.bg-light
+        .card.mb-4.bg-light.animated.slideInUp.delay-3s
           .row.no-gutters
             .col-md-4
               %img.card-img{:alt => "...", :src => "#{x.images.first.try(:fetch, "url")}"}/
@@ -22,7 +22,7 @@
                 = link_to('🔥 Enhance', playlist_path(x.id), class: "btn btn-sm bg-dark text-white")
 
   .row
-    .card.w-100.mx-3.p-3.bg-gradient-primary.text-white
+    .card.w-100.mx-3.p-3.bg-gradient-primary.text-white.animated.fadeInUp.delay-4s
       .row.no-gutters
         .card-body
           .col-md-6
