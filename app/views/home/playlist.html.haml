@@ -1,28 +1,25 @@
 .container
-  .row.pl-4.d-flex.align-items-center
+  .row.pl-4.d-flex.align-items-center.animated.fadeIn
     .col-md-6.ml-0.pl-0
       %h3.login-heading.my-4 🔥 Enhance Your Playlist.
     .col-md-6
       = render "header_options"
 
   .row
-    .col-6.sticky
+    .col-6.sticky.animated.slideInUp.delay-10s
       %img.img-fluid{"data-tilt" => "", :alt => "Responsive image", :src => "#{@playlist.images.first.try(:fetch, "url")}"}/
       .row.mt-3.mx-0
-        .col-2.m-0.p-0
+        .col-3.m-0.p-0
           = link_to('⚡', playlists_path, class: "btn  btn-block btn-lg bg-success text-white")
-        .col-2.m-0.p-0
+        .col-3.m-0.p-0
           = link_to('💃', playlists_path, class: "btn  btn-block btn-lg bg-success text-white")
-        .col-2.m-0.p-0
-          = link_to('🤗', playlists_path, class: "btn  btn-block btn-lg bg-success text-white")
-        .col-2.m-0.p-0
+        .col-3.m-0.p-0
           = link_to('⚡', playlists_path, class: "btn  btn-block btn-lg bg-danger text-white")
-        .col-2.m-0.p-0
+        .col-3.m-0.p-0
           = link_to('💃', playlists_path, class: "btn  btn-block btn-lg bg-danger text-white")
-        .col-2.m-0.p-0
-          = link_to('🤗', playlists_path, class: "btn  btn-block btn-lg bg-danger text-white")
 
-    .col-6
+
+    .col-6.animated.fadeIn.delay-4s
       .card.p-4.mb-4.text-white.bg-gradient-primary
         .row
           .col
