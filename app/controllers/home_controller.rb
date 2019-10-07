@@ -2,7 +2,6 @@ class HomeController < ApplicationController
   require 'rspotify'
 
   before_action :authenticate_user, except: [:landing]
-  after_action :check_custom_playlist, only: [:playlists]
 
   helper_method :get_features, :make_playlist, :created_playlist?, :created_by_us?
 
@@ -14,6 +13,7 @@ class HomeController < ApplicationController
 
   def playlists
     @playlists = $spotify_user.playlists
+    check_custom_playlist
   end
 
   def playlist
