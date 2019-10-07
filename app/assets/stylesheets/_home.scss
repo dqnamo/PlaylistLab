@@ -56,3 +56,13 @@
   background-color: #1ad85e;
   border-color: #1ad85e;
 }
+
+table tbody, table thead
+{
+    display: block;
+}
+table tbody
+{
+   overflow: auto;
+   height: 50vh;
+}

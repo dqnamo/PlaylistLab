@@ -36,7 +36,7 @@ class EnhancePlaylistController < ApplicationController
       i.top_tracks(:US).first(10).each do |j|
         energy = j.audio_features.energy * 100
 
-        if (energy < $features[:energy]) && (songs.exclude? j.uri) && (playlist_tracks.exclude? j)
+        if (energy < $features[:energy]) && (songs.exclude? j.uri) && (@playlist_tracks.exclude? j.uri)
           songs << j.uri
         end
 
@@ -63,7 +63,7 @@ class EnhancePlaylistController < ApplicationController
       i.top_tracks(:US).first(10).each do |j|
         danceability = j.audio_features.danceability * 100
 
-        if (danceability > $features[:danceability]) && (songs.exclude? j.uri) && (playlist_tracks.exclude? j)
+        if (danceability > $features[:danceability]) && (songs.exclude? j.uri) && (@playlist_tracks.exclude? j.uri)
           songs << j.uri
         end
 
@@ -90,7 +90,7 @@ class EnhancePlaylistController < ApplicationController
       i.top_tracks(:US).first(10).each do |j|
         danceability = j.audio_features.danceability * 100
 
-        if (danceability < $features[:danceability]) && (songs.exclude? j.uri) && (playlist_tracks.exclude? j)
+        if (danceability < $features[:danceability]) && (songs.exclude? j.uri) && (@playlist_tracks.exclude? j.uri)
           songs << j.uri
         end
 
@@ -133,7 +133,7 @@ class EnhancePlaylistController < ApplicationController
       end
     end
 
-    return @artists
+    return @artists.first(20)
   end
 
   def get_related_artists
