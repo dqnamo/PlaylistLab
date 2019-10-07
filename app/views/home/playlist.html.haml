@@ -10,13 +10,13 @@
       %img.img-fluid{"data-tilt" => "", :alt => "Responsive image", :src => "#{@playlist.images.first.try(:fetch, "url")}"}/
       .row.mt-3.mx-0
         .col-3.m-0.p-0
-          = link_to('⚡', add_energy_path(@playlist.id), class: "btn  btn-block btn-lg bg-success text-white")
+          = link_to('Add ⚡', add_energy_path(@playlist.id), class: "btn  btn-block btn-lg bg-success text-white text-sm")
         .col-3.m-0.p-0
-          = link_to('💃', add_danceability_path(@playlist.id), class: "btn  btn-block btn-lg bg-success text-white")
+          = link_to('Add 💃', add_danceability_path(@playlist.id), class: "btn  btn-block btn-lg bg-success text-white text-sm")
         .col-3.m-0.p-0
-          = link_to('⚡', remove_energy_path(@playlist.id), class: "btn  btn-block btn-lg bg-danger text-white")
+          = link_to('Remove ⚡', remove_energy_path(@playlist.id), class: "btn  btn-block btn-lg bg-danger text-white text-sm")
         .col-3.m-0.p-0
-          = link_to('💃', remove_danceability_path(@playlist.id), class: "btn  btn-block btn-lg bg-danger text-white")
+          = link_to('Remove 💃', remove_danceability_path(@playlist.id), class: "btn  btn-block btn-lg bg-danger text-white text-sm")
 
 
     .col-6.animated.fadeIn.delay-4s

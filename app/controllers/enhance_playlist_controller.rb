@@ -5,9 +5,14 @@ class EnhancePlaylistController < ApplicationController
   def add_energy
     songs = []
 
+
     @artists.each do |i|
       i.top_tracks(:US).first(10).each do |j|
+        @requests += 1
+        puts @requests
         energy = j.audio_features.energy * 100
+        @requests += 1
+        puts @requests
 
         if (energy > $features[:energy]) && (songs.exclude? j.uri) && (@playlist_tracks.exclude? j.uri)
           songs << j.uri
@@ -117,18 +122,25 @@ class EnhancePlaylistController < ApplicationController
     songs.join(",")
     puts songs
     @playlist.add_tracks!(songs)
+    @requests += 1
+    puts @requests
   end
 
   def get_artists
+    @requests = 0
     id = params[:id]
     name = $spotify_user.display_name
     @playlist = RSpotify::Playlist.find(name, id)
+    @requests += 1
+    puts @requests
     tracks = @playlist.tracks
+    @requests += 1
+    puts @requests
 
     @artists = []
 
     tracks.each do |x|
-      if @artists.exclude? x.artists.first
+      if !(@artists.any? {|h| h.name == x.artists.first.name})
         @artists << x.artists.first
       end
     end
