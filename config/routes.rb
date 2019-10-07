@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   get '/add_energy/:id', to: 'enhance_playlist#add_energy', as: :add_energy
   get '/remove_energy/:id', to: 'enhance_playlist#remove_energy', as: :remove_energy
+
+  get '/add_danceability/:id', to: 'enhance_playlist#add_danceability', as: :add_energy
+  get '/remove_danceability/:id', to: 'enhance_playlist#remove_danceability', as: :remove_energy
 end
