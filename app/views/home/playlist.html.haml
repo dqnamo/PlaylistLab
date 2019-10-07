@@ -12,11 +12,11 @@
         .col-3.m-0.p-0
           = link_to('⚡', add_energy_path(@playlist.id), class: "btn  btn-block btn-lg bg-success text-white")
         .col-3.m-0.p-0
-          = link_to('💃', playlists_path, class: "btn  btn-block btn-lg bg-success text-white")
+          = link_to('💃', add_danceability_path(@playlist.id), class: "btn  btn-block btn-lg bg-success text-white")
         .col-3.m-0.p-0
-          = link_to('⚡', playlists_path, class: "btn  btn-block btn-lg bg-danger text-white")
+          = link_to('⚡', remove_energy_path(@playlist.id), class: "btn  btn-block btn-lg bg-danger text-white")
         .col-3.m-0.p-0
-          = link_to('💃', playlists_path, class: "btn  btn-block btn-lg bg-danger text-white")
+          = link_to('💃', remove_danceability_path(@playlist.id), class: "btn  btn-block btn-lg bg-danger text-white")
 
 
     .col-6.animated.fadeIn.delay-4s
