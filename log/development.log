@@ -24833,3 +24833,448 @@ Processing by HomeController#playlist as HTML
 Completed 200 OK in 7319ms (Views: 7000.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-11-26 14:55:47 +0000
+
+PG::ConnectionBad - FATAL:  database "spotifyapp_development" does not exist
+:
+
+Started GET "/" for ::1 at 2019-11-26 14:55:48 +0000
+
+PG::ConnectionBad - FATAL:  database "spotifyapp_development" does not exist
+:
+
+Started POST "/__better_errors/78fc9e6ab066c84e/variables" for ::1 at 2019-11-26 14:55:48 +0000
+  [1m[35m (227.0ms)[0m  [1m[35mCREATE DATABASE "spotifyapp_development" ENCODING = 'unicode'[0m
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+  [1m[35m (99.8ms)[0m  [1m[35mCREATE DATABASE "spotifyapp_test" ENCODING = 'unicode'[0m
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+  [1m[35mSQL (2.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "custom_playlists" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (27.6ms)[0m  [1m[35mCREATE TABLE "custom_playlists" ("id" bigserial primary key, "user_id" character varying, "playlist_id" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "enhance_playlists" CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "enhance_playlists" ("id" bigserial primary key, "playlist_id" character varying, "tracks" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191005100204)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191005085103);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-26 14:56:07.147969"], ["updated_at", "2019-11-26 14:56:07.147969"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "custom_playlists" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "custom_playlists" ("id" bigserial primary key, "user_id" character varying, "playlist_id" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "enhance_playlists" CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "enhance_playlists" ("id" bigserial primary key, "playlist_id" character varying, "tracks" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191005100204)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191005085103);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-26 14:56:07.265579"], ["updated_at", "2019-11-26 14:56:07.265579"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (1.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-11-26 14:56:07.275682"], ["key", "environment"]]
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/john/.rvm/rubies/ruby-2.6.4/bin/rake:23
+Started GET "/" for ::1 at 2019-11-26 14:56:14 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/john/.rvm/gems/ruby-2.6.4/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 3637ms (Views: 3629.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-11-26 14:56:21 +0000
+Started GET "/auth/spotify" for ::1 at 2019-11-26 14:56:21 +0000
+Started GET "/auth/spotify/callback?code=AQCzCbOiE5QymtXAvqTVb4q0qbz1nzahDOhcWF9frhVkQN9qrSfyaoGhb1YbqyTWF2TPZTF1SU9gwHUD0xhsbNT287KjsfYScBJLOFyeqS7Q_ozaRjqH3eZWlDk-r2N-O5ots76RSeW6aLp1_eFmeDeuruamhi7KEnZd8Q6LVA2rf4S65lfL9dV2qIBnuY_Z8KV36eT8Wr6dLY9ByVZZtRWVqEKnJEkve8YYb1RV1L49ZbWtf9icmFlcuZKceBoLVHE4tYMEcIjGGcdJDvF9p8ueosOlVTe-BxVTB0TXfpPVIiCtcHo1pss7f9CAbYHm8In6rce1dcksVtqiWkku5oE&state=1d030c2f230f06794706189fa0af6c25a84c629d4e81a4cb" for ::1 at 2019-11-26 14:56:38 +0000
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQCzCbOiE5QymtXAvqTVb4q0qbz1nzahDOhcWF9frhVkQN9qrSfyaoGhb1YbqyTWF2TPZTF1SU9gwHUD0xhsbNT287KjsfYScBJLOFyeqS7Q_ozaRjqH3eZWlDk-r2N-O5ots76RSeW6aLp1_eFmeDeuruamhi7KEnZd8Q6LVA2rf4S65lfL9dV2qIBnuY_Z8KV36eT8Wr6dLY9ByVZZtRWVqEKnJEkve8YYb1RV1L49ZbWtf9icmFlcuZKceBoLVHE4tYMEcIjGGcdJDvF9p8ueosOlVTe-BxVTB0TXfpPVIiCtcHo1pss7f9CAbYHm8In6rce1dcksVtqiWkku5oE", "state"=>"1d030c2f230f06794706189fa0af6c25a84c629d4e81a4cb"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-26 14:56:38 +0000
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-11-26 14:56:38 +0000
+Processing by HomeController#playlists as HTML
+  [1m[36mCustomPlaylist Exists (1.8ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6fZnbYt4etC1HacV8uc0DY"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "70aMoF9ao6bmbDGtn9aQ0B"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6gAz3WCH1KWv7ODsZ11rbI"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Load (0.2ms)[0m  [1m[34mSELECT "custom_playlists".* FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1[0m  [["user_id", "John Paul"]]
+  ↳ app/controllers/home_controller.rb:84
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.4ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6fZnbYt4etC1HacV8uc0DY"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "70aMoF9ao6bmbDGtn9aQ0B"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6gAz3WCH1KWv7ODsZ11rbI"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "John Paul"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (351.5ms)
+Completed 200 OK in 563ms (Views: 414.4ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 14:56:42 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.1ms)
+  Rendered home/playlist.html.haml within layouts/application (3069.3ms)
+Completed 200 OK in 3242ms (Views: 3130.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 14:57:02 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 14:58:08 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Completed 500  in 92688ms (ActiveRecord: 0.0ms)
+
+
+
+SystemExit - exit:
+  (byebug):1:in `block in get_artists'
+  app/controllers/enhance_playlist_controller.rb:136:in `block in get_artists'
+  app/controllers/enhance_playlist_controller.rb:130:in `get_artists'
+
+Completed 500  in 3587ms (ActiveRecord: 0.0ms)
+
+
+
+SystemExit - exit:
+  (byebug):1:in `block in get_artists'
+  app/controllers/enhance_playlist_controller.rb:136:in `block in get_artists'
+  app/controllers/enhance_playlist_controller.rb:130:in `get_artists'
+
+Started POST "/__better_errors/29ec6785e10e28c1/variables" for ::1 at 2019-11-26 14:58:38 +0000
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 14:58:44 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Completed 500  in 3612ms (ActiveRecord: 0.0ms)
+
+
+
+SystemExit - exit:
+  (byebug):1:in `block in get_artists'
+  app/controllers/enhance_playlist_controller.rb:136:in `block in get_artists'
+  app/controllers/enhance_playlist_controller.rb:130:in `get_artists'
+
+Started POST "/__better_errors/36abed670d66579b/variables" for ::1 at 2019-11-26 14:58:48 +0000
+Started GET "/" for ::1 at 2019-11-26 14:58:52 +0000
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-26 14:58:52 +0000
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 52ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-11-26 14:58:53 +0000
+Processing by HomeController#playlists as HTML
+  [1m[36mCustomPlaylist Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6fZnbYt4etC1HacV8uc0DY"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "70aMoF9ao6bmbDGtn9aQ0B"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6gAz3WCH1KWv7ODsZ11rbI"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Load (1.1ms)[0m  [1m[34mSELECT "custom_playlists".* FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1[0m  [["user_id", "John Paul"]]
+  ↳ app/controllers/home_controller.rb:84
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (43.4ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6fZnbYt4etC1HacV8uc0DY"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCACHE CustomPlaylist Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "70aMoF9ao6bmbDGtn9aQ0B"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCACHE CustomPlaylist Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6gAz3WCH1KWv7ODsZ11rbI"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "John Paul"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (966.7ms)
+Completed 200 OK in 2541ms (Views: 2188.3ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 14:58:58 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (79.5ms)
+  Rendered home/playlist.html.haml within layouts/application (6073.3ms)
+Completed 200 OK in 7917ms (Views: 7205.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:00:46 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Completed 500  in 17330ms (ActiveRecord: 0.0ms)
+
+
+
+SystemExit - exit:
+  (byebug):1:in `block in get_artists'
+  app/controllers/enhance_playlist_controller.rb:136:in `block in get_artists'
+  app/controllers/enhance_playlist_controller.rb:130:in `get_artists'
+
+Started POST "/__better_errors/c49daa09b2e288d3/variables" for ::1 at 2019-11-26 15:01:06 +0000
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:01:36 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (49.0ms)
+  Rendered home/playlist.html.haml within layouts/application (5646.6ms)
+Completed 200 OK in 7576ms (Views: 7347.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:01:47 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (52.4ms)
+  Rendered home/playlist.html.haml within layouts/application (5640.7ms)
+Completed 200 OK in 7484ms (Views: 7238.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:01:58 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:05:59 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Completed 500  in 9669ms (ActiveRecord: 0.0ms)
+
+
+Completed 500  in 250344ms (ActiveRecord: 0.0ms)
+
+
+
+RestClient::TooManyRequests - 429 Too Many Requests:
+  app/controllers/enhance_playlist_controller.rb:10:in `block (2 levels) in add_energy'
+  app/controllers/enhance_playlist_controller.rb:9:in `block in add_energy'
+  app/controllers/enhance_playlist_controller.rb:8:in `add_energy'
+
+
+RestClient::TooManyRequests - 429 Too Many Requests:
+  app/controllers/enhance_playlist_controller.rb:10:in `block (2 levels) in add_energy'
+  app/controllers/enhance_playlist_controller.rb:9:in `block in add_energy'
+  app/controllers/enhance_playlist_controller.rb:8:in `add_energy'
+
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:06:30 +0000
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/john/.rvm/gems/ruby-2.6.4/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-26 15:06:30 +0000
+Processing by HomeController#landing as HTML
+  Rendering home/landing.html.haml within layouts/application
+  Rendered home/landing.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 525ms (Views: 520.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for ::1 at 2019-11-26 15:06:31 +0000
+Started GET "/auth/spotify" for ::1 at 2019-11-26 15:06:31 +0000
+Started GET "/auth/spotify/callback?code=AQApqFeRLUNBpo_jsoZX6D5D_jdCZICA4PJr0cOBveohC0NltgE-yXBnLKlw8vjnJU_Om_ioejGQvLXvsxaN1Q3QFNZgnRnETl1PfY07aZ6BTUTY70hdiHjCXIcoEbnH_vKDkEBDaAcelvVvQvGU7MfFHYCQivc08-f1QElzsaMUsxaTL52oAjNDeyX2PeCk9wT52JV-dzvlYK9lJ1vLXunXxR8mctCfLkcKyjqI_URh_apk6sDOThNtM6NfLmKZ7tLexgHjlKUOIfrgoF2WqfZdAzf5lxrs-Ly-ERLedybHE9Ubz-Pfn3UVIFwazynf4C-pP9KrESsx6R3k4rUNn1I&state=42c8435038340825ca267692529c2d9a28ff717902e1cb25" for ::1 at 2019-11-26 15:06:32 +0000
+Processing by ApplicationController#set_spotify_user as HTML
+  Parameters: {"code"=>"AQApqFeRLUNBpo_jsoZX6D5D_jdCZICA4PJr0cOBveohC0NltgE-yXBnLKlw8vjnJU_Om_ioejGQvLXvsxaN1Q3QFNZgnRnETl1PfY07aZ6BTUTY70hdiHjCXIcoEbnH_vKDkEBDaAcelvVvQvGU7MfFHYCQivc08-f1QElzsaMUsxaTL52oAjNDeyX2PeCk9wT52JV-dzvlYK9lJ1vLXunXxR8mctCfLkcKyjqI_URh_apk6sDOThNtM6NfLmKZ7tLexgHjlKUOIfrgoF2WqfZdAzf5lxrs-Ly-ERLedybHE9Ubz-Pfn3UVIFwazynf4C-pP9KrESsx6R3k4rUNn1I", "state"=>"42c8435038340825ca267692529c2d9a28ff717902e1cb25"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-26 15:06:32 +0000
+Processing by HomeController#landing as HTML
+Redirected to http://localhost:3000/playlists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlists" for ::1 at 2019-11-26 15:06:32 +0000
+Processing by HomeController#playlists as HTML
+  [1m[36mCustomPlaylist Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6fZnbYt4etC1HacV8uc0DY"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "70aMoF9ao6bmbDGtn9aQ0B"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6gAz3WCH1KWv7ODsZ11rbI"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:78
+  [1m[36mCustomPlaylist Load (0.2ms)[0m  [1m[34mSELECT "custom_playlists".* FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1[0m  [["user_id", "John Paul"]]
+  ↳ app/controllers/home_controller.rb:84
+  Rendering home/playlists.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (2.0ms)
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6fZnbYt4etC1HacV8uc0DY"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "70aMoF9ao6bmbDGtn9aQ0B"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCACHE CustomPlaylist Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", "6gAz3WCH1KWv7ODsZ11rbI"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:57
+  [1m[36mCustomPlaylist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "custom_playlists" WHERE "custom_playlists"."user_id" = $1 LIMIT $2[0m  [["user_id", "John Paul"], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:49
+  Rendered home/playlists.html.haml within layouts/application (402.3ms)
+Completed 200 OK in 556ms (Views: 454.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:06:36 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlist.html.haml within layouts/application (4048.9ms)
+Completed 200 OK in 4295ms (Views: 4139.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:06:43 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Completed 500  in 47527ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `top_tracks' for "6eUKZXaKkcviH0Ku9w2n3V":String:
+  app/controllers/enhance_playlist_controller.rb:9:in `block in add_energy'
+  app/controllers/enhance_playlist_controller.rb:8:in `add_energy'
+
+Started POST "/__better_errors/39af806695a137c3/variables" for ::1 at 2019-11-26 15:07:33 +0000
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:08:58 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (3.2ms)
+  Rendered home/playlist.html.haml within layouts/application (4171.6ms)
+Completed 200 OK in 4543ms (Views: 4427.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:09:05 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Redirected to http://localhost:3000/playlist/70aMoF9ao6bmbDGtn9aQ0B
+Completed 302 Found in 5455ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:09:10 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.4ms)
+  Rendered home/playlist.html.haml within layouts/application (5411.8ms)
+Completed 200 OK in 5594ms (Views: 5464.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:09:23 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Redirected to http://localhost:3000/playlist/70aMoF9ao6bmbDGtn9aQ0B
+Completed 302 Found in 7344ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:09:30 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.6ms)
+  Rendered home/playlist.html.haml within layouts/application (762.5ms)
+Completed 500  in 1441ms (ActiveRecord: 0.0ms)
+
+
+
+RestClient::TooManyRequests - 429 Too Many Requests:
+  app/controllers/home_controller.rb:33:in `block in get_features'
+  app/controllers/home_controller.rb:32:in `get_features'
+  app/views/home/playlist.html.haml:32:in `_app_views_home_playlist_html_haml__2161364469209942237_70194131225180'
+
+Started POST "/__better_errors/29d101b46eb09345/variables" for ::1 at 2019-11-26 15:09:31 +0000
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:10:12 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.7ms)
+  Rendered home/playlist.html.haml within layouts/application (6962.5ms)
+Completed 200 OK in 7129ms (Views: 7015.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_energy/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:13:29 +0000
+Processing by EnhancePlaylistController#add_energy as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+Redirected to http://localhost:3000/playlist/70aMoF9ao6bmbDGtn9aQ0B
+Completed 302 Found in 9114ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/playlist/70aMoF9ao6bmbDGtn9aQ0B" for ::1 at 2019-11-26 15:13:38 +0000
+Processing by HomeController#playlist as HTML
+  Parameters: {"id"=>"70aMoF9ao6bmbDGtn9aQ0B"}
+  Rendering home/playlist.html.haml within layouts/application
+  Rendered home/_header_options.html.haml (1.6ms)
+  Rendered home/playlist.html.haml within layouts/application (2494.8ms)
+Completed 500  in 2829ms (ActiveRecord: 0.0ms)
+
+
+
+RestClient::TooManyRequests - 429 Too Many Requests:
+  app/controllers/home_controller.rb:33:in `block in get_features'
+  app/controllers/home_controller.rb:32:in `get_features'
+  app/views/home/playlist.html.haml:32:in `_app_views_home_playlist_html_haml__2161364469209942237_70194124163920'
+
+Started POST "/__better_errors/0d020fa51ea061b1/variables" for ::1 at 2019-11-26 15:13:41 +0000

@@ -6,6 +6,7 @@ class EnhancePlaylistController < ApplicationController
     songs = []
 
     @artists.each do |i|
+      i = RSpotify::Artist.find(i)
       i.top_tracks(:US).first(10).each do |j|
         energy = j.audio_features.energy * 100
 
@@ -128,10 +129,12 @@ class EnhancePlaylistController < ApplicationController
     @artists = []
 
     tracks.each do |x|
-      if @artists.exclude? x.artists.first
-        @artists << x.artists.first
+      if @artists.exclude? x.artists.first.id
+        @artists << x.artists.first.id
       end
     end
+
+    #debugger
 
     return @artists.first(20)
   end
@@ -139,9 +142,12 @@ class EnhancePlaylistController < ApplicationController
   def get_related_artists
     related = []
 
+  #TODO
     @artists.each do |k|
       k.related_artists.first(5).each do |y|
-        related << y
+        if related.exclude? y.id
+          related << y.id
+        end
       end
     end
 
