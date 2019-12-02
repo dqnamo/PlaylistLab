@@ -71,3 +71,4 @@ tmp/cache/assets/sprockets/v3.0/nE/nEZxkz9bc7ewTOxsNl4Qasvor0hIS2V8dIdXdw5sZuk.c
 *.cache
 *.log
 *.log
+log/development.log
