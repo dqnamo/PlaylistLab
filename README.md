@@ -1,8 +1,8 @@
-# PlaylistLab
+# PlaylistLab 🧪
 
 Mix and match elements such as dancebility and energy in our playlist lab to enchance your spotify playlists.
 
-# Setup & Run
+## Setup & Run
 
 - Clone or download repo and run `bundle install` in the project folder to insatll requires ruby gems.
 - Setup databases by running `rake db:setup`
