@@ -1,3 +1,6 @@
-# README
+# PlaylistLab
 
-Enhance your playlists using audio features on spotify.
+Mix and match elements such as dancebility and energy in our playlist lab to enchance your spotify playlists.
+
+
+# Usage
