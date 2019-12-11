@@ -1,6 +1,6 @@
 # 🧪 PlaylistLab
 
-Mix and match elements such as dancebility and energy in our playlist lab to enchance your spotify playlists.
+Mix and match elements such as dancebility and energy in our playlist lab to enchance your spotify playlists. Let us make a completely new playlist for you based on your recent listening habits.
 
 ## Setup & Run
 
