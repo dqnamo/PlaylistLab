@@ -29,9 +29,9 @@
               = "#{@playlist.tracks.count} Songs"
           .col
             %p.text-white
-              = "⚡ Energy: #{get_features(@playlist)[:energy]}"
+              = "⚡ Energy: #{@features[:energy]}"
             %p.text-white
-              = "💃 Danceability: #{get_features(@playlist)[:danceability]}"
+              = "💃 Danceability: #{@features[:danceability]}"
       .card.p-3.bg-light
         %table.table.table-sm.table-borderless
           %thead
